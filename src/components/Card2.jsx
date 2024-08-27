@@ -1,0 +1,64 @@
+import React, { useState } from "react";
+import Carousel from "react-simply-carousel";
+import "./Footer.css"; 
+
+const Card2 = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  return (
+    <>
+      <div className="fontTest bg-[#1c1c1e] text-white ">
+        <h1 className="text-white text-5xl pt-5 pl-[80px]">Why Choose AV?</h1>
+        <p className="pt-5 pl-[150px] text-xs">
+          Stay Ahead, Stay Secure, Stay Confident.
+        </p>
+      </div>
+      <div className="bg-[#1c1c1e]">
+        <Carousel
+          containerProps={{
+            style: {
+              width: "100%",
+              userSelect: "none",
+            },
+          }}
+          // swipeTreshold={10}
+          itemsToShow={3.5}
+          infinite={false}
+          activeSlideIndex={activeSlide}
+          onRequestChange={setActiveSlide}
+        >
+          <Card Srno="01" Cardtitle="Seamless Experience" Carddata="Seamlessly support coustomers accross chat, email, phone, and social media." />
+          <Card Srno="02" Cardtitle=" Real-Time Insights" Carddata="Understand Customer sentiments and issue in real-time, enabling proactive responses " />
+          <Card Srno="03" Cardtitle="Growth Friendly" Carddata="Grow your customer support as your buisness grows, without any hitches" />
+          <Card Srno="04" Cardtitle="Data Security" Carddata="Prioritize customer data protection with our top-tier encryption and security protocols"/>
+          <Card Srno="05" Cardtitle="AI Automation" Carddata="Automate routine tasks and responses, ensuring faster and consistent support" />
+          <Card Srno="06" Cardtitle="Effortless Teamwork" Carddata="Foster stronger team communication with built-in collaboration tools, unified responses" />
+        </Carousel>
+      </div>
+    </>
+  );
+};
+
+const Card = ({ Srno, Cardtitle, Carddata }) => {
+  return (
+    <div class="fontTest group flex -mt-10 m-5 h-screen w-full items-center justify-center">
+      <div class="relative flex h-[300px] w-[250px]">
+        <div>
+          <div class="absolute left-[6px] top-[8px] flex h-[45px] w-[46px] items-center justify-center rounded-br-lg border-b border-r text-white font-bold text-xl">
+            / {Srno}
+          </div>
+          <div class="absolute right-[0px] top-[-1px] h-[45px] w-[199px] rounded-tl-lg rounded-tr-lg border-x border-t"></div>
+        </div>
+        <div class="absolute top-[52px] h-10 w-10 rounded-tl-lg border-l border-t"></div>
+        <div class="absolute right-[0px] top-[40px] h-[30px] w-[1px] border-r"></div>
+        <div class="absolute -bottom-2 flex flex-col gap-4 h-[251px] w-full items-center justify-center rounded-b-lg border-x border-b text-white">
+          <span class="text-xl duration-500 translate-y-8 group-hover:-translate-y-5">{Cardtitle}</span>
+          <p className=" text-sm text-center px-[5%]  opacity-0 group-hover:opacity-100 duration-500 translate-y-6 group-hover:translate-y-0"> {Carddata}</p>
+        </div>
+          
+      </div>
+    </div>
+  );
+};
+
+export default Card2;
