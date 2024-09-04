@@ -5,8 +5,6 @@ const Testimonial = () => {
     <>
     <div className='flex bg-[#1c1c1e] py-2 '>
         <ImageWithBorders/>
-        <ImageWithBorders/>
-        <ImageWithBorders/>
 
         </div>    
     </>

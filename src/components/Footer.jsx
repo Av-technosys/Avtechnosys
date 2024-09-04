@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 
 const Footer = () => {
+  const [showContact, setShowContent] = useState(false)
+  const [showAddress, setShowAddress] = useState(false)
   return (
     <>
      
@@ -15,18 +17,28 @@ const Footer = () => {
         </div>
         <hr />
         <div className="p-4 mt-20 text-sm flex justify-around flex-wrap">
-          <div className="fontTest">
+          <div className="fontTest ml-20 ">
             It takes more than just a brilliant idea to transform <br />
             it into the greatest solution, you also need the <br />
             proper team to help you realize your vision. <br />
           </div>
-          <div>
-            <ul className="border-r-[1px] pr-1 space-y-4">
-              <li>Contact</li>
-              <li>Address</li>
+          <div className="group">
+            <ul className="border-r-[1px] ml-48 pr-1 space-y-6  py-2">
+              <li onMouseEnter={() => setShowContent(true)} onMouseLeave={() => setShowContent(false)} className=" ">Contact</li>
+              <li onMouseEnter={() => setShowAddress(true)} onMouseLeave={() => setShowAddress(false)}>Address</li>
             </ul>
+
+            
           </div>
-          <div className="border-l-[1px] pl-1">
+
+            <div classname="w-[30rem] ">
+              {<h1 className={` ${ !showContact &&"opacity-0" }    w-full translate-x-10 translate-y-5 duration-500    `} >+91 9983034111 </h1>}
+              { <h1 className={` ${ !showAddress &&"opacity-0" } w-full duration-500 `} >Plot no. 8, Govind Marg, Block-B, Malviya Nagar, <br /> Jaipur, Rajasthan 302017</h1>}
+              
+              
+          </div>  
+
+          <div className="border-l-[1px] pl-1 mr-40">
             <ul>
               <li>LinkedIn </li>
               <li>Facebook</li>

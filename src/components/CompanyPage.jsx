@@ -7,12 +7,13 @@ import Footer from './Footer'
 import Marque1 from './Marque1'
 import Form from './Form'
 import Testimonial from './Testimonial'
+import Hero from './Hero'
 
 
 const CompanyPage = () => {
   return (
     <>
-    <div className='opacity-95'> 
+    <div> 
     <Header/>
     </div>
     <Partners/>
@@ -20,9 +21,11 @@ const CompanyPage = () => {
     <div className='-mt-20'>
     <Location/>
     </div>
+    
     <Marque1/>
     <Form/>
-    <Testimonial/>
+    <Hero/>
+    <Testimonial />
 
     <Footer/>
     </>

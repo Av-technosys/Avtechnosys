@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet, Link } from "react-router-dom";
 import "./Footer.css";
 import logo from "../Assets/Logo 1.png";
 import arrow from "../Assets/rightarrow.png";
@@ -22,14 +23,15 @@ const ContactUs = () => {
         </div>
         <div className="pt-6 ">
           <ul className="flex text-white list-none ml-40 p-4 rounded-full border">
-            <li className="pl-4">Company</li>
+          <li className="px-4"><Link to="/company">Company</Link></li>
             <li className="pl-8"> Services</li>
             <li className="pl-8">Industries</li>
             <li className="pl-8">Portfolio</li>
-            <li className="pl-8">Blog</li>
-            <li className="pl-8 pr-4">Contact Us</li>
+            <li className="pl-8"><Link to="/blog">Blog</Link></li>
+            <li className="pl-8 pr-4"><Link to="/contact">Contact Us</Link></li>
           </ul>
         </div>
+        <Outlet/>
         <div className="flex ml-16 my-10">
           <button className="border border-gray-500 px-4 rounded-lg ">
             Hire us

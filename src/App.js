@@ -1,4 +1,6 @@
 import React from 'react'
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -19,35 +21,24 @@ import ContactUs from './components/ContactUs'
 import PhoneNumberField from './components/PhoneFeild'
 import VideoPlayer from './components/VideoPlayer'
 import CompanyPage from './components/CompanyPage'
+import Input from './components/TextCycle'
+import Home from './components/Home';
+import Blog from './components/Blog';
 
 
 
 const App = () => {
   return (
-    <div >
 
-      {/* <Header />
-      <Partners />
-        <Card2 /> 
-    
-      <div className='relative'>
-      <div className='sticky -top-20'><Services1 /></div>
-      <div className='sticky top-0'><Services2 /></div>
-      <div className='sticky top-0'><Services3 /></div>
-      <div className='sticky top-0'><Services4 /></div>
-      <div className='sticky top-0'><Services5 /></div>
-      </div>
-      <Location />
-      <Marque1 />
-      <Form />
-      <Hero />
-      <TestCard />
-      <Footer /> */}
-      {/* <ContactUs/> */}
-{/* <PhoneNumberField/> */}
-<CompanyPage/>
+    <BrowserRouter>
+      <Routes path="/" element={<Home />}>
+        <Route index element={<Home />} />
+        <Route path="Blog" element={<Blog />} />
+        <Route path="contact" element={<ContactUs />} />
+        <Route path="company" element={<CompanyPage />} />
+      </Routes>
+    </BrowserRouter>
 
-    </div>
   )
 }
 
