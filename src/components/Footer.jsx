@@ -16,11 +16,13 @@ const Footer = () => {
           </h3>
         </div>
         <hr className="" />
-        <div className="lg:p-4 mt-20 text-sm flex justify-around lg:flex-wrap">
-          <div className="fontTest lg:ml-20 ">
+        <div className="lg:p-4 p-1 mt-20  text-sm flex  justify-around lg:flex lg:flex-wrap">
+          <div className="fontTest   ">
+            
             It takes more than just a brilliant idea to transform <br />
             it into the greatest solution, you also need the <br />
             proper team to help you realize your vision. <br />
+
           </div>
           <div className="lg:group">
             <ul className="border-r-[1px] ml-48  lg:pr-1 space-y-6  py-2">

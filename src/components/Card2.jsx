@@ -8,8 +8,8 @@ const Card2 = () => {
   return (
     <>
       <div className="fontTest bg-[#1c1c1e] text-white ">
-        <h1 className="text-white text-5xl pt-5 pl-[80px]">Why Choose AV?</h1>
-        <p className="pt-5 pl-[150px] text-xs">
+        <h1 className="text-white lg:text-5xl text-2xl pt-5 lg:pl-[80px] pl-5">Why Choose AV?</h1>
+        <p className="pt-5 lg:pl-[150px] pl-5 text-xs">
           Stay Ahead, Stay Secure, Stay Confident.
         </p>
       </div>
@@ -41,7 +41,7 @@ const Card2 = () => {
 
 const Card = ({ Srno, Cardtitle, Carddata }) => {
   return (
-    <div class="fontTest group flex -mt-10 m-5 h-screen w-full items-center justify-center">
+    <div class="fontTest group flex lg:-mt-10 -mt-5 m-5 lg:h-screen h-96 w-full items-center justify-center">
       <div class="relative flex h-[300px] w-[250px]">
         <div>
           <div class="absolute left-[6px] top-[8px] flex h-[45px] w-[46px] items-center justify-center rounded-br-lg border-b border-r text-white font-bold text-xl">

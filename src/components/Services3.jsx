@@ -32,14 +32,14 @@ const Services3 = () => {
         </div>
       </div>
 
-      <div className="fontTest flex h-72 -mt-36 bg-[#1c1c1e] ">
+      <div className="fontTest flex lg:h-72 h-60 lg:-mt-36 -mt-20  bg-[#1c1c1e] ">
         <div className="pl-10 lg:pt-16 ">
           <img className="size-16" src={Vect1} alt="" />
           <button className="text-white font-medium text-xs">
             Read <span>more</span>
           </button>
         </div>
-        <div className=" ml-48 mb-48   h-40  w-72 ">
+        <div className=" lg:ml-48 ml-3 mb-48   h-40  w-72 ">
           <img className=" w-full object-cover h-full" src={Gif3} alt="" />
         </div>
       </div>

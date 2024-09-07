@@ -25,19 +25,19 @@ and solution finders, dedicated to excelling in Branding, <br />
 Web/App/Mobile UI/UX. <br />
             </p>
         </div>
-        <div className=' lg:ml-32 object-fill h-36 w-60  '>
+        <div className=' lg:ml-32 object-fill  h-36 w-60  '>
             <img src= {ImgTwo} alt=""  />
         </div>
     </div>
 
-    <div className=' fontTest flex h-72 -mt-36 bg-[#1c1c1e] '>
-        <div className='pl-10 lg:pt-16  lg:-mt-0 mr-10 '>
+    <div className=' fontTest flex lg:h-72 h-60 -mt-36 bg-[#1c1c1e] '>
+        <div className='pl-10 lg:pt-16  lg:-mt-0 mt-10 mr-10 '>
             <img className='size-16' src={Vect1}  alt="" />
             <button className='text-white font-medium text-xs'>
             Read <span>more</span> 
         </button>
         </div >
-        <div className=' ml-48 mb-48   h-40  w-72 overflow-hidden justify-center items-center' >
+        <div className=' lg:ml-48 mb-48  lg:mt-0 mt-10 h-40  w-72 overflow-hidden justify-center items-center' >
                 <img className=' w-full object-cover h-full' src={Gif2} alt=""  />
 
         </div>

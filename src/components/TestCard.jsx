@@ -37,15 +37,15 @@ const ImageWithBorders = () => {
 
 const Card = ({ desc, name, desgination, profileImg }) => {
   return (
-  <div className="bg-[#1c1c1e] pt-10 overflow-hidden">
-    <div class="flex h-[400] w-[60vw]  overflow-hidden mx-4 p-4 border-2 rounded-3xl bg-[#1c1c1e]">
-      <div className="w-[60%]">
-        <p className="text-white  overflow-hidden text-xs p-4 mt-5">
+  <div className="bg-[#1c1c1e]  pt-10 overflow-hidden">
+    <div class="flex lg:h-[400] lg:w-[60vw]  overflow-hidden lg:mx-10 mx-4 p-4 border-2 rounded-3xl bg-[#1c1c1e]">
+      <div className="lg:w-[60%]    ">
+        <p className="text-white  overflow-hidden lg:text-md lg:font-semibold text-xs p-4 mt-5">
           "{desc}" <br />
         </p>
       </div>
       {/* <div class="relative size-72 flex justify-center items-center   overflow-hidden"> */}
-      <div class="relative w-[40%] h-72 flex justify-center rounded-2xl items-center   overflow-hidden">
+      <div class="relative lg:w-[40%] w-[25%] h-72 flex justify-center rounded-2xl items-center   overflow-hidden">
         <div class="absolute right-2 top-2 rounded-sm w-[210px] border-t-4"></div>
         <div class="absolute right-2 top-2 rounded-sm h-[210px] border-l-4"></div>
         <div class="absolute left-2 bottom-2 rounded-sm w-[210px] border-t-4"></div>

@@ -11,13 +11,13 @@ const Services4 = () => {
         <hr />
       </div>
 
-      <div className="fontTest flex h-96 -mt-4 bg-[#1c1c1e] ">
+      <div className="fontTest flex  h-96 -mt-4 bg-[#1c1c1e] ">
         <div className=" ml-10 h-9 w-3 bg-white rounded-tl-3xl rounded-br-3xl">
           {" "}
         </div>
         <div className="-mt-2 ml-[2px] h-9 w-3 bg-white rounded-tl-3xl rounded-br-3xl"></div>
         <div className="-mt-1 ml-[2px] h-9 w-3 bg-white rounded-tl-3xl rounded-br-3xl"></div>
-        <div className="-mt-2 ml-[2px] h-9 w-3 lg:mr-0 mr-3 bg-white rounded-tl-3xl rounded-br-3xl"></div>
+        <div className="-mt-2 ml-[2px] h-9 w-3  lg:mr-0 bg-white rounded-tl-3xl rounded-br-3xl"></div>
         <div className="lg:pl-64  text-white">
           <h1 className="text-3xl font-bold">Digital Innovation</h1>
           <p className=" text-sm pt-6">
@@ -31,14 +31,14 @@ const Services4 = () => {
         </div>
       </div>
 
-      <div className="fontTest flex h-72 -mt-36 bg-[#1c1c1e] ">
+      <div className="fontTest flex lg:h-72 h-60 lg:-mt-36 -mt-20 bg-[#1c1c1e] ">
         <div className="pl-10  lg:pt-16 lg:mr-0 ">
           <img className="size-16" src={Vect1} alt="" />
           <button className="text-white font-medium text-xs">
             Read <span>more</span>
           </button>
         </div>
-        <div className=" ml-48 lg:mb-48   h-40  w-72 overflow-hidden justify-center items-center">
+        <div className=" lg:ml-48 ml:3 lg:mb-48   h-40  w-72 overflow-hidden justify-center items-center">
           <img className=" w-full object-cover h-full" src={Gif4} alt="" />
         </div>
       </div>

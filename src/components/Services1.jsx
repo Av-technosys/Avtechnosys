@@ -32,15 +32,15 @@ ensure enhanced value and seamless migration. <br />
         </div>
     </div>
 
-    <div className=' fontTest lg:flex lg:justify-start h-72 lg:-mt-24 bg-[#1c1c1e] flex justify-end  '>
-    <div className='lg:pl-10 lg:pt-16 lg:-mt-0 -mt-20 '>
+    <div className=' fontTest lg:flex lg:justify-start lg:h-72 h-60 pt-20  lg:-mt-24 bg-[#1c1c1e] flex justify-end  '>
+    <div className='lg:pl-10 lg:pt-16 lg:-mt-10 -mt-20 ml-10'>
             <img className='size-16' src={Vect1}  alt="" />
             <button className='text-white font-medium text-xs'>
             Read <span>more</span> 
         </button>
         </div >
       
-        <div className=' ml-48 mb-48 lg:-mt-0 -mt-40   h-40  w-72 overflow-hidden justify-center items-center' >
+        <div className=' lg:ml-48 mb-48 lg:-mt-10 -mt-20 ml-3 h-40  w-72 overflow-hidden justify-center items-center' >
                 <img className=' w-full object-cover h-full' src={Gif1} alt=""  />
         </div>
     </div>

@@ -12,7 +12,7 @@ const Footer1 = () => {
       <hr />
       <div className='flex flex-col md:flex-row p-6 text-sm space-y-5 md:space-y-0'>
         <div className='md:w-1/2 flex items-center'>
-          <p className='md:w-4/5 ml-32'>It takes more than just a brilliant idea to transform <br />
+          <p className='md:w-4/5 lg:ml-32'>It takes more than just a brilliant idea to transform <br />
             it into the greatest solution, you also need the <br />
             proper team to help you realize your vision. <br /></p>
         </div>

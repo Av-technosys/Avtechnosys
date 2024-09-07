@@ -359,20 +359,21 @@ const Header = () => {
           {/* <div className="h-8 w-full bg-red-600 md:hidden">
             Hamburger
           </div> */}
-          <div className="w-full bg-white rounded-t-3xl"></div>
+          <div className="w-full rounded-t-3xl"></div>
         </nav>
 
         <div className="bg-[#1c1c1e]  ">
           <div className="w-full h-[80vh] bg-white rounded-t-3xl rounded-tl-3xl rounded-br-3xl">
             <div>
-              <h1 className="text-5xl pl-10 pt-32 font-semibold">
+              <h1 className="lg:text-5xl text-2xl pl-10 lg:pt-32  pt-5 font-semibold">
                 Our Services <br />
-                <span className="text-blue-950 text-5xl font-bold">
+                <span className="text-blue-950 lg:text-5xl  font-bold">
                   {" "}
                   <Input />
                 </span>
               </h1>
-              <p className="mt-14  ml-10">
+              <p className="lg:mt-20 mt-10 text-sm ml-10">
+
                 Our committed team is always available to help you maximize the
                 benefits of using Appraised. <br />
                 We provide support for both UK and US time zones, inclusive

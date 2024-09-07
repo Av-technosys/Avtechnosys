@@ -6,7 +6,7 @@ import Map2 from '../Assets/map2.svg'
 const Location = () => {
   return (
     <>
-    <div className='fontTest h-[100vh] lg:pt-10 lg:pb-8 lg:-mb-0 -mb-28 lg:text-6xl text-3xl bg-[#1c1c1e] font-semibold text-white '>
+    <div className='fontTest lg:h-[100vh] h-96 lg:pt-10 lg:pb-8 lg:-mb-0 -mb-28 lg:text-6xl text-3xl bg-[#1c1c1e] font-semibold text-white '>
        <h1 className=' ml-10'>
        Find us on World Map
        </h1>
