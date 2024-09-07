@@ -38,7 +38,7 @@ export default function Home(){
       {/* <Sidebar/> */}
       {/* <Header/> */}
 
-      {/* <Header2/> */}
+      <Header2/>
 {/* <ServicePage/> */}
       {/* <ContactUs/> */}
 {/* <CompanyPage/> */}
@@ -47,7 +47,7 @@ export default function Home(){
 {/* <Footer/> */}
 {/* <Footer1/> */}
 
-        <Header />
+        {/* <Header />
          <Partners /> 
           <Card2 /> 
       
@@ -63,7 +63,7 @@ export default function Home(){
       <Form1/>
         <Hero />
          <TestCard />
-        <Footer1 /> 
+        <Footer1 />  */}
         {/* <ContactUs/> */}
   {/* {/* <PhoneNumberField/> */}
   
