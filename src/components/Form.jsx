@@ -39,8 +39,8 @@ const Form = () => {
           />
         </div>
 
-        <div className=" text-xs  ">
-          <button className=" p-4 text-black bg-white rounded-lg font-bold border ml-[1100px]">
+        <div className=" text-xs relative  ">
+          <button className=" p-4 text-black bg-white rounded-lg font-bold border absolute right-14 ">
             Get In Touch
           </button>
         </div>

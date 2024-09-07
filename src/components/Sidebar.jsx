@@ -147,7 +147,7 @@ const SideDrawer = () => {
              included={true}
              step={10}
              min={100}
-             max={100000}
+             max={1000}
              key={ 'value'  }
              
              tipFormatter={ (value) => `$ ${value} `}

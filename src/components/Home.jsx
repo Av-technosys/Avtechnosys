@@ -26,23 +26,29 @@ import ContactUs from './ContactUs';
 import Sidebar from './Sidebar';
 import ServicePage from './ServicePage';
 import Header2 from './Header2';
+import Footer1 from './Footer1'
+import Form1 from './Form1';
 // import Sidebar from './Sidebar';
 
 export default function Home(){
     return(
       
     <div className=''>
-      {/* <Footer/> */}
+      
       {/* <Sidebar/> */}
       {/* <Header/> */}
+
       {/* <Header2/> */}
 {/* <ServicePage/> */}
       {/* <ContactUs/> */}
 {/* <CompanyPage/> */}
 {/* <Blog/> */}
 
+{/* <Footer/> */}
+{/* <Footer1/> */}
+
         <Header />
-        <Partners />
+         <Partners /> 
           <Card2 /> 
       
         <div className='relative'>
@@ -54,10 +60,10 @@ export default function Home(){
         </div>
         <Location />
         <Marque1 />
-        <Form />
+      <Form1/>
         <Hero />
          <TestCard />
-        <Footer /> 
+        <Footer1 /> 
         {/* <ContactUs/> */}
   {/* {/* <PhoneNumberField/> */}
   
