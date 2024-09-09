@@ -38,8 +38,8 @@ export default function Home(){
       {/* <Sidebar/> */}
       {/* <Header/> */}
 
-      <Header2/>
-{/* <ServicePage/> */}
+      {/* <Header2/> */}
+<ServicePage/>
       {/* <ContactUs/> */}
 {/* <CompanyPage/> */}
 {/* <Blog/> */}

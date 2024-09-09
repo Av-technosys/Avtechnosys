@@ -13,6 +13,9 @@ import button2 from '../Assets/ux.png';
 import button3 from '../Assets/bullhorn.png';
 import button4 from '../Assets/innovate.png';
 import button5 from '../Assets/cloudcomputing.png';
+import MenuIcon from '@mui/icons-material/Menu';
+import CancelIcon from '@mui/icons-material/Cancel';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const items = [
   {
@@ -62,18 +65,57 @@ const items = [
 const Header2 = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+const [first, setfirst] = useState(true);
+    const togglemenu = () => {
+      setfirst(!first);
+    };
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
   return (
     <>
-    <header className="fontTest text-white flex flex-wrap h-32 w-full bg-[#1c1c1e]">
- 
+    <header className="  fontTest text-white flex flex-wrap h-32 w-full bg-[#1c1c1e]">
+   
+    
+
  <div className="pt-7 pl-16 w-32 ">
    <img src={logo} alt="logo" />
  </div>
+<div className='lg:hidden absolute right-5 top-14 ' onClick={togglemenu}><MenuIcon sx={{
+   fontSize: '30px',
+   color: '#fff',
+   cursor: 'pointer',
+
+}}/>
+<div 
+        className={`fixed top-0 right-0 h-full ml-[1000px] transform ${first ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40 flex`}>
+         <div 
+             
+             className=" items-center px-3 py-2  w-[60vw] bg-[#1c1c1e]  border hover:border-gray-800 "
+           >
+             <div className='mt-12  text-white pr-3 float-end'>
+             <CancelIcon onClick={()=>setfirst(!first)} />
+             </div>
+            <ul className='mt-16 ml-10'>
+              <li className='py-3 text-xl '> <Link to="/company">Company</Link></li>
+              <li className='py-3 text-xl '><Link to="/Services">Services</Link></li>
+              <li className='py-3 text-xl '><Link to="/portfolio">Portfolio</Link></li>
+              <li className='py-3 text-xl '>  <Link to="/Blog">Blog</Link></li>
+              <li className='py-3 text-xl '><Link to="/contact">Contact Us</Link></li>
+            </ul>
+            <div className='grid gap-2'>
+                  <button className='py-1  border rounded-sm '>Hire Us</button>
+                  <button className='py-1  border rounded-sm ' > <Link to="/contact"> <ArrowForwardIosIcon className='bg-white text-black rounded-full p-1'/>Let's Connect</Link></button>
+                </div>
+           </div>
+               
+        </div>
+
+</div>
+ 
+ 
  <div className="pt-6 ">
-   <ul className="lg:flex sm:hidden flex-wrap text-white list-none ml-44  mt-3 p-4 rounded-full border ">
+   <ul className="lg:flex sm:hidden hidden  md:hidden flex-wrap text-white list-none ml-44  mt-3 p-4 rounded-full border ">
      <li className="px-">
        <Link to="/company">Company</Link>
      </li>

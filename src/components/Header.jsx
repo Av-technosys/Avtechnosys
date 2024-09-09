@@ -73,6 +73,11 @@ const items = [
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [first, setfirst] = useState(true);
+  const togglemenu = () => {
+    setfirst(!first);
+  };
+
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
@@ -85,16 +90,16 @@ const Header = () => {
   return (
     <div className="">
       <div className="fontTest   bg-[#1c1c1e] p-6">
-        <nav className="  bg-[#1c1c1e]">
+        <nav className=" bg-[#1c1c1e]">
           <div className="w-full flex">
-            <div className="w-1/6 h-24 bg-white ">
+            <div className="w-1/6 h-24  bg-white ">
               <div className=" bg-[#1c1c1e] w-full h-full rounded-br-[35px]">
                 <img className="pt-4 pl-14 " src={logo} alt="" />
               </div>
             </div>
             <div className="w-3/4 h-24 bg-white pt-4 rounded-t-[35px]">
-              <div className="mx-20 -mt-4 ">
-                <ul className="flex gap-5 cursor-pointer justify-center mt-5 p-3 text-lg font-medium  border-[1.5px] border-black rounded-full">
+              <div className="mx-20 -mt-4  ">
+                <ul className="flex gap-5  cursor-pointer text-black justify-center mt-5 p-3 text-lg font-medium  border-[1.5px] border-black rounded-full">
                   <li className="pr-4">
                     <Link to="/company">Company</Link>
                   </li>
@@ -362,17 +367,17 @@ const Header = () => {
           <div className="w-full rounded-t-3xl"></div>
         </nav>
 
-        <div className="bg-[#1c1c1e]  ">
+        <div className="bg-[#1c1c1e] ">
           <div className="w-full h-[80vh] bg-white rounded-t-3xl rounded-tl-3xl rounded-br-3xl">
             <div>
-              <h1 className="lg:text-5xl text-2xl pl-10 lg:pt-32  pt-5 font-semibold">
+              <h1 className="lg:text-5xl text-2xl text-black pl-10 lg:pt-32  pt-5 font-semibold">
                 Our Services <br />
                 <span className="text-blue-950 lg:text-5xl  font-bold">
                   {" "}
                   <Input />
                 </span>
               </h1>
-              <p className="lg:mt-20 mt-10 text-sm ml-10">
+              <p className="lg:mt-20 mt-10 text-sm text-black ml-10">
 
                 Our committed team is always available to help you maximize the
                 benefits of using Appraised. <br />
@@ -387,7 +392,7 @@ const Header = () => {
                 Talk To Expert
               </button>
               <button
-                className=" ml-10 border rounded-lg font-medium hover:bg-[#050344]
+                className=" ml-10 border rounded-lg font-medium text-black hover:bg-[#050344]
             hover:text-white border-black p-3"
               >
                 Book Service

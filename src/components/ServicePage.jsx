@@ -494,7 +494,7 @@ const text5 =
 const items = [
     {
       key: '1',
-      label: <div className='  flex text-6xl relative font-semibold h-96 '> 
+      label: <div className='  flex lg:text-6xl text-2xl relative font-semibold h-96 '> 
       {/* <img className='-ml-10 w-screen' src="https://unsplash.it/2700/600/?random" alt="" /> */}
         <h1 className='pt-72 absolute '> Digital Enterprise</h1> 
        <div className='text-base font-bold absolute bottom-7 right-5 '>
@@ -507,7 +507,7 @@ const items = [
     },
     {
       key: '2',
-      label: <div className=' flex text-6xl relative font-semibold h-96 '> 
+      label: <div className=' flex lg:text-6xl text-2xl relative font-semibold h-96 '> 
       <h1 className='pt-72'> Digital Experience</h1> 
      <div className='text-base font-bold absolute bottom-7 right-5 '>
      <button className='-ml-2'>Tap for more</button>
@@ -519,7 +519,7 @@ const items = [
     },
     {
       key: '3',
-      label: <div className=' flex text-6xl relative font-semibold h-96 '> 
+      label: <div className=' flex lg:text-6xl text-2xl relative font-semibold h-96 '> 
       <h1 className='pt-72'> Digital Marketing</h1> 
      <div className='text-base font-bold absolute bottom-7 right-5 '>
      <button className='-ml-2'>Tap for more</button>
@@ -531,7 +531,7 @@ const items = [
     },
     {
         key: '4',
-        label: <div className=' flex text-6xl relative font-semibold h-96 '> 
+        label: <div className=' flex lg:text-6xl text-2xl relative font-semibold h-96 '> 
         <h1 className='pt-72'> Digital Innovation</h1> 
        <div className='text-base font-bold absolute bottom-7 right-5 '>
        <button className='-ml-2'>Tap for more</button>
@@ -543,7 +543,7 @@ const items = [
       },
       {
         key: '5',
-        label: <div className=' flex text-6xl relative font-semibold h-96 '> 
+        label: <div className=' flex lg:text-6xl text-2xl relative font-semibold h-96 '> 
         <h1 className='pt-72'> Cloud Transformation</h1> 
        <div className='text-base font-bold absolute bottom-7 right-5 '>
        <button className='-ml-2'>Tap for more</button>
@@ -559,51 +559,19 @@ const ServicePage = () => {
   return (
     <>
 
-    <Header2/>
-    {/* <header className="fontTest text-white flex flex-wrap h-32 w-full bg-[#1c1c1e]">
- 
-        <div className="pt-7 pl-16 w-32 ">
-          <img src={logo} alt="logo" />
-        </div>
-        <div className="pt-6 ">
-          <ul className="flex flex-wrap text-white list-none ml-44 mt-3 p-4 rounded-full border">
-            <li className="px-">
-              <Link to="/company">Company</Link>
-            </li>
-            <li className="pl-12"> Services</li>
-            
-            <li className="pl-12">Portfolio</li>
-            <li className="pl-12">
-              <Link to="/Blog">Blog</Link>
-            </li>
-            <li className="pl-12 pr-">
-              <Link to="/contact">Contact Us</Link>
-            </li>
-          </ul>
-        </div>
-        <Outlet />
-        <div className="flex ml-28 my-11">
-          <button className="border border-gray-700 px-8 rounded-lg ">
-            Hire us
-          </button>
-          <div className="flex border ml-6 px-3 rounded-lg ">
-            <img className="size-5 mt-[9px]" src={arrow} alt="arrow" />
-            <button>Let's Connect</button>
-          </div>
-        </div>
-        
-    </header> */}
+    {/* <Header2/> */}
+    
 <hr />
-    <main className=' flex bg-[#1c1c1e] w-full h-[60vh]'> 
+    <main className=' lg:flex grid grid-cols-1  bg-[#1c1c1e] w-full h-[60vh]'> 
     <div> 
-        <h1 className='text-white text-6xl mt-32 ml-20 font-bold'>
+        <h1 className='text-white lg:text-6xl text-2xl lg:mt-32 lg:ml-20 ml-36 font-bold'>
             Our Company <br />
              <h1 className='mt-4'>Services!</h1>
         </h1>
     </div>
 
-    <div>
-        <div className='bg-slate-200 relative h-8 w-12 rounded-full mt-48 ml-44 '>
+    <div >
+        <div className='bg-slate-200 lg:mx-0 mx-10 relative h-8 w-12 rounded-full lg:mt-48  lg:ml-44 ml-40 '>
                     <div className=' absolute top-[10px] left-[13px] h-3 w-5 rounded-full bg-white'>
                         <div className='absolute top-[4.7px] left-[8px] w-[4px] h-[2.9px] bg-black rounded-full'></div>
                     </div>
@@ -611,8 +579,8 @@ const ServicePage = () => {
         </div>
     </div>
     <div className='  h-full w-96'>
-       <div className='   ml-24 h-full font-light text-[14px] w-[28rem]'>
-        <h1 className='text-white  pt-40 '>
+       <div className='   lg:ml-24  lg:-mt-0 -mt-10 h-full lg:font-light font-thin lg:text-[14px] text-[10px] w-[28rem]'>
+        <h1 className='text-white lg:pt-40 lg:mx-0 mx-10 '>
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia unde alias ex officia ipsum totam minima saepe qui sit maxime vitae praesentium cum, odio repellendus dignissimos quo earum eum officiis? Corrupti deleniti, voluptatum placeat illo, nisi quas dignissimos vel et, id dolorem distinctio amet. Unde modi officia pariatur ipsa neque.
             "
         </h1>
@@ -624,13 +592,13 @@ const ServicePage = () => {
  </div>
 
 
-<div className='bg-[#1c1c1e] h-[150vh] w-full'>
-<div className='fontTest text-white pt-20 ml-20'>
-    <h1 className='text-6xl  font-bold'>Industries </h1> <br />
-    <p className='font-light'>Discover Our Diverse Industry Partnerships</p>
+<div className='bg-[#1c1c1e] h-full w-full'>
+<div className='fontTest text-white pt-20 lg:ml-20 ml-5'>
+    <h1 className='lg:text-6xl text-2xl  font-bold'>Industries </h1> <br />
+    <p className='font-light '>Discover Our Diverse Industry Partnerships</p>
 </div>
 
-<div className=' mt-10 ml-20 mr-20 grid grid-cols-3  gap-20  justify-evenly'>
+<div className=' mt-10 lg:ml-20 mr-20 grid grid-cols-1 lg:grid  gap-5 lg:grid-cols-3  lg:gap-20  justify-evenly'>
     <div className='bg-white text-3xl font-bold h-56 w-80 rounded-xl border'>
         <img className='rounded-t-xl' src="https://unsplash.it/800/400/?random" alt="" />
        <h1 className=' ml-24 mt-3 '>Fashion </h1>
