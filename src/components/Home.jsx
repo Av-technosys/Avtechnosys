@@ -39,10 +39,10 @@ export default function Home(){
       {/* <Header/> */}
 
       {/* <Header2/> */}
-<ServicePage/>
+{/* <ServicePage/> */}
       {/* <ContactUs/> */}
 {/* <CompanyPage/> */}
-{/* <Blog/> */}
+<Blog/>
 
 {/* <Footer/> */}
 {/* <Footer1/> */}
