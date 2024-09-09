@@ -42,12 +42,12 @@ export default function Home(){
 {/* <ServicePage/> */}
       {/* <ContactUs/> */}
 {/* <CompanyPage/> */}
-<Blog/>
+{/* <Blog/> */}
 
 {/* <Footer/> */}
 {/* <Footer1/> */}
 
-        {/* <Header />
+        <Header />
          <Partners /> 
           <Card2 /> 
       
@@ -63,7 +63,7 @@ export default function Home(){
       <Form1/>
         <Hero />
          <TestCard />
-        <Footer1 />  */}
+        <Footer1 /> 
         {/* <ContactUs/> */}
   {/* {/* <PhoneNumberField/> */}
   
