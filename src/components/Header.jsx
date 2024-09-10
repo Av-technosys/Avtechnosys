@@ -438,11 +438,11 @@ const Header = () => {
               </p>
             </div>
             <div className=" lg:pl-[1rem]  m-10 text-sm ">
-              <button className=" border rounded-lg bg-[#4643cc] text-white hover:bg-white hover:text-black  border-black font-medium p-3 ">
+              <button className=" border rounded-lg  bg-[#4643cc] text-white hover:bg-white hover:text-black  border-black font-medium p-3 ">
                 Talk To Expert
               </button>
               <button
-                className=" lg:ml-10 ml-5 border rounded-lg font-medium text-black hover:bg-[#4643cc]
+                className=" lg:ml-10 ml-[0.2rem] border rounded-lg font-medium text-black hover:bg-[#4643cc]
             hover:text-white border-black p-3"
               >
                 Book Service
