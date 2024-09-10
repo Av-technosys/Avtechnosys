@@ -16,11 +16,11 @@ const PortfolioPage = () => {
    <>
    <Header2/>   
    <div className='relative  '>
-        <div className='sticky lg:-top-[140%] -top-[160%]'><PortfolioPage1 /></div>
-        <div className='sticky lg:-top-[170%] -top-[200%] '><PortfolioPage2 /></div>
-        <div className='sticky lg:-top-[170%] -top-[190%]'><PortfolioPage3 /></div>
-        <div className='sticky lg:-top-[170%] -top-[230%]'><PortfolioPage4 /></div>
-        <div className='sticky lg:-top-[170%] -top-[195%]'><PortfolioPage5 /></div>
+        <div className='sticky lg:-top-[140%] -top-[70%] '><PortfolioPage1 /></div>
+        <div className='sticky lg:-top-[170%] -top-[110%]  '><PortfolioPage2 /></div>
+        <div className='sticky lg:-top-[170%] -top-[80%]'><PortfolioPage3 /></div>
+        <div className='sticky lg:-top-[170%] -top-[120%]'><PortfolioPage4 /></div>
+        <div className='sticky lg:-top-[170%] -top-[95%]'><PortfolioPage5 /></div>
         <div className='sticky lg:-top-[140%] '><PortfolioPage6 /></div>
         </div>
    <Form1/>

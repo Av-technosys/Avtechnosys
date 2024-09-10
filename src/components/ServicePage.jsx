@@ -9,9 +9,13 @@ import bigarrow from "../Assets/bigarrow.png";
 import bigarrowup from "../Assets/bigarrowup.png";
 import digital1 from "../Assets/bg11.jpg";
 import Header2 from './Header2';
+import Form1 from './Form1';
+import Hero from './Hero';
+import Footer1 from './Footer1';
+import TestCard from './TestCard'
 
 const text = 
-<div className='h-[280vh]'>
+<div className='h-[280vh] '>
 <div className='flex  gap-20'>
 <div>
     <h1 className='text-4xl mt-12 ml-12 w-96 font-semibold' >App Modernization</h1>
@@ -579,8 +583,8 @@ const ServicePage = () => {
         </div>
     </div>
     <div className='  h-full w-96'>
-       <div className='   lg:ml-24  lg:-mt-0 -mt-10 h-full lg:font-light font-thin lg:text-[14px] text-[10px] w-[28rem]'>
-        <h1 className='text-white lg:pt-40 lg:mx-0 mx-10 '>
+       <div className='   lg:ml-24  lg:-mt-0 -mt-10 h-full lg:font-light font-thin lg:text-[14px] text-[10px] w-[20rem]'>
+        <h1 className='text-white lg:pt-40 lg:mx-0 lg:ml-0 ml-20 '>
             " Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam mollitia unde alias ex officia ipsum totam minima saepe qui sit maxime vitae praesentium cum, odio repellendus dignissimos quo earum eum officiis? Corrupti deleniti, voluptatum placeat illo, nisi quas dignissimos vel et, id dolorem distinctio amet. Unde modi officia pariatur ipsa neque.
             "
         </h1>
@@ -598,7 +602,7 @@ const ServicePage = () => {
     <p className='font-light '>Discover Our Diverse Industry Partnerships</p>
 </div>
 
-<div className=' mt-10 lg:ml-20 mr-20 grid grid-cols-1 lg:grid  gap-5 lg:grid-cols-3  lg:gap-20  justify-evenly'>
+<div className=' mt-10 lg:ml-20 ml-10 mr-20 grid grid-cols-1 lg:grid  gap-5 lg:grid-cols-3  lg:gap-20  justify-evenly'>
     <div className='bg-white text-3xl font-bold h-56 w-80 rounded-xl border'>
         <img className='rounded-t-xl' src="https://unsplash.it/800/400/?random" alt="" />
        <h1 className=' ml-24 mt-3 '>Fashion </h1>
@@ -630,10 +634,12 @@ const ServicePage = () => {
     </div>
 </div>
 
-
-
-
 </div>
+<Form1/>
+<Hero />
+         <TestCard />
+        <Footer1 /> 
+
     </>
   )
 }

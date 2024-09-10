@@ -419,7 +419,7 @@ const Header = () => {
         </nav>
 
         <div className="bg-[#1c1c1e] ">
-          <div className="w-full h-[80vh] bg-white lg:rounded-t-3xl lg:rounded-tl-3xl rounded-br-3xl">
+          <div className="w-full lg:pb-10 pb-1 bg-white lg:rounded-t-3xl lg:rounded-tl-3xl rounded-br-3xl">
             <div>
               <h1 className="lg:text-5xl text-2xl text-black pl-10 lg:pt-32  pt-5 font-semibold">
                 Our Services <br />
@@ -442,7 +442,7 @@ const Header = () => {
                 Talk To Expert
               </button>
               <button
-                className=" ml-10 border rounded-lg font-medium text-black hover:bg-[#050344]
+                className=" lg:ml-10 ml-5 border rounded-lg font-medium text-black hover:bg-[#050344]
             hover:text-white border-black p-3"
               >
                 Book Service

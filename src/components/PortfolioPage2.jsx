@@ -23,7 +23,7 @@ const PortfolioPage2 = () => {
   return (
     <>
       <hr className="bg-white text-white" />
-      <div className=" bg-[#1c1c1e] lg:overflow-hidden lg:h-[270vh] h-[350vh] ">
+      <div className=" bg-[#1c1c1e] lg:overflow-hidden pb-10 ">
         {/* saaskart img */}
         <div className=" flex w-full lg:pt-10">
           <img
@@ -53,7 +53,7 @@ options.
           </button>
         </div>
 
-        <div className="flex lg:mt-72 mt-60 text-white   lg:ml-14 ml-4">
+        <div className="flex lg:mt-72 mt-64 text-white   lg:ml-14 ml-4">
           <div className=" lg:text-3xl font-semibold h-fit lg:w-[90vw] w-[20vw]  ">
             
             Design Tools Used

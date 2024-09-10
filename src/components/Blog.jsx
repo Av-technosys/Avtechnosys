@@ -118,8 +118,8 @@ const Blog = () => {
       <img src={blogImg} alt="blog" />
       <div className="fontTest bg-[#1c1c1e] h-[40vh] flex flex-wrap justify-center">
         <div className="bg-white text-black items-center  lg:-mt-64 -mt-16    rounded-3xl lg:h-[85vh] w-[95vw]">
-          <div className="lg:mt-16  ml-10">
-            <h1 className="font-bold lg:text-4xl text-xl">Blog</h1>
+          <div className="lg:mt-16 mt-8 ml-10">
+            <h1 className="font-bold lg:text-4xl text-2xl">Blog</h1>
             <br />
             <p className="font-normal lg:-mt-0 -mt-5 lg:text-sm text-xs">
               Get daily news and insights on mobile apps, web, and software
@@ -143,9 +143,9 @@ const Blog = () => {
         <div className="">
           <div className=" lg:flex">
           <div>
-          <ul className="flex cursor-pointer text-white lg:pl-16 pl-5 lg:gap-12 gap-12 overflow-x-scroll scroll-smooth lg:overflow-x-hidden">
-            <li onClick={() => setBlogData(data)}>All</li>
-            <li onClick={() => setBlogData(data.filter((obj) => obj.keyword === "App Development"))}>
+          <ul className="flex cursor-pointer text-white lg:pl-16 pl-5 lg:gap-12 gap-5 overflow-x-scroll scroll-smooth lg:overflow-x-hidden">
+            <li className="" onClick={() => setBlogData(data)}>All</li>
+            <li className="min-w-fit" onClick={() => setBlogData(data.filter((obj) => obj.keyword === "App Development"))}>
               App Development
             </li>
             <li onClick={() => setBlogData(data.filter((obj) => obj.keyword === "Buisness"))}>
@@ -154,10 +154,10 @@ const Blog = () => {
             <li onClick={() => setBlogData(data.filter((obj) => obj.keyword === "Odoo"))}>
               Odoo
             </li>
-            <li onClick={() => setBlogData(data.filter((obj) => obj.keyword === "On Demand"))}>
+            <li className="min-w-fit" onClick={() => setBlogData(data.filter((obj) => obj.keyword === "On Demand"))}>
               On Demand
             </li>
-            <li onClick={() => setBlogData(data.filter((obj) => obj.keyword === "Open AI"))}>
+            <li className="min-w-fit" onClick={() => setBlogData(data.filter((obj) => obj.keyword === "Open AI"))}>
               Open AI
             </li>
             <li onClick={() => setBlogData(data.filter((obj) => obj.keyword === "Software"))}>
@@ -173,7 +173,7 @@ const Blog = () => {
             <div className=" flex  lg:mt-0 mt-2 lg:ml-0 ml-5 ">
               
               <input
-                className="lg:ml-5  bg-[#1c1c1e] border-b-2"
+                className="lg:ml-5 lg:w-36 w-full  bg-[#1c1c1e] border-b-2"
                 type="search"
                 placeholder="Search"
                 value={searchTerm}
@@ -184,7 +184,7 @@ const Blog = () => {
             </div>
           
 
-          <div className="flex mt-10 lg:ml-14 ml-5 flex-wrap gap-10">
+          <div className="flex mt-10 lg:ml-14 ml-14 flex-wrap gap-10">
             {filteredBlogs.map((blog) => (
               <div key={blog.keyword} className="flex flex-col gap-2 rounded-lg p-4 w-64 relative">
                 <div className="rounded-lg bg-white w-full h-40">

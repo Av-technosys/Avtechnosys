@@ -30,7 +30,7 @@ const PortfolioPage5 = () => {
   return (
     <>
       <hr className="bg-white text-white" />
-      <div className=" bg-[#1c1c1e] lg:overflow-hidden lg:h-[270vh] h-[330vh] ">
+      <div className=" bg-[#1c1c1e] lg:overflow-hidden pb-10 ">
         {/* saaskart img */}
         <div className=" flex w-full lg:pt-10">
           <img

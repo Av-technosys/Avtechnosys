@@ -3,7 +3,7 @@ import React from 'react'
 const Form1 = () => {
   return (
     <>
-    <div className='bg-[#1c1c1e] min-h-screen'>
+    <div className='bg-[#1c1c1e]  pb-10'>
     <h1 className='text-4xl md:text-6xl lg:text-7xl text-white font-semibold p-6 md:p-10 md:ml-12 lg:ml-20'>
         Let's Connect
     </h1>
