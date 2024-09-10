@@ -11,25 +11,25 @@ const Partners = () => {
   return (
     <>
        <div className="fontTest">
-        <h2 className=" pl-[80px] pt-10  pb-8 text-3xl bg-[#1c1c1e] font-bold text-white">
+        <h2 className=" pl-[5.5rem] pt-10  lg:pb-8 text-[2rem] lg:text-[4rem] bg-[#1c1c1e] font-semibold text-white">
           Our Partners
         </h2>
         <div className="bg-[#1c1c1e]">
           
-            <hr className=" bg-gray-400  lg:w-4/5 mx-20" />
+            <hr className=" bg-gray-400 ml-[5.5rem] mr-[5.5rem] lg: " />
           
         </div>
       </div>
-      <div className="sm:h-32  w-full text-white   bg-[#1c1c1e] md:mb-3 mb-3">
+      <div className="sm:h-32  w-full text-white   bg-[#1c1c1e] md:mb-3 lg:pb-0 pb-10 lg:pl-0 pl-4">
         <div className=' lg:opacity-0 hover:opacity-100 transform hover:scale-y-100 transition duration-500'>
-        <p className="lg:fontTest lg:pt-4 lg:pl-60 ">
-        At AV Technosys, our mission is to leverage innovative technology and industry <br /> 
-expertise to propel businesses forward. Our vision is to cultivate a vibrant workplace,<br />
-empowering individuals to thrive and drive global success <br />
+        <p className="fontTest lg:pt-4 lg:text-[1rem] lg:pl-60 px-2 lg:mr-40 ">
+        At AV Technosys, our mission is to leverage innovative technology and industry  
+expertise to propel businesses forward. Our vision is to cultivate a vibrant workplace,
+empowering individuals to thrive and drive global success.
         </p>
-        <div className=' absolute flex'>
-          <img className='relative lg:left-60 size-4 top-3 ' src={arrow} alt="" />
-        <button className=" fontTest lg:ml-60 mt-2 "> Contact Us</button>
+        <div className=' absolute flex  '>
+          <img className='relative lg:left-60 size-4 top-3 mr-1 ' src={arrow} alt="" />
+        <button className=" fontTest lg:text-[1rem] lg:ml-60 mt-2 "> Contact Us</button>
         </div>
         </div>
       </div>

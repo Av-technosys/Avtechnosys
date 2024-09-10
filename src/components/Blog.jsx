@@ -184,7 +184,7 @@ const Blog = () => {
             </div>
           
 
-          <div className="flex mt-10 lg:ml-14 ml-14 flex-wrap gap-10">
+          <div className="flex mt-10 lg:ml-14 ml-14  flex-wrap gap-10">
             {filteredBlogs.map((blog) => (
               <div key={blog.keyword} className="flex flex-col gap-2 rounded-lg p-4 w-64 relative">
                 <div className="rounded-lg bg-white w-full h-40">

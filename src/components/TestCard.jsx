@@ -40,7 +40,7 @@ const Card = ({ desc, name, desgination, profileImg }) => {
   <div className="bg-[#1c1c1e]  pt-10 overflow-hidden">
     <div class="flex lg:h-[400] lg:w-[60vw]  overflow-hidden lg:mx-10 mx-4 p-4 border-2 rounded-3xl bg-[#1c1c1e]">
       <div className="lg:w-[60%]    ">
-        <p className="text-white  overflow-hidden lg:text-md lg:font-semibold text-xs p-4 mt-5">
+        <p className="text-white  overflow-hidden lg:text-[1rem] lg:font-medium text-xs p-4 mt-5">
           "{desc}" <br />
         </p>
       </div>

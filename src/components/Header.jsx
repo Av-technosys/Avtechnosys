@@ -94,7 +94,7 @@ const Header = () => {
   // };
   return (
     <div className="">
-      <div className="fontTest   bg-[#1c1c1e] p-6">
+      <div className="fontTest   bg-[#1c1c1e] p-[2.5rem]">
         <div className="md:hidden bg-white rounded-t-3xl ">
           <div className="ml-10">
           <img src={avlogoblack} alt="" />
@@ -139,7 +139,7 @@ const Header = () => {
           <div className="w-full flex">
             <div className="w-1/6 h-24  bg-white ">
               <div className=" bg-[#1c1c1e] w-full h-full flex justify-center items-center rounded-br-[35px]">
-                <img className="w-20 -mt-2" src={avlogo} alt="" />
+                <img className="w-20  -mt-2" src={avlogo} alt="" />
               </div>
             </div>
 
@@ -420,15 +420,15 @@ const Header = () => {
 
         <div className="bg-[#1c1c1e] ">
           <div className="w-full lg:pb-10 pb-1 bg-white lg:rounded-t-3xl lg:rounded-tl-3xl rounded-br-3xl">
-            <div>
-              <h1 className="lg:text-5xl text-2xl text-black pl-10 lg:pt-32  pt-5 font-semibold">
+            <div className="lg:pl-[1rem]">
+              <h1 className="lg:text-[4rem] lg:pb-5 text-2xl text-black pl-10 lg:pt-32  pt-5 font-medium">
                 Our Services <br />
-                <span className="text-blue-950 lg:text-5xl  font-bold">
+                <span className="text-[#4643cc] lg:text-[4rem] h-5 font-semibold">
                   {" "}
                   <Input />
                 </span>
               </h1>
-              <p className="lg:mt-20 mt-10 text-sm text-black ml-10">
+              <p className="lg:mt-[6rem] mt-10 text-[1rem]  text-black ml-10">
                 Our committed team is always available to help you maximize the
                 benefits of using Appraised. <br />
                 We provide support for both UK and US time zones, inclusive
@@ -437,12 +437,12 @@ const Header = () => {
                 with us to discover more.{" "}
               </p>
             </div>
-            <div className=" m-10 text-sm ">
-              <button className=" border rounded-lg bg-[#050344]  border-black font-medium text-white p-3 ">
+            <div className=" lg:pl-[1rem]  m-10 text-sm ">
+              <button className=" border rounded-lg bg-[#4643cc] text-white hover:bg-white hover:text-black  border-black font-medium p-3 ">
                 Talk To Expert
               </button>
               <button
-                className=" lg:ml-10 ml-5 border rounded-lg font-medium text-black hover:bg-[#050344]
+                className=" lg:ml-10 ml-5 border rounded-lg font-medium text-black hover:bg-[#4643cc]
             hover:text-white border-black p-3"
               >
                 Book Service

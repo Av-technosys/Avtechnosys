@@ -8,12 +8,12 @@ const Card2 = () => {
   return (
     <>
       <div className="fontTest bg-[#1c1c1e] text-white ">
-        <h1 className="text-white lg:text-5xl text-2xl pt-5 lg:pl-[80px] pl-5">Why Choose AV?</h1>
-        <p className="pt-5 lg:pl-[150px] pl-5 text-xs">
+        <h1 className="text-white lg:text-[4rem] font-semibold text-2xl pt-[4rem] lg:pl-[5.5rem] pl-5">Why Choose AV?</h1>
+        <p className="pt-[2rem] lg:pl-[5.5rem] text-[1rem] pl-5 text-xs">
           Stay Ahead, Stay Secure, Stay Confident.
         </p>
       </div>
-      <div className="bg-[#1c1c1e]">
+      <div className="bg-[#1c1c1e] lg:pl-[5.5rem] lg:pr-[5.5rem]">
         <Carousel
           containerProps={{
             style: {
@@ -22,7 +22,7 @@ const Card2 = () => {
             },
           }}
           // swipeTreshold={10}
-          itemsToShow={3.5}
+          itemsToShow={4.5}
           infinite={false}
           activeSlideIndex={activeSlide}
           onRequestChange={setActiveSlide}
@@ -41,19 +41,19 @@ const Card2 = () => {
 
 const Card = ({ Srno, Cardtitle, Carddata }) => {
   return (
-    <div class="fontTest group flex lg:-mt-10 -mt-5 m-5 lg:h-screen h-96 w-full items-center justify-center">
+    <div class="fontTest group flex lg:-mt-[3.5rem] -mt-5 m-5 lg:h-screen h-96 w-full items-center justify-center">
       <div class="relative flex h-[300px] w-[250px]">
         <div>
-          <div class="absolute left-[6px] top-[8px] flex h-[45px] w-[46px] items-center justify-center rounded-br-lg border-b border-r text-white font-bold text-xl">
-            / {Srno}
+          <div class="absolute left-[6px] top-[8px] flex h-[45px] w-[46px] items-center justify-center rounded-br-lg border-b border-r text-white  text-xl">
+            / {Srno}{" "}
           </div>
           <div class="absolute right-[0px] top-[-1px] h-[45px] w-[199px] rounded-tl-lg rounded-tr-lg border-x border-t"></div>
         </div>
         <div class="absolute top-[52px] h-10 w-10 rounded-tl-lg border-l border-t"></div>
         <div class="absolute right-[0px] top-[40px] h-[30px] w-[1px] border-r"></div>
         <div class="absolute -bottom-2 flex flex-col gap-4 h-[251px] w-full items-center justify-center rounded-b-lg border-x border-b text-white">
-          <span class="text-xl duration-500 translate-y-8 group-hover:-translate-y-5">{Cardtitle}</span>
-          <p className=" text-sm text-center px-[5%]  opacity-0 group-hover:opacity-100 duration-500 translate-y-6 group-hover:translate-y-0"> {Carddata}</p>
+          <span class="text-[1.5rem] duration-500 translate-y-10 group-hover:-translate-y-5">{Cardtitle}</span>
+          <p className=" text-[1rem] text-center px-[5%]  opacity-0 group-hover:opacity-100 duration-500 translate-y-6 group-hover:translate-y-0"> {Carddata}</p>
         </div>
           
       </div>
