@@ -28,6 +28,7 @@ import ServicePage from './ServicePage';
 import Header2 from './Header2';
 import Footer1 from './Footer1'
 import Form1 from './Form1';
+import PortfolioPage from './PortfolioPage';
 // import Sidebar from './Sidebar';
 
 export default function Home(){
@@ -37,7 +38,7 @@ export default function Home(){
       
       {/* <Sidebar/> */}
       {/* <Header/> */}
-
+{/* <PortfolioPage/> */}
       {/* <Header2/> */}
 {/* <ServicePage/> */}
       {/* <ContactUs/> */}

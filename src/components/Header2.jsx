@@ -5,6 +5,7 @@ import logo from "../Assets/Logo 1.png";
 import arrow from "../Assets/rightarrow.png";
 import PhoneField from './PhoneFeild2';
 import { Slider } from 'antd';
+import { Dropdown, Space } from "antd";
 import bgimg from '../Assets/citybg.jpg';
 import bg1 from '../Assets/bg1.jpg';
 import cancel from '../Assets/cancel.png';
@@ -16,6 +17,8 @@ import button5 from '../Assets/cloudcomputing.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import CancelIcon from '@mui/icons-material/Cancel';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import avlogo from "../Assets/AV LOGO.svg"
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 const items = [
   {
@@ -65,10 +68,11 @@ const items = [
 const Header2 = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-const [first, setfirst] = useState(true);
+const [first, setfirst] = useState(false);
     const togglemenu = () => {
       setfirst(!first);
     };
+    
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
   };
@@ -79,7 +83,7 @@ const [first, setfirst] = useState(true);
     
 
  <div className="pt-7 pl-16 w-32 ">
-   <img src={logo} alt="logo" />
+   <img src={avlogo} alt="logo" />
  </div>
 <div className='lg:hidden absolute right-5 top-14 ' onClick={togglemenu}><MenuIcon sx={{
    fontSize: '30px',
@@ -91,7 +95,7 @@ const [first, setfirst] = useState(true);
         className={`fixed top-0 right-0 h-full ml-[1000px] transform ${first ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40 flex`}>
          <div 
              
-             className=" items-center px-3 py-2  w-[60vw] bg-[#1c1c1e]  border hover:border-gray-800 "
+             className=" items-center px-3 py-2 rounded-xl w-[60vw] bg-[#1c1c1e]  border hover:border-gray-800 "
            >
              <div className='mt-12  text-white pr-3 float-end'>
              <CancelIcon onClick={()=>setfirst(!first)} />
@@ -99,13 +103,13 @@ const [first, setfirst] = useState(true);
             <ul className='mt-16 ml-10'>
               <li className='py-3 text-xl '> <Link to="/company">Company</Link></li>
               <li className='py-3 text-xl '><Link to="/Services">Services</Link></li>
-              <li className='py-3 text-xl '><Link to="/portfolio">Portfolio</Link></li>
-              <li className='py-3 text-xl '>  <Link to="/Blog">Blog</Link></li>
+              <li className='py-3 text-xl '><Link to="/Portfolio">Portfolio</Link></li>
+              <li className='py-3 text-xl '><Link to="/Blog">Blog</Link></li>
               <li className='py-3 text-xl '><Link to="/contact">Contact Us</Link></li>
             </ul>
             <div className='grid gap-2'>
                   <button className='py-1  border rounded-sm '>Hire Us</button>
-                  <button className='py-1  border rounded-sm ' > <Link to="/contact"> <ArrowForwardIosIcon className='bg-white text-black rounded-full p-1'/>Let's Connect</Link></button>
+                  <button className='py-1  border rounded-sm ' > <Link to="/contact"> <ArrowForwardIosIcon className='bg-white text-black rounded-full mr-1 p-1'/>Let's Connect</Link></button>
                 </div>
            </div>
                
@@ -119,13 +123,23 @@ const [first, setfirst] = useState(true);
      <li className="px-">
        <Link to="/company">Company</Link>
      </li>
-     <li className="pl-12"> Services</li>
+     <Dropdown
+                    menu={{
+                      items,
+                    }}
+                  >
+                    <li className="ml-10 ">
+                      {/* <li className=" px-4"> */}
+                      <Link to="/Services">Services</Link><KeyboardArrowDownIcon fontSize="inherit" />
+                      {/* Services <DownOutlined  /> */}
+                    </li>
+                  </Dropdown>
      
-     <li className="pl-12">Portfolio</li>
-     <li className="pl-12">
+     <li className="pl-10"><Link to="/Portfolio">Portfolio</Link></li>
+     <li className="pl-10">
        <Link to="/Blog">Blog</Link>
      </li>
-     <li className="pl-12 pr-">
+     <li className="pl-10 pr-">
        <Link to="/contact">Contact Us</Link>
      </li>
    </ul>
@@ -136,7 +150,7 @@ const [first, setfirst] = useState(true);
      Hire us
    </button>
    <div className="flex border ml-6 px-3 rounded-lg ">
-     <img className="size-5 mt-[9px]" src={arrow} alt="arrow" />
+     <img className="size-5 mr-1 mt-[9px]" src={arrow} alt="arrow" />
      <button className=" h-10" onClick={toggleDrawer} >Let's Connect</button>
    </div>
  </div>
@@ -272,12 +286,12 @@ const [first, setfirst] = useState(true);
  
         <h1 className= ' p-3 mt-5  font-medium text-sm'>Fill the form and get an estimate</h1>
          <form action="">
-             <div className=' flex ml-3  gap-10'>
-                 <input className='border py-1' type="text" placeholder='  Name*' />
-                 <input className='border py-1 ' type="text" placeholder='    Email*' />
+             <div className=' flex ml-3  gap-20'>
+                 <input className='border py-1 bg-white' type="text" placeholder='  Name*' />
+                 <input className='border py-1 bg-white' type="text" placeholder='    Email*' />
              </div>
                <div>
-             <select className='border justify-start  pr-72 py-2 mt-8 ml-3 font-medium' name="" id="">
+             <select className='border bg-white justify-start  pr-72 py-2 mt-8 ml-3 font-medium' name="" id="">
                <option className='' value="">--Select Country--</option>
                <option value="1">USA</option>
                <option value="2">UK</option>
@@ -289,7 +303,7 @@ const [first, setfirst] = useState(true);
                <PhoneField/>
             
              </div>
-             <textarea className='ml-3 mt-8 text-sm font-normal border pr-[285px] pb-16 ' placeholder= '   Message'></textarea>
+             <textarea className='ml-3 mt-8 text-sm bg-white font-normal border pr-[285px] pb-16 ' placeholder= '   Message'></textarea>
              <button className=' px-5 py-3 border rounded-xl mt-3 float-end text-white bg-indigo-600 
 //              '>Submit</button>
          </form>

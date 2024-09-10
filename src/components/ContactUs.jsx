@@ -30,7 +30,7 @@ const ContactUs = () => {
           <div className="bg-[#1c1c1e] lg:w-1/2">
             <form className="fontTest" action="">
               <div className="lg:flex ">
-                <div className="lg:ml-10 ">
+                <div className="lg:ml-10 lg:mt-0 mt-5 ">
                   <label className="text-white text-sm " for="fname">
                     First Name
                   </label>
@@ -144,34 +144,34 @@ const ContactUs = () => {
 {/* //daisy ui card */}
 
 <div className=" grid grid-cols-1 gap-4 lg:flex lg:justify-evenly lg:pl-0 pl-24 py-2 bg-[#1c1c1e]  ">
-<div className="relative card card-compact text-white bg-[#1c1c1e]  w-56 border rounded-lg" >
+<div className="relative card card-compact text-white bg-[#1c1c1e] h-48 w-56 border rounded-lg" >
   <figure>
     <img className="w-5 border rounded-sm absolute left-5 top-5 "
       src={Chat}
       alt=""/>
   </figure>
-  <div className="card-body">
+  <div className="ml-4 card-body">
     <h2 className="card-title mt-16 ">Chat to sales</h2>
-    <p>Speak to our friendly team.</p>
+    <p className="mt-4">Speak to our friendly team.</p>
     <div className="card-actions justify-start">
-      <button className=" border rounded-lg px-3 py-2">sales@avtechnosys.com</button>
+      <button className=" border rounded-lg px-3 py-0.5 mt-2">sales@avtechnosys.com</button>
     </div>
   </div>
 </div>
 
 {/* card2 */}
 
-<div className="relative card card-compact text-white bg-[#1c1c1e]  w-56 border rounded-lg" >
+<div className="relative card card-compact text-white bg-[#1c1c1e] h-48  w-56 border rounded-lg" >
   <figure>
     <img className="w-5 border rounded-sm absolute left-5 top-5 "
       src={Support}
       alt=""/>
   </figure>
-  <div className="card-body">
+  <div className="card-body ml-4">
     <h2 className="card-title mt-16 ">Chat to support</h2>
-    <p>We're here to help.</p>
+    <p className="mt-4">We're here to help.</p>
     <div className="card-actions justify-start">
-      <button className=" border rounded-lg px-3 py-2">sales@avtechnosys.com</button>
+      <button className=" border rounded-lg px-3 py-0.5 mt-2">sales@avtechnosys.com</button>
     </div>
   </div>
 </div>
@@ -183,11 +183,11 @@ const ContactUs = () => {
       src={Call}
       alt=""/>
   </figure>
-  <div className="card-body">
+  <div className="card-body ml-4">
     <h2 className="card-title mt-16 ">Call Us</h2>
-    <p>Mon-Fri from 8am to 5pm.</p>
+    <p className="mt-4">Mon-Fri from 8am to 5pm.</p>
     <div className="card-actions justify-start">
-      <button className=" border rounded-lg px-3 py-2">+91 9983034111</button>
+      <button className=" border rounded-lg px-3 py-0.5 mt-2">+91 9983034111</button>
     </div>
   </div>
 </div>
@@ -200,11 +200,11 @@ const ContactUs = () => {
       src={Location}
       alt=""/>
   </figure>
-  <div className="card-body">
+  <div className="card-body ml-4">
     <h2 className="card-title mt-16 ">Visit Us</h2>
-    <p>Visit our Office HQ.</p>
+    <p className="mt-4">Visit our Office HQ.</p>
     <div className="card-actions justify-start">
-      <button className=" border rounded-lg px-3 py-2">View on Google Maps</button>
+      <button className=" border rounded-lg px-3 py-0.5 mt-2">View on Google Maps</button>
     </div>
   </div>
 </div>

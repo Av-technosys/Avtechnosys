@@ -494,7 +494,7 @@ const text5 =
 const items = [
     {
       key: '1',
-      label: <div className='  flex lg:text-6xl text-2xl relative font-semibold h-96 '> 
+      label: <div className='  flex lg:text-6xl text-2xl  relative font-semibold h-96 '> 
       {/* <img className='-ml-10 w-screen' src="https://unsplash.it/2700/600/?random" alt="" /> */}
         <h1 className='pt-72 absolute '> Digital Enterprise</h1> 
        <div className='text-base font-bold absolute bottom-7 right-5 '>
@@ -559,7 +559,7 @@ const ServicePage = () => {
   return (
     <>
 
-    {/* <Header2/> */}
+    <Header2/>
     
 <hr />
     <main className=' lg:flex grid grid-cols-1  bg-[#1c1c1e] w-full h-[60vh]'> 

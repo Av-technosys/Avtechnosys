@@ -24,6 +24,8 @@ import CompanyPage from './components/CompanyPage'
 import Input from './components/TextCycle'
 import Home from './components/Home';
 import Blog from './components/Blog';
+import PortfolioPage from './components/PortfolioPage';
+import ServicePage from './components/ServicePage';
 
 
 
@@ -33,7 +35,11 @@ const App = () => {
     <BrowserRouter>
       <Routes path="/" element={<Home />}>
         <Route index element={<Home />} />
+
+        <Route path="home" element={<Home />} />
         <Route path="Blog" element={<Blog />} />
+        <Route path="Portfolio" element={<PortfolioPage />} />
+        <Route path="Services" element={<ServicePage />} />
         <Route path="contact" element={<ContactUs />} />
         <Route path="company" element={<CompanyPage />} />
       </Routes>
