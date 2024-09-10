@@ -118,16 +118,16 @@ const Blog = () => {
       <img src={blogImg} alt="blog" />
       <div className="fontTest bg-[#1c1c1e] h-[40vh] flex flex-wrap justify-center">
         <div className="bg-white text-black items-center  lg:-mt-64 -mt-16    rounded-3xl lg:h-[85vh] w-[95vw]">
-          <div className="lg:mt-16 mt-8 ml-10">
-            <h1 className="font-bold lg:text-4xl text-2xl">Blog</h1>
+          <div className="lg:mt-16 mt-8 lg:pl[5.5rem] ml-10">
+            <h1 className="font-semibold lg:text-[4rem] text-2xl">Blog</h1>
             <br />
-            <p className="font-normal lg:-mt-0 -mt-5 lg:text-sm text-xs">
+            <p className="font-normal lg:pt-[1rem] lg:-mt-0 -mt-5 lg:text-[1rem] text-xs">
               Get daily news and insights on mobile apps, web, and software
               development to make money!
             </p>
           </div>
 
-          <div className="flex lg:flex-wrap lg:h-[50vh] w-[50vw] lg:ml-72 ml-20  mt-5 items-center">
+          <div className="flex fontTest lg:flex-wrap lg:h-[50vh] w-[50vw] lg:ml-72 ml-20  mt-5 items-center">
             <div className="w-1/2 bg-black text-white text-center items-center justify-center text-sm border border-black lg:h-[17rem] h-40">
               <h1 className="lg:mt-32 mt-10">Quick/New Update of AV Technosys</h1>
             </div>
@@ -139,11 +139,11 @@ const Blog = () => {
       </div>
 
       <div className="fontTest bg-[#1c1c1e] lg:h-[160vh] h-full">
-        <h1 className="text-white text-4xl font-semibold lg:p-16 p-5">Latest Articles</h1>
+        <h1 className="text-white lg:text-[4rem] text-[2rem] font-semibold  lg:p-16 p-5">Latest Articles</h1>
         <div className="">
           <div className=" lg:flex">
           <div>
-          <ul className="flex cursor-pointer text-white lg:pl-16 pl-5 lg:gap-12 gap-5 overflow-x-scroll scroll-smooth lg:overflow-x-hidden">
+          <ul className="flex cursor-pointer text-[1rem] text-white lg:pl-16 pl-5 lg:gap-12 gap-5 overflow-x-scroll scroll-smooth lg:overflow-x-hidden">
             <li className="" onClick={() => setBlogData(data)}>All</li>
             <li className="min-w-fit" onClick={() => setBlogData(data.filter((obj) => obj.keyword === "App Development"))}>
               App Development
@@ -173,7 +173,7 @@ const Blog = () => {
             <div className=" flex  lg:mt-0 mt-2 lg:ml-0 ml-5 ">
               
               <input
-                className="lg:ml-5 lg:w-36 w-full  bg-[#1c1c1e] border-b-2"
+                className="lg:ml-14 lg:w-36 w-full  bg-[#1c1c1e] border-b-2"
                 type="search"
                 placeholder="Search"
                 value={searchTerm}
@@ -184,7 +184,7 @@ const Blog = () => {
             </div>
           
 
-          <div className="flex mt-10 lg:ml-14 ml-14  flex-wrap gap-10">
+          <div className="flex mt-10 lg:ml-14 ml-16  flex-wrap gap-10">
             {filteredBlogs.map((blog) => (
               <div key={blog.keyword} className="flex flex-col gap-2 rounded-lg p-4 w-64 relative">
                 <div className="rounded-lg bg-white w-full h-40">
