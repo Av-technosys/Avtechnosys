@@ -87,7 +87,7 @@ const ContactUs = () => {
                 />
               </div>
               <br />
-              <div className="text-sm pt-3">
+              <div className="text-sm  pt-3">
                 <PhoneNumberField/>
               </div>
 
@@ -128,8 +128,8 @@ const ContactUs = () => {
       </div>
 
    {/* map  */}
-   <div className='fontTest lg:pl-[80px] lg:h-[100vh] h-[50vh] pt-10 lg:pb-8  bg-[#1c1c1e] font-semibold text-white '>
-       <h1 className="text-center justify-center lg:text-4xl text-2xl">
+   <div className='fontTest lg:pl-[80px] lg:h-[100vh] h-[50vh] lg:pt-0 pt-10 lg:pb-8  bg-[#1c1c1e] font-semibold text-white '>
+       <h1 className="text-center justify-center lg:text-[4rem] font-semibold text-2xl">
        Get in touch with our team
        </h1>
   

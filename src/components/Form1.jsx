@@ -21,7 +21,7 @@ const Form1 = () => {
                 className='bg-transparent border-b-2 border-b-gray-200 outline-none text-lg md:text-3xl lg:text-[1.5rem] pb-4 pr-8 md:pb-6 md:pr-12 lg:pb-6 lg:pr-16 text-white placeholder-white w-full md:w-auto'
             />
         </div>
-        <div className='mt-10 lg:mt-24 md:mt-16 px-4 lg:ml-16'>
+        <div className='mt-10 lg:mt-24 md:mt-16 px-4 lg:px-20 lg:ml-16'>
             <input
                 type='text'
                 placeholder='Tell us about your business and scope of the project'

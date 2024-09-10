@@ -7,7 +7,7 @@ const Footer1 = () => {
     <footer className=' fontTest bg-[#1c1c1e] lg:pt-[4rem] text-white'>
       <div className='p-6 lg:pb-[4rem] '>
         <h4 className='font-semibold lg:text[4rem] text-2xl md:text-6xl py-3 lg:py-0 ml-3 lg:ml-[3.5rem]'>Contact Us</h4>
-        <h6 className='text-xl sm:text-3xl lg:ml-[3.2rem] md:text-[6rem] lg:pt-[5.5rem] text-[#787878] py-6'>sales@avtechnosys.com</h6>
+        <h6 className='text-xl sm:text-3xl lg:ml-[3.2rem] md:text-[5rem] lg:pt-[5.5rem] text-[#787878] py-6'>sales@avtechnosys.com</h6>
       </div>
       <hr />
       <div className='flex fontTest flex-col md:flex-row p-6 text-[1rem] font-semibold space-y-5 md:space-y-0'>
