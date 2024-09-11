@@ -41,24 +41,24 @@ const PortfolioPage5 = () => {
           <img src={finz1} alt="" className="lg:ml-80 -ml-40 " />
         </div>
         <div className="text-white h-24 lg:ml-14 ml-4 lg:w-[50%] lg:-mt-80 -mt-20  ">
-          <h1 className=" lg:text-4xl text-3xl font-semibold">
+          <h1 className=" lg:text-[32px] text-3xl font-semibold">
             Project Brief{" "}
           </h1>
-          <p className="lg:text-xl  lg:font-semibold mt-7 ">
+          <p className="lg:text-[24]  lg:font-semibold mt-7 ">
           Finz introduces subscription-based payment cards to 
 revolutionize financial transactions. Finz cards offer 
 mersonalized memberships enhancing financial 
 management and rewarding users with,
 exclusive cashbackK discountsK and perks. 
           </p>
-          <button className="mt-7 relative border-2 py-1.5 pl-2 text-xl font-medium pr-8 border-white rounded-lg">
+          <button className="mt-7 relative border-2 py-1.5 pl-2 text-[24] font-medium pr-8 border-white rounded-lg">
             Visit Site{" "}
             <ArrowOutwardRoundedIcon className="absolute right-0 top-2  " />{" "}
           </button>
         </div>
 
         <div className="flex lg:mt-72 mt-44 text-white   lg:ml-14 ml-4">
-          <div className=" lg:text-3xl font-semibold h-fit lg:w-[90vw] w-[20vw]  ">
+          <div className=" lg:text-[32px] font-semibold h-fit lg:w-[90vw] w-[20vw]  ">
             
             Design Tools Used
             <div className="lg:flex gap-5 grid  mt-5">
@@ -68,11 +68,11 @@ exclusive cashbackK discountsK and perks.
             </div>
           </div>
 
-          <div className="lg:text-3xl text-xl font-semibold  lg:ml-0 ml-10">
+          <div className="lg:text-[32px] text-xl font-semibold  lg:ml-0 ml-10">
             {" "}
             Solutions
-            <h1 className="lg:mt-6 mt-2 font-normal"> Customer App / Web</h1>
-            <ul className="list-disc lg:text-2xl text-xl font-normal ml-5 mt-5">
+            <h1 className="lg:mt-6 mt-2 lg:text-[24px] font-normal"> Customer App / Web</h1>
+            <ul className="list-disc lg:text-[24px] text-xl font-normal ml-5 mt-5">
               <li className="">
                 {" "}
                 This user friendly app allows users to buy 
@@ -83,7 +83,7 @@ exclusive cashbackK discountsK and perks.
               <li>Informative blogs  </li>
             </ul>
             <h1 className="lg:mt-6 mt-2 font-normal">Seller Portal  </h1>
-            <ul className="list-disc lg:text-2xl text-xl font-normal ml-5 mt-5">
+            <ul className="list-disc lg:text-[24px] text-xl font-normal ml-5 mt-5">
               <li className=""> Seller onboarding</li>
               <li> Sales matrix</li>
               <li>   Product analytics</li>
@@ -92,8 +92,8 @@ exclusive cashbackK discountsK and perks.
             </ul>
           </div>
         </div>
-        <div className="lg:ml-14 ml-4 text-white lg:-mt-80 mt-5 ">
-          <h1 className="lg:text-3xl text-2xl font-semibold">Technology Stack Used</h1>
+        <div className="lg:ml-14 ml-4 text-white lg:-mt-72 mt-5 ">
+          <h1 className="lg:text-3xl text-[32px] font-semibold">Technology Stack Used</h1>
           <div className=" flex mt-5 lg:size-32 size-20 ">
             <img src={tech6} alt="" />
             <img src={finztech66} alt="" />

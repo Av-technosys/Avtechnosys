@@ -1,4 +1,5 @@
 import React from "react";
+import "./Footer.css";
 import finz from "../Assets/finz.jpg";
 import fixpapa from "../Assets/fixpapa.jpg";
 import saaskart from "../Assets/saaskart.jpg";
@@ -24,7 +25,7 @@ const PortfolioPage1 = () => {
   return (
     <>
       <hr className="bg-white text-white" />
-      <div className=" bg-[#1c1c1e] lg:overflow-hidden overflow-y-hidden pb-10 ">
+      <div className=" bg-[#1c1c1e] fontTest lg:overflow-hidden overflow-y-hidden pb-10 ">
         {/* saaskart img */}
         <div className=" flex w-full lg:pt-10">
           <img
@@ -35,24 +36,24 @@ const PortfolioPage1 = () => {
           <img src={saaskart1} alt="" className="lg:ml-96 -ml-40 " />
         </div>
         <div className="text-white h-24 lg:ml-14 ml-4 lg:w-[45%] lg:-mt-72 -mt-20  ">
-          <h1 className=" lg:text-4xl text-3xl font-semibold">
+          <h1 className=" lg:text-[36px] text-3xl font-semibold">
             Project Brief{" "}
           </h1>
-          <p className="lg:text-xl  lg:font-semibold mt-7 ">
+          <p className="lg:text-[1rem]  lg:font mt-7 ">
             Saaskart India's leading SaaS discovery platform providing
             data-driven insights and exclusive deals for buyers. With a focus on
             learningK excellenceK adaptabilityK and diversity Saaskart
             streamlines the software buying process while fostering innovation
             and inclusivity within the industry.
           </p>
-          <button className="mt-7 relative border-2 py-1.5 pl-2 text-xl font-medium pr-8 border-white rounded-lg">
+          <button className="mt-7 relative border-2 py-1.5 pl-2 text-[1rem] font-medium pr-8 border-white rounded-lg">
             Visit Site{" "}
             <ArrowOutwardRoundedIcon className="absolute right-0 top-2  " />{" "}
           </button>
         </div>
 
         <div className="flex lg:mt-60 mt-48 text-white   lg:ml-14 ml-4">
-          <div className=" lg:text-3xl font-semibold h-fit lg:w-[90vw] w-[20vw]  ">
+          <div className=" lg:text-[32px] font-semibold h-fit lg:w-[90vw] w-[20vw]  ">
             
             Design Tools Used
             <div className="lg:flex gap-5 grid  mt-5">
@@ -62,11 +63,11 @@ const PortfolioPage1 = () => {
             </div>
           </div>
 
-          <div className="lg:text-3xl text-xl font-semibold  lg:ml-56 ml-10">
+          <div className="lg:text-[32px] text-xl font-semibold  lg:ml-56 ml-10">
             {" "}
             Solutions
-            <h1 className="lg:mt-6 mt-2 font-normal"> End User Features</h1>
-            <ul className="list-disc lg:text-2xl text-xl font-normal ml-5 mt-5">
+            <h1 className="lg:mt-6 mt-2  font-normal"> End User Features</h1>
+            <ul className="list-disc lg:text-[24px] text-xl font-normal ml-5 mt-5">
               <li className="">
                 {" "}
                 This creative website showcases Saaskarts best features provide
@@ -78,8 +79,8 @@ const PortfolioPage1 = () => {
             </ul>
           </div>
         </div>
-        <div className="lg:ml-14 ml-4 text-white lg:-mt-32 mt-5 ">
-          <h1 className="lg:text-3xl text-2xl font-semibold">Technology Stack Used</h1>
+        <div className="lg:ml-14 ml-4 text-white lg:-mt-20 mt-5 ">
+          <h1 className="lg:text-3xl text-[32px] font-semibold">Technology Stack Used</h1>
           <div className=" flex mt-5 lg:size-32 size-20 ">
             <img src={tech1} alt="" />
             <img src={tech2} alt="" />
@@ -97,7 +98,7 @@ const PortfolioPage1 = () => {
         <div className="text-white lg:ml-14 ml-4">
           <h1 className="lg:text-3xl text-2xl font-semibold">Project Breakdown</h1>
           <div className="flex ">
-            <ul className="mt-5 lg:text-2xl text-lg lg:w-[36vw] w-[60vw] ">
+            <ul className="mt-5 lg:text-[24px] text-lg lg:w-[36vw] w-[60vw] ">
               <li className="w-56 ">
                 {" "}
                 <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3 " />
@@ -118,7 +119,7 @@ const PortfolioPage1 = () => {
               </li>
             </ul>
            <div>
-           <ul className="lg:ml-72  mt-5 lg:text-2xl text-lg">
+           <ul className="lg:ml-72   mt-5 lg:text-2xl text-lg">
               <li className="lg:mr-5 lg:my-3">
                 <CheckCircleRoundedIcon className="lg:mr-5 lg:my-3" /> UI Framework -
                 Bootstrap
@@ -126,7 +127,7 @@ const PortfolioPage1 = () => {
               <li className=" lg:mr-5 lg:my-3">
                 <CheckCircleRoundedIcon className="lg:mr-5 lg:my-3" /> Elementor (page
                 builder) WordPress,{" "}
-                <span className="lg:ml-10">WooCommerce Elementor</span>{" "}
+                <span className="lg:ml-12">WooCommerce Elementor</span>{" "}
               </li>
             </ul>
            </div>

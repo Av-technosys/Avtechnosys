@@ -43,8 +43,9 @@ const PhoneNumberField = () => {
   defaultCountry="IN"
   placeholder="Enter your phone number"
   country={'in'}
+  
   value={value}
-  inputStyle={{background: 'transparent',width:"90%",borderColor:"gray"}}
+  inputStyle={{background: 'transparent',width:"90%",borderColor:"gray",color:"gray"}}
   dropdownStyle={{background: '#1c1c1e'}}
   buttonStyle={{background: 'transparent', borderColor:"gray"}}
   onChange={setValue}/>

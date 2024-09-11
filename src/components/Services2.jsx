@@ -30,7 +30,7 @@ Web/App/Mobile UI/UX. <br />
         </div>
     </div>
 
-    <div className=' fontTest flex lg:ml-[2.5rem] lg:h-72 h-60 lg:pt-12 -mt-5 bg-[#1c1c1e] '>
+    <div className=' fontTest flex lg:ml-[2.5rem] lg:h-72 h-60 lg:-mt-24 -mt-5 bg-[#1c1c1e] '>
         <div className='lg:pl-10 pl-5 lg:pt-16  lg:-mt-0 mt-10 mr-10 '>
             <img className='size-16' src={Vect1}  alt="" />
             <button className='text-white text-[1rem] font-semibold'>

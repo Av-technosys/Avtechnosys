@@ -39,10 +39,10 @@ const PortfolioPage6 = () => {
           <img src={tavago1} alt="" className="lg:ml-80 -ml-40 " />
         </div>
         <div className="text-white h-24 lg:ml-14 ml-4 lg:w-[50%] lg:-mt-80 -mt-20  ">
-          <h1 className=" lg:text-4xl text-3xl font-semibold">
+          <h1 className=" lg:text-[32px] text-3xl font-semibold">
             Project Brief{" "}
           </h1>
-          <p className="lg:text-xl  lg:font-semibold mt-7 ">
+          <p className="lg:text-[24]  lg:font-semibold mt-7 ">
           Tavaga offers personalized rob-advisory services provide 
 precise investment portfolios as per individual needs with 
 automated algorithms it manages investments to achieve 
@@ -50,14 +50,14 @@ financial goals efficiently. Services include customized
 portfolio management tax planning insurance review and 
 specialized offerings for NRIs.  
           </p>
-          <button className="mt-7 relative border-2 py-1.5 pl-2 text-xl font-medium pr-8 border-white rounded-lg">
+          <button className="mt-7 relative border-2 py-1.5 pl-2 text-[24] font-medium pr-8 border-white rounded-lg">
             Visit Site{" "}
             <ArrowOutwardRoundedIcon className="absolute right-0 top-2  " />{" "}
           </button>
         </div>
 
         <div className="flex lg:mt-72 mt-52 text-white   lg:ml-14 ml-4">
-          <div className=" lg:text-3xl font-semibold h-fit lg:w-[90vw] w-[20vw]  ">
+          <div className=" lg:text-[32px] font-semibold h-fit lg:w-[90vw] w-[20vw]  ">
             
             Design Tools Used
             <div className="lg:flex gap-5 grid  mt-5">
@@ -67,11 +67,11 @@ specialized offerings for NRIs.
             </div>
           </div>
 
-          <div className="lg:text-3xl text-xl font-semibold  lg:ml-0 ml-10">
+          <div className="lg:text-[32px] text-xl font-semibold  lg:ml-0 ml-10">
             {" "}
             Solutions
-            <h1 className="lg:mt-6 mt-2 font-normal"> Customer App / Web</h1>
-            <ul className="list-disc lg:text-2xl text-xl font-normal ml-5 mt-5">
+            <h1 className="lg:mt-6 mt-2 lg:text-[32px] font-normal"> Customer App / Web</h1>
+            <ul className="list-disc lg:text-[24px] text-xl font-normal ml-5 mt-5">
               <li className="">
                 {" "}
                 This user friendly app allows users to buy 
@@ -82,7 +82,7 @@ specialized offerings for NRIs.
               <li>Informative blogs  </li>
             </ul>
             <h1 className="lg:mt-6 mt-2 font-normal">Seller Portal  </h1>
-            <ul className="list-disc lg:text-2xl text-xl font-normal ml-5 mt-5">
+            <ul className="list-disc lg:text-[24px] text-xl font-normal ml-5 mt-5">
               <li className=""> Seller onboarding</li>
               <li> Sales matrix</li>
               <li>   Product analytics</li>
@@ -91,8 +91,8 @@ specialized offerings for NRIs.
             </ul>
           </div>
         </div>
-        <div className="lg:ml-14 ml-4 text-white lg:-mt-80 mt-5 ">
-          <h1 className="lg:text-3xl text-2xl font-semibold">Technology Stack Used</h1>
+        <div className="lg:ml-14 ml-4 text-white lg:-mt-72 mt-5 ">
+          <h1 className="lg:text-3xl text-[32px] font-semibold">Technology Stack Used</h1>
           <div className=" flex mt-5 lg:size-32 size-20 ">
             <img src={finztech1} alt="" />
             <img src={finztech2} alt="" />
@@ -108,7 +108,7 @@ specialized offerings for NRIs.
         </div>
 
         <div className="text-white lg:ml-14 lg:mt-10 ml-4 ">
-          <h1 className="lg:text-3xl text-2xl font-semibold">Project Breakdown</h1>
+          <h1 className="lg:text-[32px] text-2xl font-semibold">Project Breakdown</h1>
           <div className="flex ">
             <ul className="mt-5 lg:text-2xl text-lg lg:w-[36vw] w-[70vw] ">
               <li className="lg:w-[40vw] ">
@@ -126,7 +126,7 @@ specialized offerings for NRIs.
               </li>
               <li className="lg:w-[40vw]">
                 <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
-                WordPress - WooCommerce  Elementor,<span className=""> Contact Form 7 Small Ballon Instagram Feed,
+                WordPress - WooCommerce  Elementor,<span className=" ml-10"> Contact Form 7 Small Ballon Instagram Feed,
                 Site Kit</span>
               </li>
             </ul>

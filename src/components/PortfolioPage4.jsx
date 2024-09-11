@@ -37,24 +37,24 @@ const PortfolioPage4 = () => {
           <img src={raajhaat1} alt="" className="lg:ml-80 -ml-40 lg:mt-0 mt-10 " />
         </div>
         <div className="text-white h-24 lg:ml-14 ml-4 lg:w-[50%] lg:-mt-80 -mt-20  ">
-          <h1 className=" lg:text-4xl text-3xl font-semibold">
+          <h1 className=" lg:text-[36px] text-3xl font-semibold">
             Project Brief{" "}
           </h1>
-          <p className="lg:text-xl  lg:font-semibold mt-7 ">
+          <p className="lg:text-[18px]  lg:font-semibold mt-7 ">
           RajasthaniHaat showcase the vibrant artistry of Rajasthan. 
 Users can explore a diverse range of authentic Rajasthani 
 fabrics handicrafts and traditional treasures. Engaging with 
 the community users learn about Rajasthan's rich heritage 
 and contribute to the empowerment of local artisans.
           </p>
-          <button className="mt-7 relative border-2 py-1.5 pl-2 text-xl font-medium pr-8 border-white rounded-lg">
+          <button className="mt-7 relative border-2 py-1.5 pl-2 text-[24] font-medium pr-8 border-white rounded-lg">
             Visit Site{" "}
             <ArrowOutwardRoundedIcon className="absolute right-0 top-2  " />{" "}
           </button>
         </div>
 
         <div className="flex lg:mt-72 mt-48 text-white   lg:ml-14 ml-4">
-          <div className=" lg:text-3xl font-semibold h-fit lg:w-[90vw] w-[20vw]  ">
+          <div className=" lg:text-[32px] font-semibold h-fit lg:w-[90vw] w-[20vw]  ">
             
             Design Tools Used
             <div className="lg:flex gap-5 grid  mt-5">
@@ -64,11 +64,11 @@ and contribute to the empowerment of local artisans.
             </div>
           </div>
 
-          <div className="lg:text-3xl text-xl font-semibold  lg:ml-0 ml-10">
+          <div className="lg:text-[32px] text-xl font-semibold  lg:ml-0 ml-10">
             {" "}
             Solutions
-            <h1 className="lg:mt-6 mt-2 font-normal"> Customer App / Web</h1>
-            <ul className="list-disc lg:text-xl text-lg font-normal ml-5 mt-5">
+            <h1 className="lg:mt-6 mt-2 lg:text-[32px] font-normal"> Customer App / Web</h1>
+            <ul className="list-disc lg:text-[24px] text-lg font-normal ml-5 mt-5">
               <li className="">
                 {" "}
                 This user friendly website allows users to access a 
@@ -80,8 +80,8 @@ product
               Rajasthani artisant educational content </li>
               <li>Secure transactions customer support </li>
             </ul>
-            <h1 className="lg:mt-6 mt-2 font-normal">Admin Portal </h1>
-            <ul className="list-disc lg:text-2xl text-xl font-normal ml-5 mt-5">
+            <h1 className="lg:mt-6 mt-2 lg:text-[32px] font-normal">Admin Portal </h1>
+            <ul className="list-disc lg:text-[24px] text-xl font-normal ml-5 mt-5">
               <li className=""> Product Listing</li>
               <li> Price Listing</li>
               <li>  Website analytics - Product & Sell</li>
