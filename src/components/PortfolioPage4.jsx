@@ -40,7 +40,7 @@ const PortfolioPage4 = () => {
           <h1 className=" lg:text-[36px] text-3xl font-semibold">
             Project Brief{" "}
           </h1>
-          <p className="lg:text-[18px]  lg:font-semibold mt-7 ">
+          <p className="lg:text-[1rem]  lg:font-normal mt-7 ">
           RajasthaniHaat showcase the vibrant artistry of Rajasthan. 
 Users can explore a diverse range of authentic Rajasthani 
 fabrics handicrafts and traditional treasures. Engaging with 
@@ -68,7 +68,7 @@ and contribute to the empowerment of local artisans.
             {" "}
             Solutions
             <h1 className="lg:mt-6 mt-2 lg:text-[32px] font-normal"> Customer App / Web</h1>
-            <ul className="list-disc lg:text-[24px] text-lg font-normal ml-5 mt-5">
+            <ul className="list-disc lg:text-[1rem] text-lg font-normal ml-5 mt-5">
               <li className="">
                 {" "}
                 This user friendly website allows users to access a 
@@ -81,7 +81,7 @@ product
               <li>Secure transactions customer support </li>
             </ul>
             <h1 className="lg:mt-6 mt-2 lg:text-[32px] font-normal">Admin Portal </h1>
-            <ul className="list-disc lg:text-[24px] text-xl font-normal ml-5 mt-5">
+            <ul className="list-disc lg:text-[1rem] text-xl font-normal ml-5 mt-5">
               <li className=""> Product Listing</li>
               <li> Price Listing</li>
               <li>  Website analytics - Product & Sell</li>
@@ -108,32 +108,33 @@ product
         <div className="text-white lg:ml-14 lg:mt-10 ml-4">
           <h1 className="lg:text-3xl text-2xl font-semibold">Project Breakdown</h1>
           <div className="flex ">
-            <ul className="mt-5 lg:text-2xl text-lg lg:w-[36vw] w-[70vw] ">
+            <ul className="mt-5 lg:text-[1rem] text-lg lg:w-[36vw] w-[70vw] ">
               <li className="lg:w-[40vw] ">
                 {" "}
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3 " />
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my- " />
                 UI/UX & Prototyping
               </li>
               <li>
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my-" />
                 Programming language - PHP
               </li>
               <li>
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my-" />
                 JS Framework - GSAP
               </li>
-              <li className="lg:w-[40vw]">
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
+              <li className="lg:w-[60vw]">
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my-" />
                 WordPress - WooCommerce  Elementor,<span className=""> Contact Form 7 Small Ballon Instagram Feed,
                 Site Kit</span>
+              </li>
+              <li className="lg:mr-1 lg:my-">
+                <CheckCircleRoundedIcon className="lg:mr-1 lg:my-" /> UI Framework -
+                Bootstrap
               </li>
             </ul>
            <div>
            <ul className="lg:ml-48 ml-2 mt-5 lg:text-2xl text-lg">
-              <li className="lg:mr-5 lg:my-3">
-                <CheckCircleRoundedIcon className="lg:mr-5 lg:my-3" /> UI Framework -
-                Bootstrap
-              </li>
+              
             </ul>
            </div>
           </div>

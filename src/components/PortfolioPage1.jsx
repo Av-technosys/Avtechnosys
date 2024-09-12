@@ -39,7 +39,7 @@ const PortfolioPage1 = () => {
           <h1 className=" lg:text-[36px] text-3xl font-semibold">
             Project Brief{" "}
           </h1>
-          <p className="lg:text-[1rem]  lg:font mt-7 ">
+          <p className="lg:text-[1rem]  lg:font-normal mt-7 ">
             Saaskart India's leading SaaS discovery platform providing
             data-driven insights and exclusive deals for buyers. With a focus on
             learningK excellenceK adaptabilityK and diversity Saaskart
@@ -67,7 +67,7 @@ const PortfolioPage1 = () => {
             {" "}
             Solutions
             <h1 className="lg:mt-6 mt-2  font-normal"> End User Features</h1>
-            <ul className="list-disc lg:text-[24px] text-xl font-normal ml-5 mt-5">
+            <ul className="list-disc lg:text-[1rem] text-xl font-normal ml-5 mt-5">
               <li className="">
                 {" "}
                 This creative website showcases Saaskarts best features provide
@@ -97,38 +97,47 @@ const PortfolioPage1 = () => {
 
         <div className="text-white lg:ml-14 ml-4">
           <h1 className="lg:text-3xl text-2xl font-semibold">Project Breakdown</h1>
-          <div className="flex ">
-            <ul className="mt-5 lg:text-[24px] text-lg lg:w-[36vw] w-[60vw] ">
-              <li className="w-56 ">
-                {" "}
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3 " />
-                Logo Design
+          <div className="flex gap-72 ">
+            <ul className=" mt-5 lg:text-[1rem] text-lg lg:w-[36vw] w-[60vw] ">
+              <h1><CheckCircleRoundedIcon className="lg: mr-1 " />
+            Logo Design</h1>
+            <li className="w-56 ">
               </li>
-              <li>
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
+               <CheckCircleRoundedIcon className="lg: mr-1 lg:my-" />
                 UI/UX & Prototyping
+              <li>
+               
               </li>
               <li>
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
+                <CheckCircleRoundedIcon className="lg: mr-1 lg:my-" />
                 Database - MySQL
               </li>
-              <li>
+
+
+              <h1><CheckCircleRoundedIcon className="lg: mr-1 lg:my- " /> JS Libraries - jQuery,  <span className=""> Underscore.js, etc.,</span> </h1>
+              
+              {/* <li>
                 <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
-                JS Libraries - jQuery,{" "}
+                JS Libraries - jQuery,
                 <span className="ml-10"> Underscore.js, etc.,</span>
-              </li>
-            </ul>
-           <div>
-           <ul className="lg:ml-72   mt-5 lg:text-2xl text-lg">
-              <li className="lg:mr-5 lg:my-3">
-                <CheckCircleRoundedIcon className="lg:mr-5 lg:my-3" /> UI Framework -
+              </li> */}
+
+
+
+
+<li className="lg:mr-5 lg:my-">
+                <CheckCircleRoundedIcon className="lg: mr-1 lg:my-" /> UI Framework -
                 Bootstrap
               </li>
-              <li className=" lg:mr-5 lg:my-3">
-                <CheckCircleRoundedIcon className="lg:mr-5 lg:my-3" /> Elementor (page
-                builder) WordPress,{" "}
-                <span className="lg:ml-12">WooCommerce Elementor</span>{" "}
-              </li>
+              <div classname="flex  ">
+                
+              <p  className=""><CheckCircleRoundedIcon className="lg: mr-1 lg:" />Elementor (page builder) WordPress, WooCommerce, <span className="ml-7">Elementor.</span></p> 
+              </div> 
+            </ul>
+           <div>
+           <ul className="lg: relative  mt-5 lg:text-[1rem] text-lg">
+              
+
             </ul>
            </div>
           </div>

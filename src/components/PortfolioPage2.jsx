@@ -69,7 +69,7 @@ options.
             {" "}
             Solutions
             <h1 className="lg:mt-6 mt-2 font-normal"> Web Design And Development</h1>
-            <ul className="list-disc lg:text-[24px] text-xl font-normal ml-5 mt-5">
+            <ul className="list-disc lg:text-[1rem] text-xl font-normal ml-5 mt-5">
               <li className="">
                 {" "}
                 This creative website allows users to buy and sell products online.
@@ -78,7 +78,7 @@ options.
               <li> Users can rent products from website </li>
             </ul>
             <h1 className="lg:mt-6 mt-2 text-[32px]  font-medium">Seller Portal</h1>
-            <ul className="list-disc lg:text-2xl text-xl font-normal ml-5 mt-5">
+            <ul className="list-disc lg:text-[1rem] text-xl font-normal ml-5 mt-5">
               <li className=""> Sellers can list there products easily.</li>
               <li>Sales matrix</li>
               <li> Product analytics</li>
@@ -106,33 +106,35 @@ options.
         <div className="text-white lg:ml-14 lg:mt-10 ml-4">
           <h1 className="lg:text-[32px] text-2xl font-semibold">Project Breakdown</h1>
           <div className="flex ">
-            <ul className="mt-5 lg:text-2xl text-lg lg:w-[36vw] w-[70vw] ">
+            <ul className="mt-5 lg:text-[1rem] text-lg lg:w-[36vw] w-[70vw] ">
               <li className="lg:w-[40vw] ">
                 {" "}
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3 " />
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg: " />
                 UI/UX & Prototyping
               </li>
               <li>
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my" />
                 Programming language - PHP
               </li>
               <li>
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my-" />
                 JS Framework - GSAP
               </li>
-              <li className="lg:w-[40vw]">
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
-                WordPress - WooCommerce <span className="ml-10">  Elementor, Contact Form 7 Small Ballon
-                   <span className=""/> Instagram Feed,
-                 Site Kit</span>
+              <li className="lg:w-[60vw]">
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my-" />
+                WordPress - WooCommerce  Elementor, Contact Form 7 Small 
+              Ballon Instagram Feed, Site Kit
+                  
+                
               </li>
+              <li className="lg:mr-1 lg:my-">
+                <CheckCircleRoundedIcon className="lg:mr-1 lg:my-" /> UI Framework -
+                Bootstrap</li>
             </ul>
            <div>
            <ul className="lg:ml-48 ml-2 mt-5 lg:text-2xl text-lg">
-              <li className="lg:mr-5 lg:my-3">
-                <CheckCircleRoundedIcon className="lg:mr-5 lg:my-3" /> UI Framework -
-                Bootstrap
-              </li>
+             
+              
             </ul>
            </div>
           </div>

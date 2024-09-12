@@ -38,7 +38,7 @@ const PortfolioPage3 = () => {
           <h1 className=" lg:text-[36px] text-3xl font-semibold">
             Project Brief{" "}
           </h1>
-          <p className="lg:text-[18px]  lg:font- mt-7 ">
+          <p className="lg:text-[1rem]  lg:font- mt-7 ">
           RenoQuotes provide trustworthy contractors for renovation 
 projects. They help with any type of project ranging from 
 general home improvement and construction to roofing and 
@@ -65,7 +65,7 @@ landscaping.
             {" "}
             Solutions
             <h1 className="lg:mt-6 mt-2 font-normal"> End User Features </h1>
-            <ul className="list-disc lg:text-[24px] text-xl font-normal ml-5 mt-5">
+            <ul className="list-disc lg:text-[1rem] text-xl font-normal ml-5 mt-5">
               <li className="">
                 {" "}
                 This user friendly app allows users to buy product smoothly.
@@ -75,7 +75,7 @@ landscaping.
               <li>  Informative blogs  </li>
             </ul>
             <h1 className="lg:mt-6 mt-2 font-normal">Seller Portal</h1>
-            <ul className="list-disc lg:text-2xl text-xl font-normal ml-5 mt-5">
+            <ul className="list-disc lg:text-[1rem] text-xl font-normal ml-5 mt-5">
               <li className="">  Seller onboarding</li>
               <li>Sales matrix</li>
               <li> Product analytics</li>
@@ -102,33 +102,34 @@ landscaping.
         <div className="text-white lg:mt-10 lg:ml-14 ml-4">
           <h1 className="lg:text-3xl  text-2xl font-semibold">Project Breakdown</h1>
           <div className="flex ">
-            <ul className="mt-5 lg:text-2xl text-lg lg:w-[36vw] w-[70vw] ">
+            <ul className="mt-5 lg:text-[1rem] text-lg lg:w-[36vw] w-[70vw] ">
               <li className="lg:w-[40vw] ">
                 {" "}
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3 " />
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my- " />
                 Logo Design
               </li>
               <li>
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my-" />
                 UI/UX & Prototyping
               </li>
               <li>
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my-" />
                 Web Server - Next.js Apache HTTP
               </li>
               <li className="lg:w-[40vw]">
-                <CheckCircleRoundedIcon className="lg:mr-5 mr-2 lg:my-3" />
+                <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my-" />
                 Programming Language - Node.js 
+              </li> 
+              <li className="lg:mr-1 lg:my-">
+                <CheckCircleRoundedIcon className="lg:mr-1 lg:my-" />JS Framework - React Next.js
+              </li>
+              <li className="lg:mr-1 lg:my-">
+                <CheckCircleRoundedIcon className="lg:mr-1 lg:my-" />Security - HSTS
               </li>
             </ul>
            <div>
            <ul className="lg:ml-48 ml-2 mt-5 lg:text-2xl text-lg">
-              <li className="lg:mr-5 lg:my-3">
-                <CheckCircleRoundedIcon className="lg:mr-5 lg:my-3" />JS Framework - React Next.js
-              </li>
-              <li className="lg:mr-5 lg:my-3">
-                <CheckCircleRoundedIcon className="lg:mr-5 lg:my-3" />Security - HSTS
-              </li>
+             
             </ul>
            </div>
           </div>
