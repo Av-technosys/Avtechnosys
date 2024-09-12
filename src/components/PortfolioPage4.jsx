@@ -28,13 +28,13 @@ const PortfolioPage4 = () => {
       <hr className="bg-white text-white" />
       <div className=" bg-[#1c1c1e] lg:overflow-hidden pb-10 ">
         {/* saaskart img */}
-        <div className=" flex w-full lg:pt-10">
+        <div className=" flex justify-between w-full lg:pt-10">
           <img
             src={raajhaat}
             alt=""
             className=" lg:ml-10 ml-4 lg:w-64 w-32 lg:h-40 h-32"
           />
-          <img src={raajhaat1} alt="" className="lg:ml-80 -ml-40 lg:mt-0 mt-10 " />
+          <img src={raajhaat1} alt="" className="lg: -ml-40 lg:mt-0 mt-10 " />
         </div>
         <div className="text-white h-24 lg:ml-14 ml-4 lg:w-[50%] lg:-mt-80 -mt-20  ">
           <h1 className=" lg:text-[36px] text-3xl font-semibold">

@@ -27,13 +27,13 @@ const PortfolioPage1 = () => {
       <hr className="bg-white text-white" />
       <div className=" bg-[#1c1c1e] fontTest lg:overflow-hidden overflow-y-hidden pb-10 ">
         {/* saaskart img */}
-        <div className=" flex w-full lg:pt-10">
+        <div className=" flex justify-between w-full  lg:pt-10">
           <img
             src={saaskart2}
             alt=""
             className=" lg:ml-10 ml-4 lg:w-64 w-32 lg:h-40 h-32"
           />
-          <img src={saaskart1} alt="" className="lg:ml-96 -ml-40 " />
+          <img src={saaskart1} alt="" className="lg: -ml-40 " />
         </div>
         <div className="text-white h-24 lg:ml-14 ml-4 lg:w-[45%] lg:-mt-72 -mt-20  ">
           <h1 className=" lg:text-[36px] text-3xl font-semibold">
