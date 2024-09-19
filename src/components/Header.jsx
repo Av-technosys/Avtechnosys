@@ -96,8 +96,8 @@ const Header = () => {
     <div className="">
       <div className="fontTest   bg-[#1c1c1e] p-[2.5rem]">
         <div className="md:hidden bg-white rounded-t-3xl ">
-          <div className="ml-10">
-          <img src={avlogoblack} alt="" />
+          <div className=" ml-10">
+          <img className="" src={avlogoblack} alt="" />
         </div>
           
         <div className='lg:hidden absolute right-10 top-14 ' onClick={togglemenu}>
@@ -139,7 +139,8 @@ const Header = () => {
           <div className="w-full flex">
             <div className="w-1/6 h-24  bg-white ">
               <div className=" bg-[#1c1c1e] w-full h-full flex justify-center items-center rounded-br-[35px]">
-                <img className="w-20  -mt-2" src={avlogo} alt="" />
+                <Link to="/" ><img className="w-[4.5rem] mb-[1rem] scale-[1.3rem] -mt-2" src={avlogo} alt="" /></Link>
+                
               </div>
             </div>
 

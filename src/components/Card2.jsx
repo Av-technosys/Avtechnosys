@@ -41,7 +41,7 @@ const Card2 = () => {
 
 const Card = ({ Srno, Cardtitle, Carddata }) => {
   return (
-    <div class="fontTest group flex lg:-mt-[3.5rem] -mt-5 m-5 lg:h-screen h-96 w-full items-center justify-center">
+    <div class="fontTest group flex lg:-mt-[3.5rem] -mt-5 m-5 lg:py-24 py-10 w-full items-center justify-center">
       <div class="relative flex h-[300px] w-[250px]">
         <div>
           <div class="absolute left-[6px] top-[8px] flex h-[45px] w-[46px] items-center justify-center rounded-br-lg border-b border-r text-white  text-xl">

@@ -47,7 +47,7 @@ const PortfolioPage1 = () => {
             and inclusivity within the industry.
           </p>
           <button className="mt-7 relative border-2 py-1.5 pl-2 text-[1rem] font-medium pr-8 border-white rounded-lg">
-            Visit Site{" "}
+           <a href="https://www.saaskart.co/" target="_blank" > Visit Site</a>
             <ArrowOutwardRoundedIcon className="absolute right-0 top-2  " />{" "}
           </button>
         </div>

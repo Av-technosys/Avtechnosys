@@ -45,7 +45,7 @@ general home improvement and construction to roofing and
 landscaping.
           </p>
           <button className="mt-7 relative border-2 py-1.5 pl-2 text-[24] font-medium pr-8 border-white rounded-lg">
-            Visit Site{" "}
+            <a href="https://renoquotes.com/" target="_blank">Visit Site</a>
             <ArrowOutwardRoundedIcon className="absolute right-0 top-2  " />{" "}
           </button>
         </div>

@@ -78,12 +78,13 @@ const [first, setfirst] = useState(false);
   };
   return (
     <>
-    <header className="  fontTest text-white flex flex-wrap h-32 w-full bg-[#1c1c1e]">
+    <header className="  fontTest text-white flex flex-wrap  h-32 w-full bg-[#1c1c1e]">
    
     
 
  <div className="pt-7 pl-16 w-32 ">
-   <img src={avlogo} alt="logo" />
+  <Link to="/">  <img src={avlogo} alt="logo" /></Link>
+  
  </div>
 <div className='lg:hidden absolute right-5 top-14 ' onClick={togglemenu}><MenuIcon sx={{
    fontSize: '30px',

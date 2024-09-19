@@ -7,7 +7,7 @@ const Footer1 = () => {
     <footer className=' fontTest bg-[#1c1c1e] lg:pt-[4rem] text-white'>
       <div className='p-6 lg:pb-[4rem] '>
         <h4 className='font-semibold lg:text[4rem] text-2xl md:text-6xl py-3 lg:py-0 ml-3 lg:ml-[3.5rem]'>Contact Us</h4>
-        <h6 className='text-xl sm:text-3xl lg:ml-[3.2rem] md:text-[5rem] lg:pt-[5.5rem] text-[#787878] py-6'>sales@avtechnosys.com</h6>
+        <h6 className='text-2xl  lg:ml-[3.2rem] lg:text-[5rem] lg:pt-[5.5rem] text-[#787878] py-6'>sales@avtechnosys.com</h6>
       </div>
       <hr />
       <div className='flex fontTest flex-col md:flex-row p-6 text-[1rem] font-semibold space-y-5 md:space-y-0'>
@@ -22,7 +22,7 @@ const Footer1 = () => {
               <div className='relative'>
                 <span className='peer cursor-pointer'>Contact</span>
                 <div className='hidden peer-hover:flex w-[10rem] text-xs absolute translate-x-[40%] top-[40%] justify-start items-center ml-10 p-2'>
-                  +91 76345 67235
+                  +91 99830-34111
                 </div>
               </div>
               <div className='relative'>
@@ -35,10 +35,10 @@ const Footer1 = () => {
           </div>
           <div className='p-2 border-l'>
             <ul>
-              <li>Instagram</li>
-              <li>Facebook</li>
-              <li>Twitter</li>
-              <li>Linkedin</li>
+               <a href="https://www.instagram.com/avtechnosys/" target="_blank" ><li>Instagram</li></a> 
+              <a href="https://www.facebook.com/people/AV-Technosys/" target="_blank"><li>Facebook</li></a> 
+               <a href="https://x.com/AvTechnosys" target="_blank"><li>Twitter</li></a>
+               <a href="https://www.linkedin.com/company/av-technosys/mycompany/" target="_blank" ><li>Linkedin</li></a>
             </ul>
           </div>
         </div>

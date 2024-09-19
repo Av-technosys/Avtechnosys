@@ -117,7 +117,7 @@ const Blog = () => {
 
       <img src={blogImg} alt="blog" />
       <div className="fontTest bg-[#1c1c1e] h-[40vh] flex flex-wrap justify-center">
-        <div className="bg-white text-black items-center  lg:-mt-64 -mt-16    rounded-3xl lg:h-[85vh] w-[95vw]">
+        <div className="bg-white text-black items-center  lg:-mt-64 -mt-16  rounded-3xl lg:pb-16 w-[95vw]">
           <div className="lg:mt-16 mt-8 lg:pl[5.5rem] ml-10">
             <h1 className="font-semibold lg:text-[4rem] text-2xl">Blog</h1>
             <br />
@@ -138,8 +138,8 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="fontTest bg-[#1c1c1e] lg:h-[160vh] h-full">
-        <h1 className="text-white lg:text-[4rem] text-[2rem] font-semibold  lg:p-16 p-5">Latest Articles</h1>
+      <div className="fontTest bg-[#1c1c1e] lg:h- h-">
+        <h1 className="text-white lg:text-[4rem] text-[2rem] font-semibold  lg:p-16 md:p-20 p-16">Latest Articles</h1>
         <div className="">
           <div className=" lg:flex">
           <div>

@@ -16,7 +16,12 @@ import Location from "../Assets/LocationIcon.png";
 import Footer1 from "./Footer1";
 import Header2 from "./Header2";
  
+const handleEmailClick = () => {
+  window.location.href = `mailto:sales@avtechnosys.com?subject=Subject&body=Body`;
+};
+
 const ContactUs = () => {
+
   return (
     <>
       <Header2/>
@@ -154,7 +159,7 @@ const ContactUs = () => {
     <h2 className="card-title mt-16 ">Chat to sales</h2>
     <p className="mt-4">Speak to our friendly team.</p>
     <div className="card-actions justify-start">
-      <button className=" border rounded-lg px-3 py-0.5 mt-2">sales@avtechnosys.com</button>
+      <button onClick={handleEmailClick} className=" border rounded-lg px-3 py-0.5 mt-2">sales@avtechnosys.com</button>
     </div>
   </div>
 </div>
@@ -171,7 +176,7 @@ const ContactUs = () => {
     <h2 className="card-title mt-16 ">Chat to support</h2>
     <p className="mt-4">We're here to help.</p>
     <div className="card-actions justify-start">
-      <button className=" border rounded-lg px-3 py-0.5 mt-2">sales@avtechnosys.com</button>
+      <button onClick={handleEmailClick} className=" border rounded-lg px-3 py-0.5 mt-2">sales@avtechnosys.com</button>
     </div>
   </div>
 </div>
@@ -187,7 +192,7 @@ const ContactUs = () => {
     <h2 className="card-title mt-16 ">Call Us</h2>
     <p className="mt-4">Mon-Fri from 8am to 5pm.</p>
     <div className="card-actions justify-start">
-      <button className=" border rounded-lg px-3 py-0.5 mt-2">+91 9983034111</button>
+      <button className=" border rounded-lg px-3 py-0.5 mt-2"> +91 9983034111 </button>
     </div>
   </div>
 </div>
@@ -204,7 +209,7 @@ const ContactUs = () => {
     <h2 className="card-title mt-16 ">Visit Us</h2>
     <p className="mt-4">Visit our Office HQ.</p>
     <div className="card-actions justify-start">
-      <button className=" border rounded-lg px-3 py-0.5 mt-2">View on Google Maps</button>
+      <button className=" border rounded-lg px-3 py-0.5 mt-2"><a href="https://www.google.com/maps/place/AV+Technosys/@26.8556917,75.8163217,15z/data=!4m6!3m5!1s0x396db785410035f5:0xdd22882a4cf4a94!8m2!3d26.8556917!4d75.8163217!16s%2Fg%2F11vwm329f7?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D"  >View on Google Maps</a></button>
     </div>
   </div>
 </div>

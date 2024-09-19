@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const texts = ["Development", "Marketing", "Social Media", "Innovative"];
+const texts = ["Development", "Marketing", "Social Media", "Innovation"];
 const variants = {
   enter: direction => {
     return {
@@ -32,7 +32,7 @@ const TextLoop = () => {
         next = 0;
       }
       setIndex(next);
-    }, 3 * 2000);
+    }, 3 * 1000);
   }, [index, setIndex]);
 
   return (

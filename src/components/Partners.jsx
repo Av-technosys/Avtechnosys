@@ -7,6 +7,7 @@ import img3 from '../Assets/saaskart.jpg';
 import img4 from '../Assets/Reno.jpg';
 import img5 from '../Assets/rajhut.jpg';
 import arrow from '../Assets/rightarrow.png';
+import { Link } from 'react-router-dom';
 const Partners = () => {
   return (
     <>
@@ -29,7 +30,7 @@ empowering individuals to thrive and drive global success.
         </p>
         <div className=' absolute flex  '>
           <img className='relative lg:left-60 size-4 top-3 mr-1 ' src={arrow} alt="" />
-        <button className=" fontTest lg:text-[1rem] lg:ml-60 mt-2 "> Contact Us</button>
+        <button className=" fontTest lg:text-[1rem] lg:ml-60 mt-2 "> <Link to="/Contact" >Contact Us</Link> </button>
         </div>
         </div>
       </div>

@@ -52,11 +52,11 @@ management and rewarding users with,
 exclusive cashbackK discountsK and perks. 
           </p>
           <button className="mt-7 relative border-2 py-1.5 pl-2 text-[24] font-medium pr-8 border-white rounded-lg">
-            Visit Site{" "}
+           <a href="http://" target="_blank">Visit Site</a>
             <ArrowOutwardRoundedIcon className="absolute right-0 top-2  " />{" "}
           </button>
         </div>
-
+ 
         <div className="flex lg:mt-72 mt-44 text-white   lg:ml-14 ml-4">
           <div className=" lg:text-[32px] font-semibold h-fit lg:w-[90vw] w-[20vw]  ">
             

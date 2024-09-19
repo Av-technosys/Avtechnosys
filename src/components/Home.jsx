@@ -29,6 +29,7 @@ import Header2 from './Header2';
 import Footer1 from './Footer1'
 import Form1 from './Form1';
 import PortfolioPage from './PortfolioPage';
+import Sample from './Sample';
 // import Sidebar from './Sidebar';
 
 export default function Home(){
@@ -47,7 +48,8 @@ export default function Home(){
 
 {/* <Footer/> */}
 {/* <Footer1/> */}
-
+{/* <Sample/> */}
+{/* <div className='sticky top-0'><Services2 /></div> */}
         <Header />
          <Partners /> 
           <Card2 /> 
@@ -68,6 +70,16 @@ export default function Home(){
         {/* <ContactUs/> */}
   {/* {/* <PhoneNumberField/> */}
   
- 
-      </div>)
+  {/* <Form1/> */}
+
+  {/* <div className='relative'>
+         <div className='sticky -top-20'><Services1 /></div>
+        <div className='sticky top-0'><Services2 /></div>
+        <div className='sticky top-0'><Services3 /></div>
+        <div className='sticky top-0'><Services4 /></div>
+        <div className='sticky top-0'><Services5 /></div>
+        </div> */}
+
+      </div>
+      )
 }
