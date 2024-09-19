@@ -12,12 +12,12 @@ const Services1 = () => {
       <h1 className=' pb-10 lg:pl-[5.5rem] '>
         Our Services
       </h1>
-      <hr className='lg:mx-[5.5rem]' />
+      <hr className=' lg:mt-0 mt-10 lg:mx-[5.5rem]' />
     </div>
 
-    <div class="fontTest min-h-screen  bg-[#1c1c1e] text-white space-y-7 p-8">
+    <div class="fontTest lg:pt-0 pt-10  min-h-screen  bg-[#1c1c1e] text-white space-y-7 p-8">
     
-  <div class="flex lg:pt-5 justify-between lg:mx-[4rem] ">
+  <div class="lg:flex lg:gap-0 grid grid-cols-1 gap-10 lg:pt-5 justify-between lg:mx-[4rem] ">
     <div class="w-[10%] pr-2"><div class="h-8 w-3 rounded-br-full rounded-ss-full bg-white"></div></div>
     <div class="w-[70%] text-xs md:text-lg lg:text-2xl lg:ml-[10rem]">
       <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Digital Enterprise</h3>
@@ -33,7 +33,7 @@ const Services1 = () => {
     </div>
     <div></div>
   </div>
-  <div class="flex gap-4  lg:pt-32 lg:ml-[4rem] md:gap-0 items-center">
+  <div class="flex gap-4  lg:pt-32 pt-10 lg:ml-[4rem] md:gap-0 items-center">
     <div class="w-[10%] lg:text-[1rem] text-[10px] font-semibold "><img src={Vect1} width="65" />Read more</div>
 
     <div class=" lg:ml-[8rem]">

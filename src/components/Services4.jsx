@@ -14,7 +14,7 @@ const Services4 = () => {
    <div className="">
    <hr className='lg:mx-[3.5rem] mt-5 ' />
    </div>
- <div class="flex lg:pt-5 justify-between lg:mx-[4rem] ">
+ <div class="lg:flex lg:gap-0 grid grid-cols-1 gap-10 lg:pt-5 justify-between lg:mx-[4rem] ">
 
  <div className='flex gap-0.5'>
       <div className='h-9 w-3 bg-white rounded-tl-3xl rounded-br-3xl'></div>      
