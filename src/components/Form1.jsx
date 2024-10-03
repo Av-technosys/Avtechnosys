@@ -5,7 +5,7 @@ const Form1 = () => {
   return (
 
     <>
-    <div className='bg-[#1c1c1e] fontTest lg:pt-72 pb-10'>
+    <div className='bg-[#1c1c1e] fontTest lg:pt- pb-10'>
     <h1 className='text-4xl md:text-[4rem] lg:text-7xl text-white font-semibold p-6 md:p-10 md:ml-12 lg:ml-[3rem]'>
         Let's Connect
     </h1>

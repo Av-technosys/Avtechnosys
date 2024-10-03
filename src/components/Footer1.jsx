@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer1 = () => {
   return (
     <>
-    <footer className=' fontTest bg-[#1c1c1e] lg:pt-[4rem] text-white'>
+    <footer className=' fontTest bg-[#1c1c1e] lg:pt text-white'>
       <div className='p-6 lg:pb-[4rem] '>
         <h4 className='font-semibold lg:text[4rem] text-2xl md:text-6xl py-3 lg:py-0 ml-3 lg:ml-[3.5rem]'>Contact Us</h4>
         <h6 className='text-2xl  lg:ml-[3.2rem] lg:text-[5rem] lg:pt-[5.5rem] text-[#787878] py-6'>sales@avtechnosys.com</h6>

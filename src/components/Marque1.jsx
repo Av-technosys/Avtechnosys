@@ -6,7 +6,7 @@ const Marque1 = () => {
   return (
     <>
   
-      <div className="fontTest bg-[#1c1c1e] lg:pt-52 lg:h-[ h-52 ">
+      <div className="fontTest bg-[#1c1c1e] lg:pt-72 lg:pb-80 lg:h-[ h-52 ">
       <Marquee direction="left" speed={100}>
         <h1 className=" pt-7 lg:text-[7rem] text-3xl lg:h-[170px] text-white font-bold"> Digital Experience, Digital Enterprise, Cloud transfomation</h1>
         </Marquee>

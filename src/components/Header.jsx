@@ -125,7 +125,7 @@ const Header = () => {
               <li className='py-3 text-xl '><Link to="/contact">Contact Us</Link></li>
             </ul>
             <div className='grid gap-2'>
-                  <button className='py-1  border rounded-sm border-black '>Hire Us</button>
+                  <button className='py-1  border rounded-sm border-black '><Link to="/HireusPage" >Hire Us</Link></button>
                   <button className='py-1  border rounded-sm border-black' > <Link to="/contact"> <ArrowForwardIosIcon className='bg-black text-white rounded-full mr-1 p-1'/>Let's Connect</Link></button>
                 </div>
            </div>
@@ -153,7 +153,7 @@ const Header = () => {
                   </li>
                   <Dropdown
                     menu={{
-                      items,
+                    
                     }}
                   >
                     <li className=" ">

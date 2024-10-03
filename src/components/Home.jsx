@@ -29,7 +29,11 @@ import Header2 from './Header2';
 import Footer1 from './Footer1'
 import Form1 from './Form1';
 import PortfolioPage from './PortfolioPage';
-import Sample from './Sample';
+import HireusPage from './HireusPage';
+import IconCloud from './magicui/icon-cloud';
+import { IconCloudDemo } from './aa';
+import Blogdemo from './Blogdemo';
+
 // import Sidebar from './Sidebar';
 
 export default function Home(){
@@ -48,9 +52,13 @@ export default function Home(){
 
 {/* <Footer/> */}
 {/* <Footer1/> */}
-{/* <Sample/> */}
+{/* <IconCloudDemo/> */}
 {/* <div className='sticky top-0'><Services2 /></div> */}
-        <Header />
+
+
+{/* <HirePricing/> */}
+
+        {/* <Header />
          <Partners /> 
           <Card2 /> 
       
@@ -66,7 +74,12 @@ export default function Home(){
       <Form1/>
         <Hero />
          <TestCard />
-        <Footer1 /> 
+        <Footer1 />  */}
+{/* <Blogdemo/> */}
+
+{/* <OrbitingCirclesDemo/> */}
+<HireusPage/>
+
         {/* <ContactUs/> */}
   {/* {/* <PhoneNumberField/> */}
   

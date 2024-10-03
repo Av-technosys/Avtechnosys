@@ -26,17 +26,33 @@ import Home from './components/Home';
 import Blog from './components/Blog';
 import PortfolioPage from './components/PortfolioPage';
 import ServicePage from './components/ServicePage';
+import { useState ,useEffect } from 'react';
 
+import {RotateLoader } from 'react-spinners';
 
 
 const App = () => {
+  const [loading, setloading] = useState(false)
+  useEffect(() => {
+    setloading(true)
+    setTimeout(() => {
+      setloading(false)
+    }, 4000)
+  }, [])
   return (
+   <div className={` h-screen ${loading && " grid place-items-center"} `}>
+    {
+      loading?
 
+      <RotateLoader className=' ' color='black'  />
+
+      :
+  
     <BrowserRouter>
+    
       <Routes path="/" element={<Home />}>
         <Route index element={<Home />} />
-
-        <Route path="home" element={<Home />} />
+       <Route path="home" element={<Home />} />
         <Route path="Blog" element={<Blog />} />
         <Route path="Portfolio" element={<PortfolioPage />} />
         <Route path="Services" element={<ServicePage />} />
@@ -44,8 +60,9 @@ const App = () => {
         <Route path="company" element={<CompanyPage />} />
       </Routes>
     </BrowserRouter>
-
+      }
+    </div>
   )
+  
 }
-
 export default App

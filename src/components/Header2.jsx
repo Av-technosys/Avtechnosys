@@ -20,50 +20,50 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import avlogo from "../Assets/AV LOGO.svg"
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-const items = [
-  {
-    key: "1",
-    label: (
-      <a target="_blank" rel=" " href=" ">
-        Digital Enterprise
-      </a>
-    ),
-  },
-  {
-    key: "2",
-    label: (
-      <a target="_blank" rel=" " href=" ">
-        Digital Experience
-      </a>
-    ),
-  },
-  {
-    key: "3",
-    label: (
-      <a target="_blank" rel=" " href=" ">
-        Digital Marketing
-      </a>
-    ),
-  },
-  {
-    key: "4",
+// const items = [
+//   {
+//     key: "1",
+//     label: (
+//       <a target="_blank" rel=" " href=" ">
+//         Digital Enterprise
+//       </a>
+//     ),
+//   },
+//   {
+//     key: "2",
+//     label: (
+//       <a target="_blank" rel=" " href=" ">
+//         Digital Experience
+//       </a>
+//     ),
+//   },
+//   {
+//     key: "3",
+//     label: (
+//       <a target="_blank" rel=" " href=" ">
+//         Digital Marketing
+//       </a>
+//     ),
+//   },
+//   {
+//     key: "4",
 
-    label: (
-      <a target="_blank" rel=" " href=" ">
-        Digital Innovation
-      </a>
-    ),
-  },
-  {
-    key: "5",
+//     label: (
+//       <a target="_blank" rel=" " href=" ">
+//         Digital Innovation
+//       </a>
+//     ),
+//   },
+//   {
+//     key: "5",
 
-    label: (
-      <a target="_blank" rel=" " href=" ">
-        Cloud Transformation
-      </a>
-    ),
-  },
-];
+//     label: (
+//       <a target="_blank" rel=" " href=" ">
+//         Cloud Transformation
+//       </a>
+//     ),
+//   },
+// ];
 
 const Header2 = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -78,7 +78,7 @@ const [first, setfirst] = useState(false);
   };
   return (
     <>
-    <header className="  fontTest text-white flex flex-wrap  h-32 w-full bg-[#1c1c1e]">
+    <header className="  fontTest text-white flex flex-wrap justify-between  h-32 w-full bg-[#1c1c1e]">
    
     
 
@@ -109,7 +109,7 @@ const [first, setfirst] = useState(false);
               <li className='py-3 text-xl '><Link to="/contact">Contact Us</Link></li>
             </ul>
             <div className='grid gap-2'>
-                  <button className='py-1  border rounded-sm '>Hire Us</button>
+                  <button className='py-1  border rounded-sm '><Link to=""></Link></button>
                   <button className='py-1  border rounded-sm ' > <Link to="/contact"> <ArrowForwardIosIcon className='bg-white text-black rounded-full mr-1 p-1'/>Let's Connect</Link></button>
                 </div>
            </div>
@@ -124,17 +124,17 @@ const [first, setfirst] = useState(false);
      <li className="px-">
        <Link to="/company">Company</Link>
      </li>
-     <Dropdown
+     {/* <Dropdown
                     menu={{
                       items,
                     }}
-                  >
+                  > */}
                     <li className="ml-10 ">
-                      {/* <li className=" px-4"> */}
-                      <Link to="/Services">Services</Link><KeyboardArrowDownIcon fontSize="inherit" />
-                      {/* Services <DownOutlined  /> */}
+                   
+                      <Link to="/Services">Services</Link>
+                     
                     </li>
-                  </Dropdown>
+                  {/* </Dropdown> */}
      
      <li className="pl-10"><Link to="/Portfolio">Portfolio</Link></li>
      <li className="pl-10">
@@ -148,7 +148,7 @@ const [first, setfirst] = useState(false);
  <Outlet />
  <div className=" lg:flex hidden ml-28 my-11">
    <button className="border border-gray-700 px-8 rounded-lg ">
-     Hire us
+    <Link to=""> Hire us</Link>
    </button>
    <div className="flex border ml-6 px-3 rounded-lg ">
      <img className="size-5 mr-1 mt-[9px]" src={arrow} alt="arrow" />
