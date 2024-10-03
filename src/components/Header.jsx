@@ -125,7 +125,7 @@ const Header = () => {
               <li className='py-3 text-xl '><Link to="/contact">Contact Us</Link></li>
             </ul>
             <div className='grid gap-2'>
-                  <button className='py-1  border rounded-sm border-black '><Link to="/HireusPage" >Hire Us</Link></button>
+                  <button className='py-1  border rounded-sm border-black '><Link to="/Hireus" >Hire Us</Link></button>
                   <button className='py-1  border rounded-sm border-black' > <Link to="/contact"> <ArrowForwardIosIcon className='bg-black text-white rounded-full mr-1 p-1'/>Let's Connect</Link></button>
                 </div>
            </div>
@@ -180,7 +180,7 @@ const Header = () => {
             <div className="w-1/4   h-24 bg-white">
               <div className="bg-[#1c1c1e] w-full h-full rounded-bl-[35px] text-white flex items-center flex-wrap text-sm justify-around gap-1">
                 <button className="px-3  border border-gray-700 rounded-lg h-10">
-                  Hire Us
+                  <Link to="/hireus" >Hire Us</Link>
                 </button>
                 <div className="flex border rounded-xl px-3  ">
                   <button className=" pl-2 h-10" onClick={toggleDrawer}>

@@ -109,7 +109,7 @@ const [first, setfirst] = useState(false);
               <li className='py-3 text-xl '><Link to="/contact">Contact Us</Link></li>
             </ul>
             <div className='grid gap-2'>
-                  <button className='py-1  border rounded-sm '><Link to=""></Link></button>
+                  <button className='py-1  border rounded-sm '><Link to="/Hireus">Hire Us</Link></button>
                   <button className='py-1  border rounded-sm ' > <Link to="/contact"> <ArrowForwardIosIcon className='bg-white text-black rounded-full mr-1 p-1'/>Let's Connect</Link></button>
                 </div>
            </div>
@@ -148,7 +148,7 @@ const [first, setfirst] = useState(false);
  <Outlet />
  <div className=" lg:flex hidden ml-28 my-11">
    <button className="border border-gray-700 px-8 rounded-lg ">
-    <Link to=""> Hire us</Link>
+    <Link to="/Hireus"> Hire us</Link>
    </button>
    <div className="flex border ml-6 px-3 rounded-lg ">
      <img className="size-5 mr-1 mt-[9px]" src={arrow} alt="arrow" />

@@ -58,7 +58,7 @@ export default function Home(){
 
 {/* <HirePricing/> */}
 
-        {/* <Header />
+        <Header />
          <Partners /> 
           <Card2 /> 
       
@@ -74,11 +74,11 @@ export default function Home(){
       <Form1/>
         <Hero />
          <TestCard />
-        <Footer1 />  */}
+        <Footer1 /> 
 {/* <Blogdemo/> */}
 
 {/* <OrbitingCirclesDemo/> */}
-<HireusPage/>
+{/* <HireusPage/> */}
 
         {/* <ContactUs/> */}
   {/* {/* <PhoneNumberField/> */}
