@@ -20,7 +20,7 @@ const Services1 = () => {
   <div class="lg:flex lg:gap-0 grid grid-cols-1 gap-10 lg:pt-5 justify-between lg:mx-[4rem] ">
     <div class="w-[10%] pr-2"><div class="h-8 w-3 rounded-br-full rounded-ss-full bg-white"></div></div>
     <div class="w-[70%] text-xs md:text-lg lg:text-2xl lg:ml-[10rem]">
-      <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Web Development 
+      <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Digital Enterprise 
       <p className='lg:text-[1rem] lg:font-semibold leading-10'> Crafting Digital Masterpieces (No Paintbrush Required)
       </p>
       </h3>

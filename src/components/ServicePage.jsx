@@ -596,13 +596,13 @@ const ServicePage = () => {
  </div>
 
 
-<div className='bg-[#1c1c1e] h-full w-full'>
+<div className='bg-[#1c1c1e] w-full'>
 <div className='fontTest text-white pt-20 lg:ml-20 ml-5'>
-    <h1 className='lg:text-6xl text-2xl  font-bold'>Industries </h1> <br />
+    <h1 className='lg:text-[4rem] text-2xl  font-bold'>Industries </h1> <br />
     <p className='font-light '>Discover Our Diverse Industry Partnerships</p>
 </div>
 
-<div className=' mt-10 lg:ml-20 ml-10 mr-20 grid grid-cols-1 lg:grid  gap-5 lg:grid-cols-3  lg:gap-20  justify-evenly'>
+<div className=' mt-10 lg:ml-20 lg: ml-10 mr-20 grid grid-cols-1 lg:grid  gap-5 lg:grid-cols-3  lg:gap-20  justify-evenly'>
     <div className='bg-white text-3xl font-bold h-56 w-80 rounded-xl border'>
         <img className='rounded-t-xl' src="https://unsplash.it/800/400/?random" alt="" />
        <h1 className=' ml-24 mt-3 '>Fashion </h1>
