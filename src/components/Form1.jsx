@@ -5,12 +5,12 @@ const Form1 = () => {
   return (
 
     <>
-    <div className='bg-[#1c1c1e] fontTest lg:pt- pb-10 px-[5.5rem]  '>
+    <div className='bg-[#1c1c1e] fontTest lg:pt- pb-10 lg:px-[5.5rem] px-[1rem] '>
     <h1 className='text-4xl md:text-[4rem] lg:text-[4rem] text-white font-semibold p- md:pt-10 md:ml- lg:'>
         Let's Connect
     </h1>
     <form action='#'>
-        <div className='flex flex-col md:flex-row lg:ml-0 outline-none justify-between md:justify- gap- md:gap- lg:gap- mt-8 md:mt-12 '>
+        <div className='flex flex-col md:flex-row lg:ml-0 outline-none justify-between md:justify- gap-7 md:gap- lg:gap- mt-8 md:mt-12 '>
             <input
                 type='text'
                 placeholder='What is your name ?'
