@@ -157,7 +157,7 @@ const [first, setfirst] = useState(false);
  </div>
 
  <div 
-        className={`fixed top-0 right-0 h-full w-[70%] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40 flex`}>
+        className={`fixed top-0 right-0 h-full w-[65%] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40 flex`}>
          
          {/* ml-[1000px] */}
         
@@ -226,11 +226,16 @@ Phone no. :- +44 7470994018 <br />
                    
           {/* w-[850px] */}
           
-          <div className='p-6 flex-1 mx-20 w-[850px]   bg-white text-black overflow-y-auto overflow-x-hidden '>
-            <div className='flex justify-between  items-center  mb-6'>
-              <h1 className="ml-3">Platform of Your Project?</h1>
-              <img className='h-6 mr-3 w-6 cursor-pointer' src={cancel} alt="Cancel" onClick={toggleDrawer} />
-            </div>
+          <div className="p-6 flex-1 w-[850px]   bg-white text-black overflow-y-auto overflow-x-hidden ">
+                        <div className="flex justify-between  items-center  mb-6">
+                          <h1 className="ml-3">Platform of Your Project?</h1>
+                          <img
+                            className="h-6 mr-3 w-6 cursor-pointer"
+                            src={cancel}
+                            alt="Cancel"
+                            onClick={toggleDrawer}
+                          />
+                        </div>
 
             <div className='mt-3 flex gap-5  justify-evenly'>
         <button className=' shadow-box font-light text-sm items-center   h-24 w-32  border-gray-500 shadow rounded-lg'>

@@ -187,7 +187,7 @@ const Header = () => {
                     <ChevronRightOutlinedIcon  className="bg-white text-black rounded-full "  fontSize="inherit"/> Let's Connect
                   </button>
                   <div
-                    className={`fixed top-0 right-0 h-full w-[60%] transform ${
+                    className={`fixed top-0 right-0 h-full w-[65%] transform ${
                       isOpen ? "translate-x-0" : "translate-x-full"
                     } transition-transform duration-300 ease-in-out z-40 flex`}
                   >
