@@ -157,7 +157,7 @@ const [first, setfirst] = useState(false);
  </div>
 
  <div 
-        className={`fixed top-0 right-0 h-full w-[65%] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40 flex`}>
+        className={`fixed top-0 right-0 h-full w-[62%] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40 flex`}>
          
          {/* ml-[1000px] */}
         
