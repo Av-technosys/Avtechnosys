@@ -25,10 +25,11 @@ const Services3 = () => {
     <div class="w-[10%] pr-2 lg:-ml-[5.1rem] "><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div> */}
 
     <div class="w-[70%] text-xs md:text-lg lg:text-2xl lg:ml-[12rem]">
-      <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Digital Marketing</h3>
-      <p className='lg:text-[1rem] lg:font-semibold'>  We provide intelligent, resilient, and cutting-edge omnichannel{" "}
-             experiences through personalized digital solutions, leveraging{" "} 
-          customer insights to enhance engagement and satisfaction.</p>
+      <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Digital Marketing
+      <p className='lg:text-[1rem] lg:font-semibold leading-10'>Turning Clicks into Fans (and Sales!)
+      </p>
+      </h3>
+      <p className='lg:text-[1rem] lg:font-semibold'> We don’t just want clicks; we want fans! Our strategies are so compelling, your audience will be nodding along, shouting, ‘Yes! This is exactly what I need!’</p>
     </div>
     <div>
       <img src={ImgThree} width="200" />

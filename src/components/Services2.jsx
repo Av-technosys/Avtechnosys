@@ -23,11 +23,11 @@ const Services2 = () => {
     <div class="w-[10%] pr-2 lg:-ml-[4.5rem] "><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div> */}
     
     <div class="w-[70%] text-xs md:text-lg lg:text-2xl lg:ml-[13.5rem]">
-      <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Digital Experience</h3>
-      <p className='lg:text-[1rem] lg:font-semibold'> Creating Digital Products and Experiences Centered Around the 
- User. Our team comprises top-tier creative thinkers, UX architects, 
- and solution finders, dedicated to excelling in Branding, 
- Web/App/Mobile UI/UX. <br /></p>
+      <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Mobile Apps
+      <p className='lg:text-[1rem] lg:font-semibold leading-10'> Your Business, In Their Pockets (And a Dash of Fun)
+      </p>
+      </h3>
+      <p className='lg:text-[1rem] lg:font-semibold'> Let’s create apps that are so engaging, your users will forget they even have friends! <br /></p>
     </div>
     <div>
       <img src={ImgTwo} width="300" />

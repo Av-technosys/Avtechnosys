@@ -93,13 +93,13 @@ const [first, setfirst] = useState(false);
 
 }}/>
 <div 
-        className={`fixed top-0 right-0 h-full ml-[1000px] transform ${first ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40 flex`}>
+         className={`fixed top-0 right-0 h-full ml-[1000px] transform ${first ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40 flex`}>
          <div 
              
-             className=" items-center px-3 py-2 rounded-xl w-[60vw] bg-[#1c1c1e]  border hover:border-gray-800 "
+             className=" items-center px-3 py-2 rounded-xl w-[60vw] bg-white text-black border hover:border-gray-800 "
            >
              <div className='mt-12  text-white pr-3 float-end'>
-             <CancelIcon onClick={()=>setfirst(!first)} />
+             <CancelIcon onClick={()=>setfirst(!first)} className="text-black"/>
              </div>
             <ul className='mt-16 ml-10'>
               <li className='py-3 text-xl '> <Link to="/company">Company</Link></li>
@@ -109,8 +109,8 @@ const [first, setfirst] = useState(false);
               <li className='py-3 text-xl '><Link to="/contact">Contact Us</Link></li>
             </ul>
             <div className='grid gap-2'>
-                  <button className='py-1  border rounded-sm '><Link to="/hireus">Hire Us</Link></button>
-                  <button className='py-1  border rounded-sm ' > <Link to="/contact"> <ArrowForwardIosIcon className='bg-white text-black rounded-full mr-1 p-1'/>Let's Connect</Link></button>
+                  <button className='py-1  border rounded-sm border-black '><Link to="/Hireus" >Hire Us</Link></button>
+                  <button className='py-1  border rounded-sm border-black' > <Link to="/contact"> <ArrowForwardIosIcon className='bg-black text-white rounded-full mr-1 p-1'/>Let's Connect</Link></button>
                 </div>
            </div>
                
@@ -168,7 +168,7 @@ const [first, setfirst] = useState(false);
             <img className="h-full w-full  " src={bgimg} alt="Background" />
             <div className='absolute inset-0 p-6'>
             <h1 className="text-white font-semibold text-5xl mb-5 "> Our <br /> Offices</h1>
-              <div className='text-sm text-white font-medium space-y-16'>
+              <div className='text-[1rem] text-white font-medium space-y-16'>
                 <div className='flex justify-between'>
                   <div>
                     <p>Jaipur:- Plot no.8, Govind Marg,<br/>
@@ -226,7 +226,7 @@ Phone no. :- +44 7470994018 <br />
                    
           {/* w-[850px] */}
           
-          <div className='p-6 flex-1  bg-white text-black overflow-y-auto overflow-x-hidden '>
+          <div className='p-6 flex-1 mx-20 w-[850px]   bg-white text-black overflow-y-auto overflow-x-hidden '>
             <div className='flex justify-between  items-center  mb-6'>
               <h1 className="ml-3">Platform of Your Project?</h1>
               <img className='h-6 mr-3 w-6 cursor-pointer' src={cancel} alt="Cancel" onClick={toggleDrawer} />
@@ -317,8 +317,10 @@ Phone no. :- +44 7470994018 <br />
             
              </div>
              <textarea className='ml-3 mt-8 text-sm bg-white font-normal border pr-[285px] pb-16 ' placeholder= '   Message'></textarea>
-             <button className=' px-5 py-3 border rounded-xl mt-3 float-end text-white bg-indigo-600 
-//              '>Submit</button>
+             
+              <button className=' px-5 py-3 border rounded-xl mt-3 float-end text-white bg-indigo-600 '>Submit</button>
+             
+             
          </form>
           </div>
         </div>

@@ -7,14 +7,12 @@ const Footer1 = () => {
     <footer className=' fontTest bg-[#1c1c1e] lg:pt text-white'>
       <div className='p-6 lg:pb-[4rem] '>
         <h4 className='font-semibold lg:text[4rem] text-2xl md:text-6xl py-3 lg:py-0 ml-3 lg:ml-[3.5rem]'>Contact Us</h4>
-        <h6 className='text-2xl  lg:ml-[3.2rem] lg:text-[5rem] lg:pt-[5.5rem] text-[#787878] py-6'>sales@avtechnosys.com</h6>
+        <h6 className='text-2xl  lg:ml-[3.2rem] lg:text-[5rem] lg:mt-[5.5rem] text-[#787878] py-6 hover:text-white duration-300'>sales@avtechnosys.com</h6>
       </div>
       <hr />
       <div className='flex fontTest flex-col md:flex-row p-6 text-[1rem] font-semibold space-y-5 md:space-y-0'>
         <div className='md:w-1/2 flex items-center'>
-          <p className='md:w-4/5 lg:ml-32'>It takes more than just a brilliant idea to transform <br />
-            it into the greatest solution, you also need the <br />
-            proper team to help you realize your vision. <br /></p>
+          <p className='md:w- lg:ml-14'>AV Technosys isn’t your typical tech company – we’re the crew that flips the script on what’s possible. We take your biggest ideas and turn them into digital experiences that make people stop, stare, and scroll back. </p>
         </div>
         <div className='w-full md:w-1/2 flex justify-between md:justify-around'>
           <div className='flex relative'>

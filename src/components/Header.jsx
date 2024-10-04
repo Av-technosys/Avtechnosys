@@ -155,17 +155,13 @@ const Header = () => {
                   <li className="">
                     <Link to="/company">Company</Link>
                   </li>
-                  <Dropdown
-                    menu={{
-                    
-                    }}
-                  >
+                  
                     <li className=" ">
                       {/* <li className=" px-4"> */}
                       <Link to="/Services">Services</Link>
-                      {/* Services <DownOutlined  /> */}
+                      
                     </li>
-                  </Dropdown>
+                  
 
                   <li className=""><Link to="/Portfolio">Portfolio</Link></li>
                   {/* <li className="px-4">Portfolio</li> */}
@@ -191,7 +187,7 @@ const Header = () => {
                     <ChevronRightOutlinedIcon  className="bg-white text-black rounded-full "  fontSize="inherit"/> Let's Connect
                   </button>
                   <div
-                    className={`fixed top-0 right-0 h-full w-[70%] transform ${
+                    className={`fixed top-0 right-0 h-full w-[60%] transform ${
                       isOpen ? "translate-x-0" : "translate-x-full"
                     } transition-transform duration-300 ease-in-out z-40 flex`}
                   >
@@ -208,7 +204,7 @@ const Header = () => {
                             {" "}
                             Our <br /> Offices
                           </h1>
-                          <div className="text-sm text-white font-medium space-y-16">
+                          <div className="text-[1rem] text-white font-medium space-y-16">
                             <div className="flex justify-between">
                               <div>
                                 <p>
@@ -298,7 +294,7 @@ Phone no. :- +44 7470994018 <br />
                         </div>
                       </div>
 
-                      <div className="p-6 flex-1  bg-white text-black overflow-y-auto overflow-x-hidden ">
+                      <div className="p-6 flex-1 w-[850px]   bg-white text-black overflow-y-auto overflow-x-hidden ">
                         <div className="flex justify-between  items-center  mb-6">
                           <h1 className="ml-3">Platform of Your Project?</h1>
                           <img
@@ -444,12 +440,7 @@ Phone no. :- +44 7470994018 <br />
                 </span>
               </h1>
               <p className="lg:mt-[6rem] mt-10 text-[1rem]  text-black ml-10">
-                Our committed team is always available to help you maximize the
-                benefits of using Appraised. <br />
-                We provide support for both UK and US time zones, inclusive
-                success plans, and immediate <br />
-                web chat assistance for managers and employees. Get in touch
-                with us to discover more.{" "}
+              Got a dream that sounds a bit out there? Perfect! At AV Technosys, we specialize in <br />turning the ‘Wait, what?!’ into ‘Wow, no way!’ Join us on a wild tech adventure that’s as <br /> fun as it is groundbreaking!
               </p>
             </div>
             <div className=" lg:pl-[1rem]  m-10 text-sm ">

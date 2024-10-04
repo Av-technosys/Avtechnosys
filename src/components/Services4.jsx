@@ -28,10 +28,11 @@ const Services4 = () => {
    <div class="w-[10%] pr-2 lg:-ml-[4.3rem] "><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div>
    <div class="w-[10%] pr-2 lg:-ml-[4.3rem] "><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div> */}
    <div class="w-[70%] text-xs md:text-lg lg:text-2xl lg:ml-[11rem]">
-     <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Digital Innovation</h3>
-     <p className='lg:text-[1rem] lg:font-semibold'>  Harnessing state-of-the-art technology, innovative 
-             ideation, and the prowess of digital innovation to drive 
-             forward next-generation business transformation.</p>
+     <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>UI/UX Design
+     <p className='lg:text-[1rem] lg:font-semibold leading-10'> Design That Dazzles (Like a Unicorn in a Tutu)
+     </p>
+     </h3>
+     <p className='lg:text-[1rem] lg:font-semibold'>  Our designs are not just pretty; they’re user-friendly and functionally fabulous! Let’s dazzle your users and make them say, ‘Whoa, I need this in my life!’</p>
    </div>
    <div>
      <img src={ImgFour} width="300" />

@@ -20,13 +20,11 @@ const Services1 = () => {
   <div class="lg:flex lg:gap-0 grid grid-cols-1 gap-10 lg:pt-5 justify-between lg:mx-[4rem] ">
     <div class="w-[10%] pr-2"><div class="h-8 w-3 rounded-br-full rounded-ss-full bg-white"></div></div>
     <div class="w-[70%] text-xs md:text-lg lg:text-2xl lg:ml-[10rem]">
-      <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Digital Enterprise</h3>
-      <p className='lg:text-[1rem] lg:font-semibold'> We specialize in optimizing and upgrading the functionality and{" "}
-            
-            performance of your mobile, web, and desktop applications, 
-            leveraging contemporary programming languages and platforms to{" "}
-           
-            ensure enhanced value and seamless migration. <br /></p>
+      <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Web Development 
+      <p className='lg:text-[1rem] lg:font-semibold leading-10'> Crafting Digital Masterpieces (No Paintbrush Required)
+      </p>
+      </h3>
+      <p className='lg:text-[1rem] lg:font-semibold'> Your website is your digital stage! We make it bold, fast, and so stunning it’ll leave your visitors questioning their life choices! <br /></p>
     </div>
     <div>
       <img src={ImgOne} width="300" />

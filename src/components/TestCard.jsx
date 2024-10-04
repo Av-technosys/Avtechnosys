@@ -29,9 +29,9 @@ const ImageWithBorders = () => {
         activeSlideIndex={activeSlide}
         onRequestChange={setActiveSlide}
       >
-        <Card name="— Earl Duncan" desgination="S4 Digi, Digital Marketing" desc="AV Technosys helped us turn our ideas into a functional digital solution. Their team was reliable and supportive throughout the process" profileImg={user1} />
-        <Card name="— Nitin Mathur" desgination="Tavaga, Stock Consulatncy" desc="Our app has significantly improved user engagement. The AV Technosys team delivered a quality product that met our needs efficiently." profileImg={user3} />
-        <Card name="— Prateek Mathur" desgination="Saaskart, Saas Company" desc= "We threw some wild ideas at AV Technosys, and they turned them into features we didn’t even know we needed! Fast, efficient, and a blast to work with." profileImg={user2} />
+        <Card name="— Earl" desgination="S4 Digi, Digital Marketing" desc="AV Technosys helped us turn our ideas into a functional digital solution. Their team was reliable and supportive throughout the process" profileImg={user1} />
+        <Card name="— Nitin" desgination="Tavaga, Stock Consulatncy" desc="Our app has significantly improved user engagement. The AV Technosys team delivered a quality product that met our needs efficiently." profileImg={user3} />
+        <Card name="— Prateek" desgination="Saaskart, Saas Company" desc= "We threw some wild ideas at AV Technosys, and they turned them into features we didn’t even know we needed! Fast, efficient, and a blast to work with." profileImg={user2} />
 
       </Marquee>
     </>
@@ -53,7 +53,7 @@ const Card = ({ desc, name, desgination, profileImg }) => {
         <div class="absolute right-2 top-2 rounded-sm h-[210px] border-l-4"></div>
         <div class="absolute left-2 bottom-2 rounded-sm w-[210px] border-t-4"></div>
         <div class="absolute left-2 bottom-2 rounded-sm h-[210px] border-r-4"></div>
-        <img  src={profileImg} alt="" className="w-[80%]" />
+        <img  src={profileImg} alt="" className="" />
           
       </div>
       <div className="bg-[#1c1c1e] size-fit absolute left- top-52  overflow-hidden">

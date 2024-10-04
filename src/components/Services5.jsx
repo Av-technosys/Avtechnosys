@@ -38,8 +38,11 @@ const Services5 = () => {
    <div class="w-[10%] pr-2 lg:-ml-[4.3rem] "><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div>
    <div class="w-[10%] pr-2 lg:-ml-[4.3rem] "><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div> */}
    <div class="w-[70%] text-xs md:text-lg lg:text-2xl lg:ml-[10rem]">
-     <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Cloud Transformation</h3>
-     <p className='lg:text-[1rem] lg:font-semibold lg:pt-10'> Our enterprise cloud consulting services priotize operational excellence, Security, Reliability, Performance, Efficiency, and cost-optimization, </p>
+     <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Cloud & AI/ML
+     <p className='lg:text-[1rem] lg:font-semibold leading-10'> Scalable & Secure (Like a Fortress Made of Rainbows!)
+     </p>
+     </h3>
+     <p className='lg:text-[1rem] lg:font-semibold lg:pt-10'>Take your infrastructure to the cloud like a boss! Our scalable solutions grow with you, keeping everything safe and sound– no matter what comes your way!. </p>
    </div>
    <div>
      <img src={ImgFive} width="300" />
