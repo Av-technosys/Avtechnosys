@@ -298,7 +298,7 @@ Phone no. :- +44 7470994018 <br />
                         </div>
                       </div>
 
-                      <div className="p-6 flex-1 w-[850px] bg-white text-black overflow-y-auto overflow-x-hidden ">
+                      <div className="p-6 flex-1  bg-white text-black overflow-y-auto overflow-x-hidden ">
                         <div className="flex justify-between  items-center  mb-6">
                           <h1 className="ml-3">Platform of Your Project?</h1>
                           <img
