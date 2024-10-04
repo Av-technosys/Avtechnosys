@@ -109,7 +109,7 @@ const [first, setfirst] = useState(false);
               <li className='py-3 text-xl '><Link to="/contact">Contact Us</Link></li>
             </ul>
             <div className='grid gap-2'>
-                  <button className='py-1  border rounded-sm '><Link to="/Hireus">Hire Us</Link></button>
+                  <button className='py-1  border rounded-sm '><Link to="/hireus">Hire Us</Link></button>
                   <button className='py-1  border rounded-sm ' > <Link to="/contact"> <ArrowForwardIosIcon className='bg-white text-black rounded-full mr-1 p-1'/>Let's Connect</Link></button>
                 </div>
            </div>
@@ -148,7 +148,7 @@ const [first, setfirst] = useState(false);
  <Outlet />
  <div className=" lg:flex hidden ml-28 my-11">
    <button className="border border-gray-700 px-8 rounded-lg ">
-    <Link to="/Hireus"> Hire us</Link>
+    <Link to="/hireus"> Hire us</Link>
    </button>
    <div className="flex border ml-6 px-3 rounded-lg ">
      <img className="size-5 mr-1 mt-[9px]" src={arrow} alt="arrow" />
@@ -157,17 +157,18 @@ const [first, setfirst] = useState(false);
  </div>
 
  <div 
-        className={`fixed top-0 right-0 h-full ml-[1000px] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40 flex`}>
-        
+        className={`fixed top-0 right-0 h-full w-[70%] transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40 flex`}>
+         
+         {/* ml-[1000px] */}
         
         <div className='relative h-full flex flex-row'>
           
          
           <div className=' relative  w-]'>
-            <img className="h-full w-full " src={bgimg} alt="Background" />
+            <img className="h-full w-full  " src={bgimg} alt="Background" />
             <div className='absolute inset-0 p-6'>
             <h1 className="text-white font-semibold text-5xl mb-5 "> Our <br /> Offices</h1>
-              <div className='text-sm text-white font-medium space-y-4'>
+              <div className='text-sm text-white font-medium space-y-16'>
                 <div className='flex justify-between'>
                   <div>
                     <p>Jaipur:- Plot no.8, Govind Marg,<br/>
@@ -181,15 +182,35 @@ const [first, setfirst] = useState(false);
                 
                 <div className='flex justify-between'>
                   <div>
-                    <p>Jaipur:- Plot no.8, Govind Marg,<br/>
+                    <p>
+                    M01, AL Mulla Building 2, <br />
+Near Burj Nahar Mall, Deira, Dubai <br />
+Phone no. :- +971 521665467 <br />
+                      {/* Jaipur:- Plot no.8, Govind Marg,<br/>
                     Block-B, Malviya Nagar, Jaipur,<br/>
                     Rajasthan, 302017<br/>
-                    Phone no.:- +91 9983034111</p>
+                    Phone no.:- +91 9983034111 */}
+                    </p>
                   </div>
                   <img className='h-16 w-16 rounded-full' src={bg1} alt="Office" />
                 </div>
                 <br />
                 <div className='flex justify-between'>
+                  <div>
+                    <p>
+                    1-3 St Nicholas Street Worcester <br /> 
+WR1 1UW, United Kingdom  <br />
+Phone no. :- +44 7470994018 <br />
+                      {/* Jaipur:- Plot no.8, Govind Marg,<br/>
+                    Block-B, Malviya Nagar, Jaipur,<br/>
+                    Rajasthan, 302017<br/>
+                    Phone no.:- +91 9983034111 */}
+                    </p>
+                  </div>
+                  <img className='h-16 w-16 rounded-full' src={bg1} alt="Office" />
+                </div>
+                <br />
+                {/* <div className='flex justify-between'>
                   <div>
                     <p>Jaipur:- Plot no.8, Govind Marg,<br/>
                     Block-B, Malviya Nagar, Jaipur,<br/>
@@ -197,17 +218,7 @@ const [first, setfirst] = useState(false);
                     Phone no.:- +91 9983034111</p>
                   </div>
                   <img className='h-16 w-16 rounded-full' src={bg1} alt="Office" />
-                </div>
-                <br />
-                <div className='flex justify-between'>
-                  <div>
-                    <p>Jaipur:- Plot no.8, Govind Marg,<br/>
-                    Block-B, Malviya Nagar, Jaipur,<br/>
-                    Rajasthan, 302017<br/>
-                    Phone no.:- +91 9983034111</p>
-                  </div>
-                  <img className='h-16 w-16 rounded-full' src={bg1} alt="Office" />
-                </div>
+                </div> */}
                 
               </div>
             </div>

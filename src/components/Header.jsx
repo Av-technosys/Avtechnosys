@@ -31,50 +31,54 @@ import CancelIcon from '@mui/icons-material/Cancel';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
 
-const items = [
-  {
-    key: "1",
-    label: (
-      <a target="_blank" rel=" " href=" ">
-        Digital Enterprise
-      </a>
-    ),
-  },
-  {
-    key: "2",
-    label: (
-      <a target="_blank" rel=" " href=" ">
-        Digital Experience
-      </a>
-    ),
-  },
-  {
-    key: "3",
-    label: (
-      <a target="_blank" rel=" " href=" ">
-        Digital Marketing
-      </a>
-    ),
-  },
-  {
-    key: "4",
+// const items = [
+//   {
+//     key: "1",
+//     label: (
+//       <a target="_blank" rel=" " href=" ">
+//         Digital Enterprise
+//       </a>
+//     ),
+//   },
+//   {
+//     key: "2",
+//     label: (
+//       <a target="_blank" rel=" " href=" ">
+//         Digital Experience
+//       </a>
+//     ),
+//   },
+//   {
+//     key: "3",
+//     label: (
+//       <a target="_blank" rel=" " href=" ">
+//         Digital Marketing
+//       </a>
+//     ),
+//   },
+//   {
+//     key: "4",
 
-    label: (
-      <a target="_blank" rel=" " href=" ">
-        Digital Innovation
-      </a>
-    ),
-  },
-  {
-    key: "5",
+//     label: (
+//       <a target="_blank" rel=" " href=" ">
+//         Digital Innovation
+//       </a>
+//     ),
+//   },
+//   {
+//     key: "5",
 
-    label: (
-      <a target="_blank" rel=" " href=" ">
-        Cloud Transformation
-      </a>
-    ),
-  },
-];
+//     label: (
+//       <a target="_blank" rel=" " href=" ">
+//         Cloud Transformation
+//       </a>
+//     ),
+//   },
+// ];
+
+const handleEmailClick = () => {
+  window.location.href = `mailto:sales@avtechnosys.com?subject=Subject&body=Body`;
+};
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -158,7 +162,7 @@ const Header = () => {
                   >
                     <li className=" ">
                       {/* <li className=" px-4"> */}
-                      <Link to="/Services">Services</Link><KeyboardArrowDownIcon fontSize="inherit" />
+                      <Link to="/Services">Services</Link>
                       {/* Services <DownOutlined  /> */}
                     </li>
                   </Dropdown>
@@ -187,10 +191,11 @@ const Header = () => {
                     <ChevronRightOutlinedIcon  className="bg-white text-black rounded-full "  fontSize="inherit"/> Let's Connect
                   </button>
                   <div
-                    className={`fixed top-0 right-0 h-full ml-[1000px] transform ${
+                    className={`fixed top-0 right-0 h-full w-[70%] transform ${
                       isOpen ? "translate-x-0" : "translate-x-full"
                     } transition-transform duration-300 ease-in-out z-40 flex`}
                   >
+                    {/* ml-[1000px] */}
                     <div className="relative h-full flex flex-row">
                       <div className=" relative  w-]">
                         <img
@@ -203,7 +208,7 @@ const Header = () => {
                             {" "}
                             Our <br /> Offices
                           </h1>
-                          <div className="text-sm text-white font-medium space-y-4">
+                          <div className="text-sm text-white font-medium space-y-16">
                             <div className="flex justify-between">
                               <div>
                                 <p>
@@ -227,13 +232,19 @@ const Header = () => {
                             <div className="flex justify-between">
                               <div>
                                 <p>
-                                  Jaipur:- Plot no.8, Govind Marg,
+
+
+
+                                M01, AL Mulla Building 2, <br />
+Near Burj Nahar Mall, Deira, Dubai <br />
+Phone no. :- +971 521665467 <br />
+                                  {/* Jaipur:- Plot no.8, Govind Marg,
                                   <br />
                                   Block-B, Malviya Nagar, Jaipur,
                                   <br />
                                   Rajasthan, 302017
                                   <br />
-                                  Phone no.:- +91 9983034111
+                                  Phone no.:- +91 9983034111 */}
                                 </p>
                               </div>
                               <img
@@ -244,6 +255,28 @@ const Header = () => {
                             </div>
                             <br />
                             <div className="flex justify-between">
+                              <div>
+                                <p>
+                                1-3 St Nicholas Street Worcester 
+WR1 1UW, United Kingdom <br />
+Phone no. :- +44 7470994018 <br />
+                                  {/* Jaipur:- Plot no.8, Govind Marg,
+                                  <br />
+                                  Block-B, Malviya Nagar, Jaipur,
+                                  <br />
+                                  Rajasthan, 302017
+                                  <br />
+                                  Phone no.:- +91 9983034111 */}
+                                </p>
+                              </div>
+                              <img
+                                className="h-16 w-16 rounded-full"
+                                src={bg1}
+                                alt="Office"
+                              />
+                            </div>
+                            <br />
+                            {/* <div className="flex justify-between">
                               <div>
                                 <p>
                                   Jaipur:- Plot no.8, Govind Marg,
@@ -260,26 +293,7 @@ const Header = () => {
                                 src={bg1}
                                 alt="Office"
                               />
-                            </div>
-                            <br />
-                            <div className="flex justify-between">
-                              <div>
-                                <p>
-                                  Jaipur:- Plot no.8, Govind Marg,
-                                  <br />
-                                  Block-B, Malviya Nagar, Jaipur,
-                                  <br />
-                                  Rajasthan, 302017
-                                  <br />
-                                  Phone no.:- +91 9983034111
-                                </p>
-                              </div>
-                              <img
-                                className="h-16 w-16 rounded-full"
-                                src={bg1}
-                                alt="Office"
-                              />
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -439,14 +453,14 @@ const Header = () => {
               </p>
             </div>
             <div className=" lg:pl-[1rem]  m-10 text-sm ">
-              <button className=" border rounded-lg  bg-[#4643cc] text-white hover:bg-white hover:text-black  border-black font-medium p-3 ">
+              <button onClick={handleEmailClick} className=" border rounded-lg  bg-[#4643cc] text-white hover:bg-white hover:text-black  border-black font-medium p-3 ">
                 Talk To Expert
               </button>
-              <button
+              <button 
                 className=" lg:ml-10 ml-[0.2rem] border rounded-lg font-medium text-black hover:bg-[#4643cc]
             hover:text-white border-black p-3"
               >
-                Book Service
+                <Link to="/contact">Book Service</Link>
               </button>
             </div>
           </div>

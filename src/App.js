@@ -29,6 +29,7 @@ import ServicePage from './components/ServicePage';
 import { useState ,useEffect } from 'react';
 
 import {RotateLoader } from 'react-spinners';
+import HireusPage from './components/HireusPage';
 
 
 const App = () => {
@@ -58,6 +59,7 @@ const App = () => {
         <Route path="Services" element={<ServicePage />} />
         <Route path="contact" element={<ContactUs />} />
         <Route path="company" element={<CompanyPage />} />
+        <Route path="hireus" element={<HireusPage />} />
       </Routes>
     </BrowserRouter>
       }
