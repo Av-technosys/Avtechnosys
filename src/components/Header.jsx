@@ -104,7 +104,7 @@ const Header = () => {
           <img className="" src={avlogoblack} alt="" />
         </div>
           
-        <div className='lg:hidden absolute right-10 top-14 ' onClick={togglemenu}>
+        <div className='lg:hidden absolute right-12 top-[4.5rem]' onClick={togglemenu}>
           <MenuIcon sx={{
    fontSize: '30px',
    color: '#000000',

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Outlet, Link } from "react-router-dom";
 import "./Footer.css";
 import logo from "../Assets/Logo 1.png";
@@ -21,6 +22,169 @@ const handleEmailClick = () => {
 };
 
 const ContactUs = () => {
+  // const form = useRef();
+  // const [errors, setErrors] = useState({});
+
+  // const validateForm = (formData) => {
+  //   let errors = {};
+
+  //   // Check if the first name is empty
+  //   if (!formData.get('first_name')) {
+  //     errors.first_name = "First name is required";
+  //   }
+
+  //   // Check if the last name is empty
+  //   if (!formData.get('last_name')) {
+  //     errors.last_name = "Last name is required";
+  //   }
+
+  //   // Check if the company name is empty
+  //   if (!formData.get('company_name')) {
+  //     errors.company_name = "Company name is required";
+  //   }
+
+  //   // Check if the email is empty or invalid
+  //   const email = formData.get('email');
+  //   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email validation regex
+  //   if (!email) {
+  //     errors.email = "Email is required";
+  //   } else if (!emailRegex.test(email)) {
+  //     errors.email = "Invalid email address";
+  //   }
+
+  //   // Check if the phone number is empty
+  //   const phone = formData.get('phone');
+  //   const phoneRegex = /^[0-9]{10}$/; // Simple phone number validation (10 digits)
+  //   if (!phone) {
+  //     errors.phone = "Phone number is required";
+  //   } else if (!phoneRegex.test(phone)) {
+  //     errors.phone = "Invalid phone number";
+  //   }
+
+  //   // Check if the message is empty
+  //   if (!formData.get('message')) {
+  //     errors.message = "Message is required";
+  //   }
+
+  //   return errors;
+  // };
+
+  // // Function to send email using EmailJS
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   const formData = new FormData(form.current);
+  //   const validationErrors = validateForm(formData);
+
+  //   if (Object.keys(validationErrors).length > 0) {
+  //     setErrors(validationErrors);
+  //     return;
+  //   }
+
+  //   emailjs
+  //     .sendForm('service_tz902dr', 'template_bjzmbng', form.current, {
+  //       publicKey: '7e3pjCOJgYjLD4Mu-',
+  //     })
+  //     .then(
+  //       () => {
+  //         console.log('SUCCESS!');
+  //         form.current.reset(); // Clear form fields after submission
+  //         setErrors({}); // Clear validation errors
+  //       },
+  //       (error) => {
+  //         console.log('FAILED...', error.text);
+  //       }
+  //     );
+  // };
+
+
+
+
+
+
+
+
+  const form = useRef();
+const [errors, setErrors] = useState({});
+
+const validateForm = (formData) => {
+  let errors = {};
+
+  // Validate first name
+  if (!formData.get('first_name')) {
+    errors.first_name = "First name is required";
+  }
+
+  // Validate last name
+  if (!formData.get('last_name')) {
+    errors.last_name = "Last name is required";
+  }
+
+  // Validate company name
+  if (!formData.get('from_company')) {
+    errors.company_name = "Company name is required";
+  }
+
+  // Validate email
+  const email = formData.get('from_email');
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!email) {
+    errors.email = "Email is required";
+  } else if (!emailRegex.test(email)) {
+    errors.email = "Invalid email address";
+  }
+
+  // Validate phone number
+  const phone = formData.get('phone');
+  const phoneRegex = /^[0-9]{10}$/;
+  if (!phone) {
+    errors.phone = "Phone number is required";
+  } else if (!phoneRegex.test(phone)) {
+    errors.phone = "Invalid phone number";
+  }
+
+  // Validate message
+  if (!formData.get('message')) {
+    errors.message = "Message is required";
+  }
+
+  // Validate checkbox
+  const checkbox = formData.get('privacy_policy');
+  if (!checkbox) {
+    errors.checkbox = "You must agree to the Privacy Policy.";
+  }
+
+  return errors;
+};
+
+// Function to send email using EmailJS
+const sendEmail = (e) => {
+  e.preventDefault();
+  const formData = new FormData(form.current);
+  const validationErrors = validateForm(formData);
+
+  if (Object.keys(validationErrors).length > 0) {
+    setErrors(validationErrors);
+    return;
+  }
+
+  emailjs
+    .sendForm('service_tz902dr', 'template_bjzmbng', form.current, {
+      publicKey: '7e3pjCOJgYjLD4Mu-',
+    })
+    .then(
+      () => {
+        console.log('SUCCESS!');
+        form.current.reset(); // Clear form fields after submission
+        setErrors({}); // Clear validation errors
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+      }
+    );
+};
+
+
 
   return (
     <>
@@ -33,9 +197,13 @@ const ContactUs = () => {
             <VideoPlayer />
           </div>
           <div className="bg-[#1c1c1e] lg:w-1/2">
-            <form className="fontTest" action="">
+
+
+
+            <form className="fontTest" ref={form} onSubmit={sendEmail}>
               <div className="lg:flex ">
                 <div className="lg:ml-10 lg:mt-0 mt-5 ">
+
                   <label className="text-white text-sm " for="fname">
                     First Name
                   </label>
@@ -44,11 +212,13 @@ const ContactUs = () => {
                     className="text-sm mt-2 p-1  lg:w-56 w-72  border-gray-600 border rounded-lg bg-[#1c1c1e] "
                     type="text"
                     id="fname"
-                    name="fname"
+                    name="from_name"
                     placeholder="Enter your first name"
                     required
                   />
+                  {errors.first_name && <span className="text-red-500">{errors.first_name}</span>}
                 </div>
+
                 <br />
                 <div className=" lg:ml-[40px]">
                   <label className="text-white text-sm " for="lname">
@@ -59,10 +229,12 @@ const ContactUs = () => {
                     className="text-sm mt-2 p-1 lg:w-56 w-72 rounded-lg border-gray-600 border bg-[#1c1c1e]"
                     type="text"
                     id="lname"
-                    name="lname"
+                    name="from_name"
                     placeholder="Enter your last name"
                     required
                   />
+                              {errors.last_name && <span className="text-red-500">{errors.last_name}</span>}
+
                 </div>
               </div>
 
@@ -75,8 +247,11 @@ const ContactUs = () => {
                 <input
                   className="text-sm mt-2 p-1 rounded-lg lg:w-[38vw] w-[69vw]  border-gray-600 border bg-[#1c1c1e]"
                   type="text"
+                  name="from_company"
                   placeholder="Enter your company name"
                 />
+                          {errors.company_name && <span className="text-red-500">{errors.company_name}</span>}
+
               </div>
 
               <div className="lg:ml-10  lg:w-11/12   mt-8">
@@ -88,12 +263,17 @@ const ContactUs = () => {
                 <input
                   className="text-sm mt-2 p-1 rounded-lg lg:w-[38vw] w-[69vw]  border-gray-600 border bg-[#1c1c1e]"
                   type="text"
+                  name="from_email"
                   placeholder="Enter your email"
                 />
+                          {errors.email && <span className="text-red-500">{errors.email}</span>}
+
               </div>
               <br />
               <div className="text-sm  pt-3">
                 <PhoneNumberField/>
+                {errors.phone && <span className="text-red-500">{errors.phone}</span>}
+
               </div>
 
               <div className="lg:ml-10 mt-8">
@@ -105,8 +285,11 @@ const ContactUs = () => {
                 <input
                   className="text-sm mt-2 pb-20 rounded-lg w-11/12 border-gray-600 border bg-[#1c1c1e]"
                   type="text"
+                  name="message"
                   placeholder="Tell us what we can help you with "
                 />
+                          {errors.message && <span className="text-red-500">{errors.message}</span>}
+
               </div>
               <div className="text-white text-xs lg:ml-10 flex  ">
                 <input
@@ -133,7 +316,7 @@ const ContactUs = () => {
       </div>
 
    {/* map  */}
-   <div className='fontTest lg:pl-[80px] lg:h-[100vh] h-[50vh] lg:pt-0 pt-10 lg:pb-8  bg-[#1c1c1e] font-semibold text-white '>
+   <div className='fontTest lg:pl-[80px] lg:h-[100vh]  lg:pt-0 pt-10 lg:pb-8 pb-10 bg-[#1c1c1e] font-semibold text-white '>
        <h1 className="text-center justify-center lg:text-[4rem] font-semibold text-2xl">
        Get in touch with our team
        </h1>
@@ -182,7 +365,7 @@ const ContactUs = () => {
 </div>
 
 {/* card3 */}
-<div className="relative card card-compact text-white bg-[#1c1c1e]  w-56 border rounded-lg" >
+<div className="relative card card-compact text-white bg-[#1c1c1e] h-48 w-56 border rounded-lg" >
   <figure>
     <img className="w-5 border rounded-sm absolute left-5 top-5 "
       src={Call}
@@ -199,7 +382,7 @@ const ContactUs = () => {
 
 {/* card4 */}
 
-<div className="relative card card-compact text-white bg-[#1c1c1e]  w-56 border rounded-lg" >
+<div className="relative card card-compact text-white bg-[#1c1c1e] h-48 w-56 border rounded-lg" >
   <figure>
     <img className="w-5 border rounded-sm absolute left-5 top-5 "
       src={Location}
@@ -207,7 +390,7 @@ const ContactUs = () => {
   </figure>
   <div className="card-body ml-4">
     <h2 className="card-title mt-16 ">Visit Us</h2>
-    <p className="mt-4">Visit our Office HQ.</p>
+    <p className="mt-4">Visit our Office.</p>
     <div className="card-actions justify-start">
       <button className=" border rounded-lg px-3 py-0.5 mt-2"><a href="https://www.google.com/maps/place/AV+Technosys/@26.8556917,75.8163217,15z/data=!4m6!3m5!1s0x396db785410035f5:0xdd22882a4cf4a94!8m2!3d26.8556917!4d75.8163217!16s%2Fg%2F11vwm329f7?entry=ttu&g_ep=EgoyMDI0MDkxMS4wIKXMDSoASAFQAw%3D%3D"  >View on Google Maps</a></button>
     </div>

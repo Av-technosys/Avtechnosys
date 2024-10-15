@@ -39,11 +39,12 @@ const PhoneNumberField = () => {
       </div>
       <div className='lg:ml-10 w-[100%] lg:w-[95%]'>
       <PhoneInput
+      
       className="bg-[#1c1c1e]  "
   defaultCountry="IN"
   placeholder="Enter your phone number"
   country={'in'}
-  
+  name="from_number"
   value={value}
   inputStyle={{background: 'transparent',width:"90%",borderColor:"gray",color:"gray"}}
   dropdownStyle={{background: '#1c1c1e'}}

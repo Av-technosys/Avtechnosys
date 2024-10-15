@@ -44,7 +44,7 @@ const Card = ({ desc, name, desgination, profileImg }) => {
     <div class="lg:flex lg:h-[400] h-72 lg:w-[60vw] w-[130vw]  overflow-hidden lg:mx-10 mx-4 p-4 border-2 rounded-3xl  ">
       <div className="lg:w-[60%] w-[50%] ">
         <p className="text-white text-wrap leading-6  overflow-hidden lg:text-[1rem] lg:font-medium text-xs p-4 mt-5">
-          <FormatQuoteIcon className="-mt-3 -ml-3 rotate-180"/>{desc}<FormatQuoteIcon className="-mt-3 lg:mr-3 mr-0"/> <br />
+          <FormatQuoteIcon className="-mt-3 -ml-3 rotate-180"/>{desc}<FormatQuoteIcon className="-mt-3 lg:mr-3 mr-0"/> <br/>
         </p>
       </div>
       {/* <div class="relative size-72 flex justify-center items-center   overflow-hidden"> */}
