@@ -162,7 +162,7 @@ const HireusPage = () => {
                 >
                   <form action="">
                     <div className="">
-                      <div className="flex justify-between px-[2rem] pt-[2rem]">
+                      <div className="lg:flex lg:justify-between grid grid-cols-1 px-[2rem] pt-[2rem]">
                         <div>
                           <label className="" htmlFor="">
                             First Name
@@ -173,13 +173,14 @@ const HireusPage = () => {
                             type="text"
                             placeholder="   Enter your First name"
                           />
-                        </div>
+                        </div>{" "}
+                        <br />
                         <div>
                           <label htmlFor="">Last Name</label> <br />
                           <input
                             className=" mt-[1rem] pr-20 py-2 border-2 border-black rounded-lg"
                             type="text"
-                            placeholder="   Enter your First name"
+                            placeholder="   Enter your Last name"
                           />
                         </div>
                       </div>

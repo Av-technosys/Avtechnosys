@@ -17,9 +17,9 @@ import "react-modern-drawer/dist/index.css";
 
 import { DownOutlined, SmileOutlined } from "@ant-design/icons";
 import { Dropdown, Space } from "antd";
-import MenuIcon from '@mui/icons-material/Menu';
+import MenuIcon from "@mui/icons-material/Menu";
 import "./Footer.css";
-import avlogo from "../Assets/AV LOGO.svg"
+import avlogo from "../Assets/AV LOGO.svg";
 import logo from "../Assets/Logo 1.png";
 import arrow from "../Assets/rightarrow.png";
 import Input from "./TextCycle";
@@ -27,9 +27,9 @@ import Sidebar from "./Sidebar";
 import { Button, Slider } from "antd";
 import SideDrawer from "./Sidebar";
 import PhoneField from "./PhoneFeild2";
-import CancelIcon from '@mui/icons-material/Cancel';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import ChevronRightOutlinedIcon from '@mui/icons-material/ChevronRightOutlined';
+import CancelIcon from "@mui/icons-material/Cancel";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 
 // const items = [
 //   {
@@ -98,53 +98,82 @@ const Header = () => {
   // };
   return (
     <div className="">
-      <div className="fontTest   bg-[#1c1c1e] p-[2.5rem]">
+      <div className="fontTest   bg-[#1c1c1e] p-[1.5rem]">
         <div className="md:hidden bg-white rounded-t-3xl ">
           <div className=" ml-10">
-          <img className="" src={avlogoblack} alt="" />
-        </div>
-          
-        <div className='lg:hidden absolute right-12 top-[4.5rem]' onClick={togglemenu}>
-          <MenuIcon sx={{
-   fontSize: '30px',
-   color: '#000000',
-   cursor: 'pointer',
-
-}} 
-/>
-<div 
-        className={`fixed top-0 right-0 h-full ml-[1000px] transform ${first ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out z-40 flex`}>
-         <div 
-             
-             className=" items-center px-3 py-2 rounded-xl w-[60vw] bg-white text-black border hover:border-gray-800 "
-           >
-             <div className='mt-12  text-white pr-3 float-end'>
-             <CancelIcon onClick={()=>setfirst(!first)} className="text-black"/>
-             </div>
-            <ul className='mt-16 ml-10'>
-              <li className='py-3 text-xl '> <Link to="/company">Company</Link></li>
-              <li className='py-3 text-xl '><Link to="/Services">Services</Link></li>
-              <li className='py-3 text-xl '><Link to="/Portfolio">Portfolio</Link></li>
-              <li className='py-3 text-xl '><Link to="/Blog">Blog</Link></li>
-              <li className='py-3 text-xl '><Link to="/contact">Contact Us</Link></li>
-            </ul>
-            <div className='grid gap-2'>
-                  <button className='py-1  border rounded-sm border-black '><Link to="/Hireus" >Hire Us</Link></button>
-                  <button className='py-1  border rounded-sm border-black' > <Link to="/contact"> <ArrowForwardIosIcon className='bg-black text-white rounded-full mr-1 p-1'/>Let's Connect</Link></button>
-                </div>
-           </div>
-               
-        </div>
-</div>
-          
+            <img className="" src={avlogoblack} alt="" />
           </div>
-          <hr  className="bg-[#1c1c1e] border border-[#1c1c1e]"/>
+
+          <div
+            className="lg:hidden absolute right-12 top-[3.5rem]"
+            onClick={togglemenu}
+          >
+            <MenuIcon
+              sx={{
+                fontSize: "30px",
+                color: "#000000",
+                cursor: "pointer",
+              }}
+            />
+            <div
+              className={`fixed top-0 right-0 h-full ml-[1000px] transform ${
+                first ? "translate-x-0" : "translate-x-full"
+              } transition-transform duration-300 ease-in-out z-40 flex`}
+            >
+              <div className=" items-center px-3 py-2 rounded-xl w-[60vw] bg-white text-black border hover:border-gray-800 ">
+                <div className="mt-12  text-white pr-3 float-end">
+                  <CancelIcon
+                    onClick={() => setfirst(!first)}
+                    className="text-black"
+                  />
+                </div>
+                <ul className="mt-16 ml-10">
+                  <li className="py-3 text-xl ">
+                    {" "}
+                    <Link to="/company">Company</Link>
+                  </li>
+                  <li className="py-3 text-xl ">
+                    <Link to="/Services">Services</Link>
+                  </li>
+                  <li className="py-3 text-xl ">
+                    <Link to="/Portfolio">Portfolio</Link>
+                  </li>
+                  <li className="py-3 text-xl ">
+                    <Link to="/Blog">Blog</Link>
+                  </li>
+                  <li className="py-3 text-xl ">
+                    <Link to="/contact">Contact Us</Link>
+                  </li>
+                </ul>
+                <div className="grid gap-2">
+                  <button className="py-1  border rounded-sm border-black ">
+                    <Link to="/Hireus">Hire Us</Link>
+                  </button>
+                  <button className="py-1  border rounded-sm border-black">
+                    {" "}
+                    <Link to="/contact">
+                      {" "}
+                      <ArrowForwardIosIcon className="bg-black text-white rounded-full mr-1 p-1" />
+                      Let's Connect
+                    </Link>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr className="bg-[#1c1c1e] border border-[#1c1c1e]" />
         <nav className="hidden md:block bg-[#1c1c1e]">
           <div className="w-full flex">
             <div className="w-1/6 h-24  bg-white ">
               <div className=" bg-[#1c1c1e] w-full h-full flex justify-center items-center rounded-br-[35px]">
-                <Link to="/" ><img className="w-[4.5rem] mb-[1rem] scale-[1.3rem] -mt-2" src={avlogo} alt="" /></Link>
-                
+                <Link to="/">
+                  <img
+                    className="w-[4.5rem] mb-[1rem] scale-[1.3rem] -mt-2"
+                    src={avlogo}
+                    alt=""
+                  />
+                </Link>
               </div>
             </div>
 
@@ -155,15 +184,15 @@ const Header = () => {
                   <li className="">
                     <Link to="/company">Company</Link>
                   </li>
-                  
-                    <li className=" ">
-                      {/* <li className=" px-4"> */}
-                      <Link to="/Services">Services</Link>
-                      
-                    </li>
-                  
 
-                  <li className=""><Link to="/Portfolio">Portfolio</Link></li>
+                  <li className=" ">
+                    {/* <li className=" px-4"> */}
+                    <Link to="/Services">Services</Link>
+                  </li>
+
+                  <li className="">
+                    <Link to="/Portfolio">Portfolio</Link>
+                  </li>
                   {/* <li className="px-4">Portfolio</li> */}
                   <li className="">
                     {/* <li className="px-4"> */} <Link to="/Blog">Blog</Link>
@@ -180,11 +209,15 @@ const Header = () => {
             <div className="w-1/4   h-24 bg-white">
               <div className="bg-[#1c1c1e] w-full h-full rounded-bl-[35px] text-white flex items-center flex-wrap text-sm justify-around gap-1">
                 <button className="px-3  border border-gray-700 rounded-lg h-10">
-                  <Link to="/hireus" >Hire Us</Link>
+                  <Link to="/hireus">Hire Us</Link>
                 </button>
                 <div className="flex border rounded-xl px-3  ">
                   <button className=" pl-2 h-10" onClick={toggleDrawer}>
-                    <ChevronRightOutlinedIcon  className="bg-white text-black rounded-full "  fontSize="inherit"/> Let's Connect
+                    <ChevronRightOutlinedIcon
+                      className="bg-white text-black rounded-full "
+                      fontSize="inherit"
+                    />{" "}
+                    Let's Connect
                   </button>
                   <div
                     className={`fixed top-0 right-0 h-full w-[62%] transform ${
@@ -228,12 +261,9 @@ const Header = () => {
                             <div className="flex justify-between">
                               <div>
                                 <p>
-
-
-
-                                M01, AL Mulla Building 2, <br />
-Near Burj Nahar Mall, Deira, Dubai <br />
-Phone no. :- +971 521665467 <br />
+                                  M01, AL Mulla Building 2, <br />
+                                  Near Burj Nahar Mall, Deira, Dubai <br />
+                                  Phone no. :- +971 521665467 <br />
                                   {/* Jaipur:- Plot no.8, Govind Marg,
                                   <br />
                                   Block-B, Malviya Nagar, Jaipur,
@@ -253,9 +283,9 @@ Phone no. :- +971 521665467 <br />
                             <div className="flex justify-between">
                               <div>
                                 <p>
-                                1-3 St Nicholas Street Worcester 
-WR1 1UW, United Kingdom <br />
-Phone no. :- +44 7470994018 <br />
+                                  1-3 St Nicholas Street Worcester WR1 1UW,
+                                  United Kingdom <br />
+                                  Phone no. :- +44 7470994018 <br />
                                   {/* Jaipur:- Plot no.8, Govind Marg,
                                   <br />
                                   Block-B, Malviya Nagar, Jaipur,
@@ -418,7 +448,6 @@ Phone no. :- +44 7470994018 <br />
                       </div>
                     </div>
                   </div>
-                 
                 </div>
               </div>
             </div>
@@ -432,22 +461,28 @@ Phone no. :- +44 7470994018 <br />
         <div className="bg-[#1c1c1e] ">
           <div className="w-full lg:pb-10 pb-1 bg-white lg:rounded-t-3xl lg:rounded-tl-3xl rounded-br-3xl">
             <div className="lg:pl-[1rem]">
-              <h1 className="lg:text-[4rem] lg:pb-5 text-2xl text-black pl-10 lg:pt-32  pt-5 font-medium">
+              <h1 className="lg:text-[4rem] lg:pb-5 text-2xl text-black lg:pl-10 pl-5 lg:pt-32  pt-5 font-medium">
                 Our Services <br />
                 <span className="text-[#4643cc] lg:text-[4rem] h-5 font-semibold">
                   {" "}
                   <Input />
                 </span>
               </h1>
-              <p className="lg:mt-[6rem] mt-10 text-[1rem]  text-black ml-10">
-              Got a dream that sounds a bit out there? Perfect! At AV Technosys, we specialize in <br />turning the ‘Wait, what?!’ into ‘Wow, no way!’ Join us on a wild tech adventure that’s as <br /> fun as it is groundbreaking!
+              <p className="lg:mt-[6rem] mt-10 text-[1rem]  text-black lg:ml-10 ml-5">
+                Got a dream that sounds a bit out there? Perfect! At AV
+                Technosys, we specialize in <br />
+                turning the ‘Wait, what?!’ into ‘Wow, no way!’ Join us on a wild
+                tech adventure that’s as <br /> fun as it is groundbreaking!
               </p>
             </div>
             <div className=" lg:pl-[1rem]  m-10 text-sm ">
-              <button onClick={handleEmailClick} className=" border rounded-lg  bg-[#4643cc] text-white hover:bg-white hover:text-black  border-black font-medium p-3 ">
+              <button
+                onClick={handleEmailClick}
+                className=" border rounded-lg  bg-[#4643cc] text-white hover:bg-white hover:text-black  border-black font-medium p-3 "
+              >
                 Talk To Expert
               </button>
-              <button 
+              <button
                 className=" lg:ml-10 ml-[0.2rem] border rounded-lg font-medium text-black hover:bg-[#4643cc]
             hover:text-white border-black p-3"
               >
