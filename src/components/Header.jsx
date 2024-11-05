@@ -77,7 +77,7 @@ import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
 // ];
 
 const handleEmailClick = () => {
-  window.location.href = `mailto:sales@avtechnosys.com?subject=Subject&body=Body`;
+  window.location.href = `mailto:sales@avtechnosys.com?`;
 };
 
 const Header = () => {
@@ -241,11 +241,10 @@ const Header = () => {
                             <div className="flex justify-between">
                               <div>
                                 <p>
-                                  Jaipur:- Plot no.8, Govind Marg,
+                                  238, 2nd floor, Purani Chungi,
                                   <br />
-                                  Block-B, Malviya Nagar, Jaipur,
-                                  <br />
-                                  Rajasthan, 302017
+                                  DCM Road, Vaishali Nagar, <br />
+                                  Jaipur, Rajasthan, 302017
                                   <br />
                                   Phone no.:- +91 9983034111
                                 </p>
@@ -471,7 +470,7 @@ const Header = () => {
               <p className="lg:mt-[6rem] mt-10 text-[1rem]  text-black lg:ml-10 ml-5">
                 Got a dream that sounds a bit out there? Perfect! At AV
                 Technosys, we specialize in <br />
-                turning the ‘Wait, what?!’ into ‘Wow, no way!’ Join us on a wild
+                turning the ‘Wait, what?’ into ‘Wow, no way!’ Join us on a wild
                 tech adventure that’s as <br /> fun as it is groundbreaking!
               </p>
             </div>
