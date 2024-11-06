@@ -13,6 +13,11 @@ import Form1 from "./Form1";
 import Hero from "./Hero";
 import Footer1 from "./Footer1";
 import TestCard from "./TestCard";
+import frame1 from "../Assets/frame1.png";
+import frame2 from "../Assets/frame2.png";
+import frame3 from "../Assets/frame3.png";
+import frame4 from "../Assets/frame4.png";
+import frame5 from "../Assets/frame5.png";
 
 const text = (
   <div className="">
@@ -655,11 +660,15 @@ const items = [
   {
     key: "1",
     label: (
-      <div className="  flex lg:text-6xl text-2xl  relative font-semibold h-96 ">
-        <h1 className="pt-72 absolute "> Digital Enterprise</h1>
+      <div className=" flex lg:text-6xl text-2xl  relative font-semibold h-96 ">
+        <img src={frame1} alt="" className="-m-3 w-full " />
+        <h1 className="pt-72 absolute opacity-85   ">
+          {" "}
+          <span className="border rounded-xl bg-white">DIGITAL ENTERPRISE</span>
+        </h1>
         <div className="text-base font-bold absolute bottom-7 right-5 ">
-          <button className="-ml-2">Tap for more</button>
-          <img className="size-16" src={bigarrow} alt="" />
+          <button className="-ml-2 text-white">Tap for more</button>
+          <img className="size-16  " src={bigarrow} alt="" />
         </div>
       </div>
     ),
@@ -669,7 +678,11 @@ const items = [
     key: "2",
     label: (
       <div className=" flex lg:text-6xl text-2xl relative font-semibold h-96 ">
-        <h1 className="pt-72"> Digital Experience</h1>
+        <img src={frame2} alt="" className=" -m-3  w-full" />
+        <h1 className="pt-72 absolute opacity-85">
+          {" "}
+          <span className="border rounded-xl bg-white">DIGITAL EXPERIENCE</span>
+        </h1>
         <div className="text-base font-bold absolute bottom-7 right-5 ">
           <button className="-ml-2">Tap for more</button>
           <img className="size-16" src={bigarrow} alt="" />
@@ -682,7 +695,11 @@ const items = [
     key: "3",
     label: (
       <div className=" flex lg:text-6xl text-2xl relative font-semibold h-96 ">
-        <h1 className="pt-72"> Digital Marketing</h1>
+        <img src={frame3} alt="" className=" -m-3  w-full" />
+        <h1 className="pt-72 absolute opacity-85">
+          {" "}
+          <span className="border rounded-xl bg-white">DIGITAL MARKETING</span>
+        </h1>
         <div className="text-base font-bold absolute bottom-7 right-5 ">
           <button className="-ml-2">Tap for more</button>
           <img className="size-16" src={bigarrow} alt="" />
@@ -695,7 +712,10 @@ const items = [
     key: "4",
     label: (
       <div className=" flex lg:text-6xl text-2xl relative font-semibold h-96 ">
-        <h1 className="pt-72"> Digital Innovation</h1>
+        <img src={frame4} alt="" className=" -m-3  w-full" />
+        <h1 className="pt-72 absolute opacity-85">
+          <span className="border rounded-xl bg-white">DIGITAL INNOVATION</span>
+        </h1>
         <div className="text-base font-bold absolute bottom-7 right-5 ">
           <button className="-ml-2">Tap for more</button>
           <img className="size-16" src={bigarrow} alt="" />
@@ -708,10 +728,16 @@ const items = [
     key: "5",
     label: (
       <div className=" flex lg:text-6xl text-2xl relative font-semibold h-96 ">
-        <h1 className="pt-72"> Cloud Transformation</h1>
+        <img src={frame5} alt="" className=" -m-3  w-full" />
+        <h1 className="pt-72 absolute opacity-85">
+          {" "}
+          <span className="border rounded-xl bg-white">
+            CLOUD TRANSFORMATION
+          </span>
+        </h1>
         <div className="text-base font-bold absolute bottom-7 right-5 ">
           <button className="-ml-2">Tap for more</button>
-          <img className="size-16" src={bigarrow} alt="" />
+          <img className="size-16 " src={bigarrow} alt="" />
         </div>
       </div>
     ),
