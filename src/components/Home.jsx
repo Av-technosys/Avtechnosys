@@ -43,7 +43,7 @@ export default function Home() {
       {/* <Header/> */}
       {/* <PortfolioPage/> */}
       {/* <Header2/> */}
-      <ServicePage />
+      {/* <ServicePage /> */}
       {/* <ContactUs/> */}
       {/* <CompanyPage/> */}
       {/* <Blog/> */}
@@ -55,7 +55,7 @@ export default function Home() {
 
       {/* <HirePricing/> */}
       {/* <Form /> */}
-      {/* <Header />
+      <Header />
          <Partners /> 
           <Card2 /> 
       
@@ -71,7 +71,7 @@ export default function Home() {
       <Form1/>
         <Hero />
          <TestCard />
-        <Footer1 />  */}
+        <Footer1 /> 
       {/* <Blogdemo/> */}
 
       {/* <OrbitingCirclesDemo/> */}
