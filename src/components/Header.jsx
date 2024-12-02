@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import bgimg from "../Assets/citybg.jpg";
-import bg1 from "../Assets/bg1.jpg";
+import bg1 from "../Assets/bg-jpr.svg";
+import bg2 from "../Assets/bg-uk.svg";
+import bg3 from "../Assets/bg-uae.svg";
 import cancel from "../Assets/cancel.png";
 import button1 from "../Assets/digitaltransform.png";
 import button2 from "../Assets/ux.png";
@@ -30,51 +32,6 @@ import PhoneField from "./PhoneFeild2";
 import CancelIcon from "@mui/icons-material/Cancel";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ChevronRightOutlinedIcon from "@mui/icons-material/ChevronRightOutlined";
-
-// const items = [
-//   {
-//     key: "1",
-//     label: (
-//       <a target="_blank" rel=" " href=" ">
-//         Digital Enterprise
-//       </a>
-//     ),
-//   },
-//   {
-//     key: "2",
-//     label: (
-//       <a target="_blank" rel=" " href=" ">
-//         Digital Experience
-//       </a>
-//     ),
-//   },
-//   {
-//     key: "3",
-//     label: (
-//       <a target="_blank" rel=" " href=" ">
-//         Digital Marketing
-//       </a>
-//     ),
-//   },
-//   {
-//     key: "4",
-
-//     label: (
-//       <a target="_blank" rel=" " href=" ">
-//         Digital Innovation
-//       </a>
-//     ),
-//   },
-//   {
-//     key: "5",
-
-//     label: (
-//       <a target="_blank" rel=" " href=" ">
-//         Cloud Transformation
-//       </a>
-//     ),
-//   },
-// ];
 
 const handleEmailClick = () => {
   window.location.href = `mailto:sales@avtechnosys.com?`;
@@ -272,7 +229,7 @@ const Header = () => {
                               </div>
                               <img
                                 className="h-16 w-16 rounded-full"
-                                src={bg1}
+                                src={bg3}
                                 alt="Office"
                               />
                             </div>
@@ -287,7 +244,7 @@ const Header = () => {
                               </div>
                               <img
                                 className="h-16 w-16 rounded-full"
-                                src={bg1}
+                                src={bg2}
                                 alt="Office"
                               />
                             </div>

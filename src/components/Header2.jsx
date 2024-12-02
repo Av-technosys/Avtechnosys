@@ -1,13 +1,16 @@
 import React from "react";
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
+
 import logo from "../Assets/Logo 1.png";
 import arrow from "../Assets/rightarrow.png";
 import PhoneField from "./PhoneFeild2";
 import { Slider } from "antd";
 import { Dropdown, Space } from "antd";
 import bgimg from "../Assets/citybg.jpg";
-import bg1 from "../Assets/bg1.jpg";
+import bg1 from "../Assets/bg-jpr.svg";
+import bg2 from "../Assets/bg-uk.svg";
+import bg3 from "../Assets/bg-uae.svg";
 import cancel from "../Assets/cancel.png";
 import button1 from "../Assets/digitaltransform.png";
 import button2 from "../Assets/ux.png";
@@ -20,51 +23,6 @@ import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import avlogo from "../Assets/AV LOGO.svg";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
-// const items = [
-//   {
-//     key: "1",
-//     label: (
-//       <a target="_blank" rel=" " href=" ">
-//         Digital Enterprise
-//       </a>
-//     ),
-//   },
-//   {
-//     key: "2",
-//     label: (
-//       <a target="_blank" rel=" " href=" ">
-//         Digital Experience
-//       </a>
-//     ),
-//   },
-//   {
-//     key: "3",
-//     label: (
-//       <a target="_blank" rel=" " href=" ">
-//         Digital Marketing
-//       </a>
-//     ),
-//   },
-//   {
-//     key: "4",
-
-//     label: (
-//       <a target="_blank" rel=" " href=" ">
-//         Digital Innovation
-//       </a>
-//     ),
-//   },
-//   {
-//     key: "5",
-
-//     label: (
-//       <a target="_blank" rel=" " href=" ">
-//         Cloud Transformation
-//       </a>
-//     ),
-//   },
-// ];
-
 const Header2 = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -75,6 +33,12 @@ const Header2 = () => {
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
+  };
+
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = (buttonName) => {
+    setIsClicked(buttonName); // Toggle the state on click
   };
   return (
     <>
@@ -148,11 +112,7 @@ const Header2 = () => {
             <li className="px-">
               <Link to="/company">Company</Link>
             </li>
-            {/* <Dropdown
-                    menu={{
-                      items,
-                    }}
-                  > */}
+
             <li className="ml-10 ">
               <Link to="/Services">Services</Link>
             </li>
@@ -223,15 +183,11 @@ const Header2 = () => {
                         M01, AL Mulla Building 2, <br />
                         Near Burj Nahar Mall, Deira, Dubai <br />
                         Phone no. :- +971 521665467 <br />
-                        {/* Jaipur:- Plot no.8, Govind Marg,<br/>
-                    Block-B, Malviya Nagar, Jaipur,<br/>
-                    Rajasthan, 302017<br/>
-                    Phone no.:- +91 9983034111 */}
                       </p>
                     </div>
                     <img
                       className="h-16 w-16 rounded-full"
-                      src={bg1}
+                      src={bg3}
                       alt="Office"
                     />
                   </div>
@@ -242,28 +198,15 @@ const Header2 = () => {
                         1-3 St Nicholas Street Worcester <br />
                         WR1 1UW, United Kingdom <br />
                         Phone no. :- +44 7470994018 <br />
-                        {/* Jaipur:- Plot no.8, Govind Marg,<br/>
-                    Block-B, Malviya Nagar, Jaipur,<br/>
-                    Rajasthan, 302017<br/>
-                    Phone no.:- +91 9983034111 */}
                       </p>
                     </div>
                     <img
                       className="h-16 w-16 rounded-full"
-                      src={bg1}
+                      src={bg2}
                       alt="Office"
                     />
                   </div>
                   <br />
-                  {/* <div className='flex justify-between'>
-                  <div>
-                    <p>Jaipur:- Plot no.8, Govind Marg,<br/>
-                    Block-B, Malviya Nagar, Jaipur,<br/>
-                    Rajasthan, 302017<br/>
-                    Phone no.:- +91 9983034111</p>
-                  </div>
-                  <img className='h-16 w-16 rounded-full' src={bg1} alt="Office" />
-                </div> */}
                 </div>
               </div>
             </div>
@@ -282,29 +225,84 @@ const Header2 = () => {
               </div>
 
               <div className="mt-3 flex gap-5  justify-evenly">
-                <button className=" shadow-box font-light text-sm items-center   h-24 w-32  border-gray-500 shadow rounded-lg">
-                  <img className="w-12 ml-10 " src={button1} alt="" />
-                  <h1>Digital Enterprise</h1>
-                </button>
-                <button className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg">
-                  <img className="w-12 ml-10 " src={button2} alt="" />
-                  <h1>Digital Experience</h1>
-                </button>
-                <button className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg">
-                  <img className="w-12 ml-10 " src={button3} alt="" />
-                  <h1>Digital Marketing</h1>
-                </button>
+                <div
+                  className={
+                    isClicked === "digitalEnterprise"
+                      ? "bg-gray-100 rounded-lg border border-black"
+                      : ""
+                  }
+                >
+                  <button
+                    onClick={() => handleClick("digitalEnterprise")}
+                    className=" shadow-box font-light text-sm items-center   h-24 w-32  border-gray-500 shadow rounded-lg"
+                  >
+                    <img className="w-12 ml-10 " src={button1} alt="" />
+                    <h1>Digital Enterprise</h1>
+                  </button>
+                </div>
+                <div
+                  className={
+                    isClicked === "digitalexperience"
+                      ? "bg-gray-100 rounded-lg border border-black"
+                      : ""
+                  }
+                >
+                  <button
+                    onClick={() => handleClick("digitalexperience")}
+                    className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg"
+                  >
+                    <img className="w-12 ml-10 " src={button2} alt="" />
+                    <h1>Digital Experience</h1>
+                  </button>
+                </div>
+                <div
+                  className={
+                    isClicked === "digitalmarketing"
+                      ? "bg-gray-100 rounded-lg border border-black"
+                      : ""
+                  }
+                >
+                  <button
+                    onClick={() => handleClick("digitalmarketing")}
+                    className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg"
+                  >
+                    <img className="w-12 ml-10 " src={button3} alt="" />
+                    <h1>Digital Marketing</h1>
+                  </button>
+                </div>
               </div>
 
               <div className="mt-6 flex gap-12  justify-center">
-                <button className="shadow-box font-light text-sm h-24 w-32  border-gray-500 shadow rounded-lg">
-                  <img className="w-12 ml-10 " src={button4} alt="" />
-                  <h1>Digital Innovation</h1>
-                </button>
-                <button className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg">
-                  <img className="w-12 ml-10 " src={button5} alt="" />
-                  <h1>Cloud Transformation</h1>
-                </button>
+                <div
+                  className={
+                    isClicked === "digitalinnovation"
+                      ? "bg-gray-100 rounded-lg border border-black"
+                      : ""
+                  }
+                >
+                  <button
+                    onClick={() => handleClick("digitalinnovation")}
+                    className="shadow-box font-light text-sm h-24 w-32  border-gray-500 shadow rounded-lg"
+                  >
+                    <img className="w-12 ml-10 " src={button4} alt="" />
+                    <h1>Digital Innovation</h1>
+                  </button>
+                </div>
+                <div
+                  className={
+                    isClicked === "cloudtransformation"
+                      ? "bg-gray-100 rounded-lg border border-black"
+                      : ""
+                  }
+                >
+                  <button
+                    onClick={() => handleClick("cloudtransformation")}
+                    className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg"
+                  >
+                    <img className="w-12 ml-10 " src={button5} alt="" />
+                    <h1>Cloud Transformation</h1>
+                  </button>
+                </div>
               </div>
 
               <div>

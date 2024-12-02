@@ -20,6 +20,8 @@ import tech7 from "../Assets/fixtech7.svg";
 import tech8 from "../Assets/fixtech8.svg";
 import renotech3 from "../Assets/renotech3.svg";
 import tavago from "../Assets/tavago.svg";
+import tavaga from "../Assets/tavaga.png";
+
 import tavago1 from "../Assets/tavago1.png";
 import tavagalogo from "../Assets/tavaga-logo_1.png";
 import ArrowOutwardRoundedIcon from "@mui/icons-material/ArrowOutwardRounded";
@@ -33,9 +35,9 @@ const PortfolioPage6 = () => {
         {/* saaskart img */}
         <div className=" flex justify-between w-full lg:pt-10">
           <img
-            src={tavago}
+            src={tavaga}
             alt=""
-            className=" lg:ml-10 ml-4 lg:w-64 w-32 lg:h-40 h-32"
+            className=" lg:ml-10 ml-4 lg:w-64 w-32  h-20"
           />
           <img src={tavago1} alt="" className="lg: -ml-40 " />
         </div>

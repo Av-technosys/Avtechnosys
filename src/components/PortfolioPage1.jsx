@@ -72,9 +72,9 @@ const PortfolioPage1 = () => {
             <ul className="list-disc lg:text-[1rem] text-xl font-normal ml-5 mt-5">
               <li className="">
                 {" "}
-                This creative website showcases Saaskart's best features provide
-                solutions to buyers & seller investment solutions collaboration
-                to partners.
+                This creative website showcases Saaskart's best features and
+                provides investment solutions for buyers and sellers, fostering
+                collaboration with partners.
               </li>
               <li> Marketplace to see and buy product.</li>
               <li> Informative blogs. </li>

@@ -18,6 +18,12 @@ import frame2 from "../Assets/frame2.png";
 import frame3 from "../Assets/frame3.png";
 import frame4 from "../Assets/frame4.png";
 import frame5 from "../Assets/frame5.png";
+import entertain from "../Assets/entertainment.jpg";
+import healthcare from "../Assets/healthcare.jpg";
+import finance from "../Assets/finance.jpg";
+import fitness from "../Assets/fitness.jpg";
+import logistics from "../Assets/logistics.jpg";
+import realstate from "../Assets/realstate.jpg";
 
 const text = (
   <div className="">
@@ -751,7 +757,7 @@ const ServicePage = () => {
       <Header2 />
 
       <hr />
-      <main className=" lg:flex grid grid-cols-1  bg-[#1c1c1e] w-full h-[60vh]">
+      <main className=" lg:flex grid grid-cols-1 lg:justify-center bg-[#1c1c1e] w-full h-[60vh]">
         <div>
           <h1 className="text-white lg:text-6xl text-2xl lg:mt-32 lg:ml-20 ml-36 font-bold">
             Our Company <br />
@@ -794,57 +800,33 @@ const ServicePage = () => {
 
         <div className=" mt-10 lg:ml-20 lg: ml-10 mr-20 grid grid-cols-1 lg:grid  gap-5 lg:grid-cols-3  lg:gap-20  justify-evenly">
           <div className="bg-white text-3xl font-bold h-56 w-80 rounded-xl border">
-            <img
-              className="rounded-t-xl"
-              src="https://unsplash.it/800/400/?random"
-              alt=""
-            />
-            <h1 className=" ml-14 mt-3 ">Fitness solution </h1>
+            <img className="rounded-t-xl h-44 w-full" src={fitness} alt="" />
+            <h1 className=" ml-14 mt-1 ">Fitness solution </h1>
           </div>
 
           <div className="bg-white text-3xl font-bold h-56 w-80 rounded-xl border">
-            <img
-              className="rounded-t-xl"
-              src="https://unsplash.it/800/400/?rando"
-              alt=""
-            />
-            <h1 className=" ml-14 mt-3 ">Entertainment </h1>
+            <img className="rounded-t-xl h-44 w-full" src={entertain} alt="" />
+            <h1 className=" ml-14 mt-1 ">Entertainment </h1>
           </div>
 
           <div className="bg-white text-3xl font-bold h-56 w-80 rounded-xl border">
-            <img
-              className="rounded-t-xl"
-              src="https://unsplash.it/800/400/?randm"
-              alt=""
-            />
-            <h1 className=" ml-2 mt-3 ">Banking and Finance </h1>
+            <img className="rounded-t-xl h-44 w-full" src={finance} alt="" />
+            <h1 className=" ml-2 mt-1 ">Banking and Finance </h1>
           </div>
 
           <div className="bg-white text-3xl font-bold h-56 w-80 rounded-xl border">
-            <img
-              className="rounded-t-xl"
-              src="https://unsplash.it/800/400/?ranom"
-              alt=""
-            />
-            <h1 className=" ml-24 mt-3 ">Healthcare </h1>
+            <img className="rounded-t-xl h-44 w-full" src={healthcare} alt="" />
+            <h1 className=" ml-24 mt-1 ">Healthcare </h1>
           </div>
 
           <div className="bg-white text-3xl font-bold h-56 w-80 rounded-xl border">
-            <img
-              className="rounded-t-xl"
-              src="https://unsplash.it/800/400/?radom"
-              alt=""
-            />
-            <h1 className=" ml-24 mt-3 ">Logistic </h1>
+            <img className="rounded-t-xl h-44 w-full" src={logistics} alt="" />
+            <h1 className=" ml-24 mt-1 ">Logistic </h1>
           </div>
 
           <div className="bg-white text-3xl font-bold h-56 w-80 rounded-xl border">
-            <img
-              className="rounded-t-xl"
-              src="https://unsplash.it/800/400/?rndom"
-              alt=""
-            />
-            <h1 className=" ml-24 mt-3 ">Real Estate </h1>
+            <img className="rounded-t-xl h-44 w-full" src={realstate} alt="" />
+            <h1 className=" ml-24 mt-1 ">Real Estate </h1>
           </div>
         </div>
       </div>
