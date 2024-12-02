@@ -21,6 +21,7 @@ import tech8 from "../Assets/fixtech8.svg";
 import renotech3 from "../Assets/renotech3.svg";
 import tavago from "../Assets/tavago.svg";
 import tavago1 from "../Assets/tavago1.png";
+import tavagalogo from "../Assets/tavaga-logo_1.png";
 import ArrowOutwardRoundedIcon from "@mui/icons-material/ArrowOutwardRounded";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 
@@ -43,22 +44,22 @@ const PortfolioPage6 = () => {
             Project Brief{" "}
           </h1>
           <p className="lg:text-[1rem]  lg:font-normal mt-7 ">
-          Tavaga offers personalized rob-advisory services provide 
-precise investment portfolios as per individual needs with 
-automated algorithms it manages investments to achieve 
-financial goals efficiently. Services include customized 
-portfolio management tax planning insurance review and 
-specialized offerings for NRIs.  
+            Tavaga offers personalized rob-advisory services provide precise
+            investment portfolios as per individual needs with automated
+            algorithms it manages investments to achieve financial goals
+            efficiently. Services include customized portfolio management tax
+            planning insurance review and specialized offerings for NRIs.
           </p>
           <button className="mt-7 relative border-2 py-1.5 pl-2 text-[24] font-medium pr-8 border-white rounded-lg">
-            <a href="https://tavaga.com/" target="_blank">Visit Site{" "}</a>
+            <a href="https://tavaga.com/" target="_blank">
+              Visit Site{" "}
+            </a>
             <ArrowOutwardRoundedIcon className="absolute right-0 top-2  " />{" "}
           </button>
         </div>
 
         <div className="flex lg:mt-72 mt-52 text-white   lg:ml-14 ml-4">
           <div className=" lg:text-[32px] font-semibold h-fit lg:w-[90vw] w-[20vw]  ">
-            
             Design Tools Used
             <div className="lg:flex gap-5 grid  mt-5">
               <img src={figma} alt="" />
@@ -70,29 +71,33 @@ specialized offerings for NRIs.
           <div className="lg:text-[32px] text-xl font-semibold  lg:ml-0 ml-10">
             {" "}
             Solutions
-            <h1 className="lg:mt-6 mt-2 lg:text-[32px] font-normal"> Customer App / Web</h1>
+            <h1 className="lg:mt-6 mt-2 lg:text-[32px] font-normal">
+              {" "}
+              Customer App / Web
+            </h1>
             <ul className="list-disc lg:text-[1rem] text-xl font-normal ml-5 mt-5">
               <li className="">
                 {" "}
-                This user friendly app allows users to buy 
-                product smoothly
+                This user friendly app allows users to buy product smoothly
               </li>
-              <li>  Community section to post content</li>
-              <li>  Membership section </li>
-              <li>Informative blogs  </li>
+              <li> Community section to post content</li>
+              <li> Membership section </li>
+              <li>Informative blogs </li>
             </ul>
-            <h1 className="lg:mt-6 mt-2 font-normal">Seller Portal  </h1>
+            <h1 className="lg:mt-6 mt-2 font-normal">Seller Portal </h1>
             <ul className="list-disc lg:text-[1rem] text-xl font-normal ml-5 mt-5">
               <li className=""> Seller onboarding</li>
               <li> Sales matrix</li>
-              <li>   Product analytics</li>
-              <li>   Payment settlement</li>
+              <li> Product analytics</li>
+              <li> Payment settlement</li>
               <li> Delivery management</li>
             </ul>
           </div>
         </div>
         <div className="lg:ml-14 ml-4 text-white lg:-mt-72 mt-5 ">
-          <h1 className="lg:text-3xl text-[32px] font-semibold">Technology Stack Used</h1>
+          <h1 className="lg:text-3xl text-[32px] font-semibold">
+            Technology Stack Used
+          </h1>
           <div className=" flex mt-5 lg:size-32 size-20 ">
             <img src={finztech1} alt="" />
             <img src={finztech2} alt="" />
@@ -101,14 +106,16 @@ specialized offerings for NRIs.
           </div>
           <div className=" flex lg:-mt-6 -mt-5 lg:size-32 size-20  ">
             <img src={finztech5} alt="" />
-            <img src={finztech6} alt="" />            
+            <img src={finztech6} alt="" />
             <img src={finztech7} alt="" />
             <img src={tech2} alt="" />
           </div>
         </div>
 
         <div className="text-white lg:ml-14 lg:mt-10 ml-4 ">
-          <h1 className="lg:text-[32px] text-2xl font-semibold">Project Breakdown</h1>
+          <h1 className="lg:text-[32px] text-2xl font-semibold">
+            Project Breakdown
+          </h1>
           <div className="flex ">
             <ul className="mt-5 lg:text-[1rem] text-lg lg:w-[36vw] w-[70vw] ">
               <li className="lg:w-[40vw] ">
@@ -126,19 +133,17 @@ specialized offerings for NRIs.
               </li>
               <li className="lg:w-[60vw]">
                 <CheckCircleRoundedIcon className="lg:mr-1 mr-2 lg:my-" />
-                WordPress - WooCommerce  Elementor, Contact Form 7 Small Ballon Instagram Feed,
-                Site Kit
+                WordPress - WooCommerce Elementor, Contact Form 7 Small Ballon
+                Instagram Feed, Site Kit
               </li>
               <li className="lg:mr-1 lg:my-">
-                <CheckCircleRoundedIcon className="lg:mr-1 lg:my-" /> UI Framework -
-                Bootstrap
+                <CheckCircleRoundedIcon className="lg:mr-1 lg:my-" /> UI
+                Framework - Bootstrap
               </li>
             </ul>
-           <div>
-           <ul className="lg:ml-48 ml-2 mt-5 lg:text-2xl text-lg">
-              
-            </ul>
-           </div>
+            <div>
+              <ul className="lg:ml-48 ml-2 mt-5 lg:text-2xl text-lg"></ul>
+            </div>
           </div>
         </div>
       </div>

@@ -92,6 +92,11 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = (buttonName) => {
+    setIsClicked(buttonName); // Toggle the state on click
+  };
   // const [isOpen, setIsOpen] = React.useState(false);
   // const toggleDrawer = () => {
   //   setIsOpen((prevState) => !prevState);
@@ -263,13 +268,6 @@ const Header = () => {
                                   M01, AL Mulla Building 2, <br />
                                   Near Burj Nahar Mall, Deira, Dubai <br />
                                   Phone no. :- +971 521665467 <br />
-                                  {/* Jaipur:- Plot no.8, Govind Marg,
-                                  <br />
-                                  Block-B, Malviya Nagar, Jaipur,
-                                  <br />
-                                  Rajasthan, 302017
-                                  <br />
-                                  Phone no.:- +91 9983034111 */}
                                 </p>
                               </div>
                               <img
@@ -285,13 +283,6 @@ const Header = () => {
                                   1-3 St Nicholas Street Worcester WR1 1UW,
                                   United Kingdom <br />
                                   Phone no. :- +44 7470994018 <br />
-                                  {/* Jaipur:- Plot no.8, Govind Marg,
-                                  <br />
-                                  Block-B, Malviya Nagar, Jaipur,
-                                  <br />
-                                  Rajasthan, 302017
-                                  <br />
-                                  Phone no.:- +91 9983034111 */}
                                 </p>
                               </div>
                               <img
@@ -301,24 +292,6 @@ const Header = () => {
                               />
                             </div>
                             <br />
-                            {/* <div className="flex justify-between">
-                              <div>
-                                <p>
-                                  Jaipur:- Plot no.8, Govind Marg,
-                                  <br />
-                                  Block-B, Malviya Nagar, Jaipur,
-                                  <br />
-                                  Rajasthan, 302017
-                                  <br />
-                                  Phone no.:- +91 9983034111
-                                </p>
-                              </div>
-                              <img
-                                className="h-16 w-16 rounded-full"
-                                src={bg1}
-                                alt="Office"
-                              />
-                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -335,29 +308,105 @@ const Header = () => {
                         </div>
 
                         <div className="mt-3 flex gap-5  justify-evenly">
-                          <button className=" shadow-box font-light text-sm items-center   h-24 w-32  border-gray-500 shadow rounded-lg">
-                            <img className="w-12 ml-10 " src={button1} alt="" />
-                            <h1>Digital Enterprise</h1>
-                          </button>
-                          <button className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg">
-                            <img className="w-12 ml-10 " src={button2} alt="" />
-                            <h1>Digital Experience</h1>
-                          </button>
-                          <button className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg">
-                            <img className="w-12 ml-10 " src={button3} alt="" />
-                            <h1>Digital Marketing</h1>
-                          </button>
+                          <div
+                            className={
+                              isClicked === "digitalEnterprise"
+                                ? "bg-gray-100 rounded-lg border border-black"
+                                : ""
+                            }
+                          >
+                            <button
+                              onClick={() => handleClick("digitalEnterprise")}
+                              className=" shadow-box font-light text-sm items-center   h-24 w-32  border-gray-500 shadow rounded-lg"
+                            >
+                              <img
+                                className="w-12 ml-10 "
+                                src={button1}
+                                alt=""
+                              />
+                              <h1>Digital Enterprise</h1>
+                            </button>
+                          </div>
+                          <div
+                            className={
+                              isClicked === "digitalexperience"
+                                ? "bg-gray-100 rounded-lg border border-black"
+                                : ""
+                            }
+                          >
+                            <button
+                              onClick={() => handleClick("digitalexperience")}
+                              className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg"
+                            >
+                              <img
+                                className="w-12 ml-10 "
+                                src={button2}
+                                alt=""
+                              />
+                              <h1>Digital Experience</h1>
+                            </button>
+                          </div>
+
+                          <div
+                            className={
+                              isClicked === "digitalmarketing"
+                                ? "bg-gray-100 rounded-lg border border-black"
+                                : ""
+                            }
+                          >
+                            <button
+                              onClick={() => handleClick("digitalmarketing")}
+                              className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg"
+                            >
+                              <img
+                                className="w-12 ml-10 "
+                                src={button3}
+                                alt=""
+                              />
+                              <h1>Digital Marketing</h1>
+                            </button>
+                          </div>
                         </div>
 
                         <div className="mt-6 flex gap-12  justify-center">
-                          <button className="shadow-box font-light text-sm h-24 w-32  border-gray-500 shadow rounded-lg">
-                            <img className="w-12 ml-10 " src={button4} alt="" />
-                            <h1>Digital Innovation</h1>
-                          </button>
-                          <button className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg">
-                            <img className="w-12 ml-10 " src={button5} alt="" />
-                            <h1>Cloud Transformation</h1>
-                          </button>
+                          <div
+                            className={
+                              isClicked === "digitalinnovation"
+                                ? "bg-gray-100 rounded-lg border border-black"
+                                : ""
+                            }
+                          >
+                            <button
+                              onClick={() => handleClick("digitalinnovation")}
+                              className="shadow-box font-light text-sm h-24 w-32  border-gray-500 shadow rounded-lg"
+                            >
+                              <img
+                                className="w-12 ml-10 "
+                                src={button4}
+                                alt=""
+                              />
+                              <h1>Digital Innovation</h1>
+                            </button>
+                          </div>
+                          <div
+                            className={
+                              isClicked === "cloudtransformation"
+                                ? "bg-gray-100 rounded-lg border border-black"
+                                : ""
+                            }
+                          >
+                            <button
+                              onClick={() => handleClick("cloudtransformation")}
+                              className="shadow-box font-light text-sm h-24 w-32 border-gray-500 shadow rounded-lg"
+                            >
+                              <img
+                                className="w-12 ml-10 "
+                                src={button5}
+                                alt=""
+                              />
+                              <h1>Cloud Transformation</h1>
+                            </button>
+                          </div>
                         </div>
 
                         <div>
@@ -471,7 +520,7 @@ const Header = () => {
                 Got a dream that sounds a bit out there? Perfect! At AV
                 Technosys, we specialize in <br />
                 turning the ‘Wait, what?’ into ‘Wow, no way!’ Join us on a wild
-                tech adventure that’s as <br /> fun as it is groundbreaking!
+                tech adventure that’s as <br /> fun as it is groundbreaking.
               </p>
             </div>
             <div className=" lg:pl-[1rem]  m-10 text-sm ">

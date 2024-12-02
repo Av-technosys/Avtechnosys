@@ -4,7 +4,6 @@ import Vect1 from "../Assets/vector1.png";
 import ImgFive from "../Assets/service5.jpg";
 import Gif5 from "../Assets/Gif5.gif";
 
-
 // import React from "react";
 // import "./Footer.css";
 // import Vect1 from "../Assets/vector1.png";
@@ -12,56 +11,66 @@ import Gif5 from "../Assets/Gif5.gif";
 // import Gif4 from "../Assets/Gif4.gif";
 
 const Services5 = () => {
- return (
-   <>
+  return (
+    <>
+      <div class="fontTest min-h-screen bg-[#1c1c1e] text-white space-y-7 p-8">
+        <div className="">
+          <hr className="lg:mx-[3.5rem] mt-5 " />
+        </div>
+        <div class="lg:flex lg:gap-0 grid grid-cols-1 gap-10 lg:pt-5 justify-between lg:mx-[4rem] ">
+          <div className="flex gap-0.5">
+            <div className="h-9 w-3 bg-white rounded-tl-3xl rounded-br-3xl"></div>
+            <div className="h-9 w-3 -mt-4 bg-white rounded-tl-3xl rounded-br-3xl"></div>
+            <div className="h-9 w-3 bg-white rounded-tl-3xl rounded-br-3xl"></div>
+            <div className="h-9 w-3 -mt-4 bg-white rounded-tl-3xl rounded-br-3xl"></div>
+            <div className="h-9 w-3 bg-white rounded-tl-3xl rounded-br-3xl"></div>
+          </div>
 
-
-
-   <div class="fontTest min-h-screen bg-[#1c1c1e] text-white space-y-7 p-8">
-   <div className="">
-   <hr className='lg:mx-[3.5rem] mt-5 ' />
-   </div>
- <div class="lg:flex lg:gap-0 grid grid-cols-1 gap-10 lg:pt-5 justify-between lg:mx-[4rem] ">
- <div className='flex gap-0.5'>
- <div className='h-9 w-3 bg-white rounded-tl-3xl rounded-br-3xl'></div>      
-      <div className='h-9 w-3 -mt-4 bg-white rounded-tl-3xl rounded-br-3xl'></div> 
-      <div className='h-9 w-3 bg-white rounded-tl-3xl rounded-br-3xl'></div>
-      <div className='h-9 w-3 -mt-4 bg-white rounded-tl-3xl rounded-br-3xl'></div> 
-      <div className='h-9 w-3 bg-white rounded-tl-3xl rounded-br-3xl'></div>
-    </div>
-
-
-
-   {/* <div class="w-[10%] pr-2"><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div>
+          {/* <div class="w-[10%] pr-2"><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div>
    <div class="w-[10%] pr-2 lg:-ml-[4.3rem] "><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div>
    <div class="w-[10%] pr-2 lg:-ml-[4.3rem] "><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div>
    <div class="w-[10%] pr-2 lg:-ml-[4.3rem] "><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div>
    <div class="w-[10%] pr-2 lg:-ml-[4.3rem] "><div class="h-9 w-3 rounded-br-full rounded-ss-full bg-white"></div></div> */}
-   <div class="w-[70%] text-xs md:text-lg lg:text-2xl lg:ml-[10rem]">
-     <h3 className='lg:text-[2.5rem] font-semibold lg:pb-10 pb-2'>Cloud Transformation
-     <p className='lg:text-[1rem] lg:font-semibold leading-10'> Scalable & Secure (Like a Fortress Made of Rainbows!)
-     </p>
-     </h3>
-     <p className='lg:text-[1rem] lg:font-semibold lg:pt-10'>Take your infrastructure to the cloud like a boss! Our scalable solutions grow with you, keeping everything safe and sound– no matter what comes your way!. </p>
-   </div>
-   <div>
-     <img src={ImgFive} width="300" />
-   </div>
-   <div></div>
- </div>
- <div class="flex gap-4  lg:pt-32 lg:ml-[4rem] md:gap-0 items-center">
-   <div class="w-[10%] lg:text-[1rem] text-[10px] font-semibold "><img src={Vect1} width="65" />Read more</div>
+          <div class="w-[70%] text-xs md:text-lg lg:text-2xl lg:ml-[10rem]">
+            <h3 className="lg:text-[2.5rem] font-semibold lg:pb-10 pb-2">
+              Cloud Transformation
+              <p className="lg:text-[1rem] lg:font-semibold leading-10">
+                {" "}
+                Scalable & Secure
+              </p>
+            </h3>
+            <p className="lg:text-[1rem] lg:font-semibold lg:pt-10">
+              Take your infrastructure to the cloud like a boss! Our scalable
+              solutions grow with you, keeping everything safe and sound– no
+              matter what comes your way.{" "}
+            </p>
+          </div>
+          <div>
+            <img src={ImgFive} width="300" />
+          </div>
+          <div></div>
+        </div>
+        <div class="flex gap-4  lg:pt-32 lg:ml-[4rem] md:gap-0 items-center">
+          <div class="w-[10%] lg:text-[1rem] text-[10px] font-semibold ">
+            <img src={Vect1} width="65" />
+            Read more
+          </div>
+          <div class=" lg:ml-[8rem]">
+            <img
+              className="lg:h-44 h-20 lg:w-72 w-52 "
+              src={Gif5}
+              width=""
+              height=""
+            />
+          </div>
+            
+        </div>
+      </div>
+    </>
+  );
+};
 
-   <div class=" lg:ml-[8rem]">
-     <img className='lg:h-44 h-20 lg:w-72 w-52 ' src={Gif5} width="" height="" />
-   </div>
-  </div>
-</div>
-   </>
- )
-}
-
-export default Services5
+export default Services5;
 
 // const Services4 = () => {
 //   return (
@@ -106,9 +115,6 @@ export default Services5
 // };
 
 // export default Services4;
-
-
-
 
 // const Services5 = () => {
 //   return (

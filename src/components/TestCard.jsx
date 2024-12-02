@@ -37,7 +37,7 @@ const ImageWithBorders = () => {
         />
         <Card
           name="— Nitin"
-          desgination="Tavaga, Stock Consulatncy"
+          desgination="Tavaga, Stock Consultancy"
           desc="Our app has significantly improved user engagement. The AV Technosys team delivered a quality product that met our needs efficiently."
           profileImg={user3}
         />

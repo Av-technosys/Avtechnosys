@@ -662,7 +662,7 @@ const items = [
     label: (
       <div className=" flex lg:text-6xl text-2xl  relative font-semibold h-96 ">
         <img src={frame1} alt="" className="-m-3 w-full " />
-        <h1 className="pt-72 absolute opacity-85   ">
+        <h1 className="pt-72 absolute opacity-85  ">
           {" "}
           <span className="border rounded-xl bg-white">DIGITAL ENTERPRISE</span>
         </h1>
@@ -684,7 +684,7 @@ const items = [
           <span className="border rounded-xl bg-white">DIGITAL EXPERIENCE</span>
         </h1>
         <div className="text-base font-bold absolute bottom-7 right-5 ">
-          <button className="-ml-2">Tap for more</button>
+          <button className="-ml-2 text-white">Tap for more</button>
           <img className="size-16" src={bigarrow} alt="" />
         </div>
       </div>
@@ -701,7 +701,7 @@ const items = [
           <span className="border rounded-xl bg-white">DIGITAL MARKETING</span>
         </h1>
         <div className="text-base font-bold absolute bottom-7 right-5 ">
-          <button className="-ml-2">Tap for more</button>
+          <button className="-ml-2 text-white">Tap for more</button>
           <img className="size-16" src={bigarrow} alt="" />
         </div>
       </div>
@@ -717,7 +717,7 @@ const items = [
           <span className="border rounded-xl bg-white">DIGITAL INNOVATION</span>
         </h1>
         <div className="text-base font-bold absolute bottom-7 right-5 ">
-          <button className="-ml-2">Tap for more</button>
+          <button className="-ml-2 text-white">Tap for more</button>
           <img className="size-16" src={bigarrow} alt="" />
         </div>
       </div>
@@ -736,7 +736,7 @@ const items = [
           </span>
         </h1>
         <div className="text-base font-bold absolute bottom-7 right-5 ">
-          <button className="-ml-2">Tap for more</button>
+          <button className="-ml-2 text-white">Tap for more</button>
           <img className="size-16 " src={bigarrow} alt="" />
         </div>
       </div>
@@ -755,7 +755,7 @@ const ServicePage = () => {
         <div>
           <h1 className="text-white lg:text-6xl text-2xl lg:mt-32 lg:ml-20 ml-36 font-bold">
             Our Company <br />
-            <h1 className="mt-4">Services!</h1>
+            <h1 className="mt-4">Services</h1>
           </h1>
         </div>
 
@@ -777,13 +777,15 @@ const ServicePage = () => {
           </div>
         </div>
       </main>
-      <div>
+      <div className=" bg-[#1c1c1e]  ">
         <Collapse accordion items={items} />
       </div>
 
       <div className="bg-[#1c1c1e] w-full">
         <div className="fontTest text-white pt-20 lg:ml-20 ml-5">
-          <h1 className="lg:text-[4rem] text-2xl  font-bold">Industries </h1>{" "}
+          <h1 className="lg:text-[4rem] fontTest text-2xl  font-semibold">
+            Industries{" "}
+          </h1>{" "}
           <br />
           <p className="font-light ">
             Discover Our Diverse Industry Partnerships

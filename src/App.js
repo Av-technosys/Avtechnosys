@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Switch } from "react-router-dom";
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -30,6 +30,7 @@ import { useState ,useEffect } from 'react';
 
 import {RotateLoader } from 'react-spinners';
 import HireusPage from './components/HireusPage';
+import BlogDetails from './components/BlogDetails';
 
 
 const App = () => {
@@ -60,6 +61,8 @@ const App = () => {
         <Route path="contact" element={<ContactUs />} />
         <Route path="company" element={<CompanyPage />} />
         <Route path="hireus" element={<HireusPage />} />
+        <Route path="/blogdetails" element={<BlogDetails />} />
+      
       </Routes>
     </BrowserRouter>
       }
