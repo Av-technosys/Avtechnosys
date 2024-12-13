@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.css";
 
 const Footer1 = () => {
+  useEffect(() => {
+    // Dynamically load the Elfsight script
+    const script = document.createElement("script");
+    script.src = "https://static.elfsight.com/platform/platform.js";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script); // Clean up the script on component unmount
+    };
+  }, []);
   return (
     <>
       <footer className=" fontTest bg-[#1c1c1e] lg:pt text-white">
@@ -12,6 +23,15 @@ const Footer1 = () => {
           <h6 className="text-2xl  lg:ml-[3.2rem] lg:text-[5rem] lg:mt-[5.5rem] text-[#787878] py-6 hover:text-white duration-300">
             sales@avtechnosys.com
           </h6>
+        </div>
+        <hr />
+        {/* Review Section with Background */}
+        <div className="bg-[#1c1c1e] p-6">
+          {/* Embed Google Reviews using Elfsight */}
+          <div
+            className="elfsight-app-704e64fc-7165-4092-8517-2b178615dcf4"
+            data-elfsight-app-lazy
+          ></div>
         </div>
         <hr />
         <div className="flex fontTest flex-col md:flex-row p-6 text-[1rem] font-semibold space-y-5 md:space-y-0">
