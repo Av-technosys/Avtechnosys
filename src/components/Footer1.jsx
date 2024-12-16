@@ -33,7 +33,6 @@ const Footer1 = () => {
             data-elfsight-app-lazy
           ></div>
         </div>
-        <hr />
         <div className="flex fontTest flex-col md:flex-row p-6 text-[1rem] font-semibold space-y-5 md:space-y-0">
           <div className="md:w-1/2 flex items-center">
             <p className="md:w- lg:ml-14">
