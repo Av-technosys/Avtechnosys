@@ -757,7 +757,7 @@ const ServicePage = () => {
       <Header2 />
 
       <hr />
-      <main className=" lg:flex grid grid-cols-1 lg:justify-center bg-[#1c1c1e] w-full h-[60vh]">
+      <main className=" lg:flex grid grid-cols-1 -mt-20  bg-[#1c1c1e] w-full h-[55vh]">
         <div>
           <h1 className="text-white lg:text-6xl text-2xl lg:mt-32 lg:ml-20 ml-36 font-bold">
             Our Company <br />

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Footer.css";
+import Snowfall from "react-snowfall";
 
 const Footer1 = () => {
   useEffect(() => {
@@ -16,6 +17,10 @@ const Footer1 = () => {
   return (
     <>
       <footer className=" fontTest bg-[#1c1c1e] lg:pt text-white">
+        <Snowfall
+          color="white" // Snowflake color
+          snowflakeCount={150} // Number of snowflakes
+        />
         <div className="p-6 lg:pb-[4rem] ">
           <h4 className="font-semibold lg:text[4rem] text-2xl md:text-6xl py-3 lg:py-0 ml-3 lg:ml-[3.5rem]">
             Contact Us
@@ -44,18 +49,22 @@ const Footer1 = () => {
           </div>
           <div className="w-full md:w-1/2 flex justify-between md:justify-around">
             <div className="flex relative">
-              <div className="p-2 border-r flex flex-col justify-around">
-                <div className="relative">
-                  <span className="peer cursor-pointer">Contact</span>
-                  <div className="hidden peer-hover:flex w-[10rem] text-xs absolute translate-x-[40%] top-[40%] justify-start items-center ml-10 p-2">
+              <div className=" p-2 border-r flex flex-col justify-around">
+                <div className="relative -mt-5">
+                  <span className=" peer cursor-pointer hover:text-gray-300  ">
+                    Contact
+                  </span>
+                  <div className=" w-[10rem] text-xs absolute translate-x-[40%] top-[-15%] justify-start items-center ml-10 p-2">
                     +91 99830-34111
                   </div>
                 </div>
                 <div className="relative">
-                  <span className="peer cursor-pointer">Address</span>
-                  <div className="hidden peer-hover:flex w-[10rem] text-xs absolute translate-x-[40%] -translate-y-[90%] justify-center items-center p-2 ml-10">
-                    238, 2nd floor, mangalam metropolis tower, purani chungi,
-                    vaishali nagar, Jaipur, Rajasthan 302017
+                  <span className="cursor-pointer hover:text-slate-300">
+                    Address
+                  </span>
+                  <div className=" w-[10rem] text-xs absolute translate-x-[40%] -translate-y-[40%] justify-center items-center p-2 ml-10">
+                    238, 2nd Floor, Mangalam Metropolis Tower, Purani Chungi,
+                    Vaishali Nagar, Jaipur, Rajasthan 302017
                   </div>
                 </div>
               </div>
@@ -66,22 +75,30 @@ const Footer1 = () => {
                   href="https://www.instagram.com/avtechnosys/"
                   target="_blank"
                 >
-                  <li>Instagram</li>
+                  <li className="hover:text-pink-400 hover:scale-110">
+                    Instagram
+                  </li>
                 </a>
                 <a
                   href="https://www.facebook.com/people/AV-Technosys/"
                   target="_blank"
                 >
-                  <li>Facebook</li>
+                  <li className="hover:text-blue-600 hover:scale-110">
+                    Facebook
+                  </li>
                 </a>
                 <a href="https://x.com/AvTechnosys" target="_blank">
-                  <li>Twitter</li>
+                  <li className="hover:text-gray-500 hover:scale-110">
+                    Twitter
+                  </li>
                 </a>
                 <a
                   href="https://www.linkedin.com/company/av-technosys/mycompany/"
                   target="_blank"
                 >
-                  <li>Linkedin</li>
+                  <li className="hover:text-blue-400 hover:scale-110">
+                    Linkedin
+                  </li>
                 </a>
               </ul>
             </div>

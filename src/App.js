@@ -31,6 +31,7 @@ import { useState ,useEffect } from 'react';
 import {RotateLoader } from 'react-spinners';
 import HireusPage from './components/HireusPage';
 import BlogDetails from './components/BlogDetails';
+import Snowfall from "react-snowfall";
 
 
 const App = () => {
@@ -42,7 +43,12 @@ const App = () => {
     }, 4000)
   }, [])
   return (
+    
    <div className={` h-screen ${loading && " grid place-items-center"} `}>
+    <Snowfall 
+        color="white"  // Snowflake color
+        snowflakeCount={150}  // Number of snowflakes
+      />
     {
       loading?
 

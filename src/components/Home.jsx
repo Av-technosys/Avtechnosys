@@ -34,7 +34,7 @@ import IconCloud from "./magicui/icon-cloud";
 import { IconCloudDemo } from "./aa";
 import Blogdemo from "./Blogdemo";
 import BlogDetails from "./BlogDetails";
-
+import Snowfall from "react-snowfall";
 // import Sidebar from './Sidebar';
 
 export default function Home() {
@@ -56,7 +56,10 @@ export default function Home() {
 
       {/* <HirePricing/> */}
       {/* <Form /> */}
-
+      <Snowfall
+        color="white" // Snowflake color
+        snowflakeCount={150} // Number of snowflakes
+      />
       <Header />
       <Partners />
       <Card2 />

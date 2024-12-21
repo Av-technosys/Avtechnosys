@@ -1,10 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import finz from "../Assets/finz.jpg";
-import fixpapa from "../Assets/fixpapa.jpg";
-import saaskart from "../Assets/saaskart.jpg";
-import reno from "../Assets/Reno.jpg";
-import rajhut from "../Assets/rajhut.jpg";
+
 import saaskart1 from "../Assets/saaskart1.png";
 import saaskart2 from "../Assets/saaskart2.svg";
 import figma from "../Assets/figma (1).svg";
@@ -134,8 +130,7 @@ const PortfolioPage1 = () => {
               <div classname="flex  ">
                 <p className="">
                   <CheckCircleRoundedIcon className="lg: mr-1 lg:" />
-                  Elementor (page builder) WordPress, WooCommerce,{" "}
-                  <span className="ml-7">Elementor.</span>
+                  Elementor (page builder) WordPress, WooCommerce, Elementor.
                 </p>
               </div>
             </ul>
