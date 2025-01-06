@@ -8,15 +8,10 @@ import img4 from "../Assets/Reno.jpg";
 import img5 from "../Assets/rajhut.jpg";
 import arrow from "../Assets/rightarrow.png";
 import { Link } from "react-router-dom";
-import Snowfall from "react-snowfall";
 
 const Partners = () => {
   return (
     <>
-      <Snowfall
-        color="white" // Snowflake color
-        snowflakeCount={150} // Number of snowflakes
-      />
       <div className="fontTest">
         <h2 className=" pl-[5.5rem] pt-10  lg:pb-8 text-[2rem] lg:text-[4rem] bg-[#1c1c1e] font-semibold text-white">
           Our Partners

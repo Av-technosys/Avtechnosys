@@ -1,7 +1,6 @@
 import React from "react";
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
-import Snowfall from "react-snowfall";
 
 import logo from "../Assets/Logo 1.png";
 import arrow from "../Assets/rightarrow.png";
@@ -44,11 +43,6 @@ const Header2 = () => {
   return (
     <>
       <header className="  fontTest text-white flex flex-wrap justify-between  h-32 w-full bg-[#1c1c1e]">
-        <Snowfall
-          color="white" // Snowflake color
-          snowflakeCount={150} // Number of snowflakes
-        />
-
         <div className="pt-7 pl-16 w-32 ">
           <Link to="/">
             {" "}
